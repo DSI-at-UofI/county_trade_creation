@@ -1,0 +1,17 @@
+.Rproj.user/
+
+assets/USmap_cnty_df.rds
+assets/USmap_st_df.rds
+
+data/cfs_cleaned_data
+data/data_needs
+
+code/check_predict.do
+code/data_checks.R
+code/dyadic_county_merged_construction.do
+
+output/dyadic_county_flows.rds
+output/dyadic_county_2017.rds
+output/dyadic_state_2017_merge.dta
+output/dyadic_county_flows_adjusted.rds
+output/dyadic_county_flows_adjusted.dta

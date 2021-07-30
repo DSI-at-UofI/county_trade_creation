@@ -1,0 +1,51 @@
+long_name,initial,fips,clm_region
+alabama,al,1,southeast
+alaska,ak,2,NA
+arizona,az,4,southwest
+arkansas,ar,5,south
+california,ca,6,west
+colorado,co,8,southwest
+connecticut,ct,9,northeast
+delaware,de,10,northeast
+florida,fl,12,southeast
+georgia,ga,13,southeast
+hawaii,hi,15,NA
+idaho,id,16,northwest
+illinois,il,17,central
+indiana,in,18,central
+iowa,ia,19,east north central
+kansas,ks,20,south
+kentucky,ky,21,central
+louisiana,la,22,south
+maine,me,23,northeast
+maryland,md,24,northeast
+massachusetts,ma,25,northeast
+michigan,mi,26,east north central
+minnesota,mn,27,east north central
+mississippi,ms,28,northeast
+missouri,mo,29,central
+montana,mt,30,west north central
+nebraska,ne,31,west north central
+nevada,nv,32,west
+new hampshire,nh,33,northeast
+new jersey,nj,34,northeast
+new mexico,nm,35,southwest
+new york,ny,36,northeast
+north carolina,nc,37,southeast
+north dakota,nd,38,west north central
+ohio,oh,39,central
+oklahoma,ok,40,south
+oregon,or,41,northwest
+pennsylvania,pa,42,northeast
+rhode island,ri,44,northeast
+south carolina,sc,45,southeast
+south dakota,sd,46,west north central
+tennessee,tn,47,central
+texas,tx,48,south
+utah,ut,49,southwest
+vermont,vt,50,northeast
+virginia,va,51,southeast
+washington,wa,53,northwest
+west virginia,wv,54,central
+wisconsin,wi,55,east north central
+wyoming,wy,56,west north central
