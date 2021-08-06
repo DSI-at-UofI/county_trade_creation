@@ -2,7 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 
-# No? J Nava
+# Noe J Nava
 # noejn2@illinois.edu
 # https://noejn2.github.io/
 # Script creates the dyadic_county_flows_adjusted.rds, which is our 
@@ -148,16 +148,17 @@ dy_cnty$cnty_flows[dy_cnty$gdp_j == 0] <- 0
 # 2nd Step -- Adjust dyadic county flows to match state dyadic flows
 st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
 i <- 0
-for(st_ori in st_list) {
-  for(st_des in st_list) {
+for(st_ori in st_list[1]) {
+  for(st_des in st_list[1]) {
     
     i <- i + 1
     cat("\n")
     cat(":::: Iteration number ", i, "out of 2,304")
     cat("\n")
     
-    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des
+    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des 
     
+    a <- dy_cnty[indices,]
     cnty_flw_sim <- sum(dy_cnty$cnty_flows[indices])
     cnty_flw_obs <- mean(dy_cnty$trade[indices])
     

@@ -9,7 +9,7 @@ rm(list = ls())
 
 # Script creates dyadic_county_2017.dta. This is the dataset that we
 # employ to create county food flows.
-# Code takes approximately 27 minutes
+# Code takes approximately 28 minutes
 # on Intel(R) Xeon(R) CPU E3-12250 v6 3.00Ghz 
 # 64 GB ram
 # Mumford computer
@@ -95,34 +95,35 @@ rm(list = setdiff(ls(), c("data_tb",
 implan <- read_csv(file = 'data/data_needs/industry_export_cleaned_2017.csv')
 
 ind_id_list <- c(
-  "001", # Oilseed farming
+  #"001", # Oilseed farming
   "002", # Grain farming
-  "003", # Vegetable and melon farming
+  #"003", # Vegetable and melon farming
   "011", # Beef cattle ranching and farming
   "063", # Dog and cat food manufacturing
   "064", # Other animal food manufacturing
   "065", # Flour milling
   "066", # Rice milling
   "068", # Wet corn milling
-  "069", # Soybean and other oilseed processing
-  "076", # Confectionery manufacturing from chocolate
-  "077", # Frozen fruits, juices and vegetables manufacturing
+  #"069", # Soybean and other oilseed processing
+  #"076", # Confectionery manufacturing from chocolate
+  #"077", # Frozen fruits, juices and vegetables manufacturing
   "078", # Frozen specialities manufacturing
-  "080", # Canned specialties
+  #"080", # Canned specialties
   "093", # Bread and bakery product, except frozen, manufacturing
-  "097", # Roasted nuts and peanut butter manufacturing
-  "099", # Coffee and tea manufacturing
-  "100", # Flavoring syrup and concetrate manufacturing
-  "103", # All other food manufacturing
+  #"097", # Roasted nuts and peanut butter manufacturing
+  #"099", # Coffee and tea manufacturing
+  #"100", # Flavoring syrup and concetrate manufacturing
+  #"103", # All other food manufacturing
   "106", # Breweries
-  "107", # Wineries
+  #"107", # Wineries
   "163" # Other basic organic chemical manufacturing
 )
 implan <- implan %>%
+  filter(ind_id %in% ind_id_list) %>%
   select(fips,
          output)
 
-implan <- collapse::collap(implan, output~fips, FUN = sum)
+implan <- collapse::collap(implan, output~fips, FUN = sum, na.rm = TRUE)
 
 # As supply (_j)
 data_tb <- left_join(data_tb, implan, by = c("dest" = "fips"))
