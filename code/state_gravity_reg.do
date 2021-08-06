@@ -59,7 +59,7 @@ drop gdp_id001_i emp_id001_i gdp_id001_j emp_id001_j gdp_id069_i emp_id069_i gdp
 *** Variables will be re-scalled by 1,000,000 such that coefficients are large ****
 global vars gdp_id011_j gdp_id163_j gdp_id002_j gdp_id063_j gdp_id064_j gdp_id068_j gdp_id106_j gdp_id065_j gdp_id066_j gdp_id078_j gdp_id093_j
 gen gdp_j = 0
-foreach var in $vars { /* IMPORTANT: The adjustment by /1000000 is done here, not need to do it in other scripts. */
+foreach var in $vars { /* IMPORTANT: The adjustment by /1000000 is done here, not need to do it in other scripts --- for state only. */
 	replace `var' = `var'/1000000
 	replace gdp_j = gdp_j + `var'
 }
