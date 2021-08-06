@@ -9,7 +9,7 @@ rm(list = ls())
 
 # Script creates dyadic_county_2017.dta. This is the dataset that we
 # employ to create county food flows.
-# Code takes approximately 28 minutes
+# Code takes approximately 29 minutes
 # on Intel(R) Xeon(R) CPU E3-12250 v6 3.00Ghz 
 # 64 GB ram
 # Mumford computer
@@ -124,6 +124,8 @@ implan <- implan %>%
          output)
 
 implan <- collapse::collap(implan, output~fips, FUN = sum, na.rm = TRUE)
+implan <- implan %>%
+  mutate(fips = as.character(as.numeric(fips)))
 
 # As supply (_j)
 data_tb <- left_join(data_tb, implan, by = c("dest" = "fips"))
