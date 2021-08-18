@@ -1,6 +1,10 @@
 library(tidyverse)
 library(readstata13)
 
+# From: Noé Nava
+# Modified: Jian Zou 
+# Date: 08/16/2021
+
 rm(list = ls())
 # Adding climate region to dyadic datasets
 key <- read_csv(file = 'assets/state_clm_region.csv')
