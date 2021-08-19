@@ -7,11 +7,12 @@ library(tidyverse)
 # https://noejn2.github.io/
 # Script creates the dyadic_county_flows_adjusted.rds, which is our 
 # main dataset in this repository
-# Code takes approximately 27 minutes
+# Code takes approximately 15 minutes
 # on Intel(R) Xeon(R) CPU E3-12250 v6 3.00Ghz 
 # 64 GB ram
 # Mumford computer
- 
+
+answer_weights <-askYesNo("Calculate weights?")
 start.time <- Sys.time()
 start.time
 
@@ -20,7 +21,6 @@ dy_cnty <- readRDS(file = 'output/dyadic_county_2017.rds')
 dy_stat <- readstata13::read.dta13(file = 'output/dyadic_state_2017_merge.dta')
 
 # Setting-up the dataset for county flows -----
-
 dy_cnty <- dy_cnty %>%
   mutate(distance = log(distance + head_mayer_2002)) %>%
   mutate(sales_i = log(sales_i)) %>%
@@ -64,6 +64,9 @@ dy_cnty$gdp_j[is.na(dy_cnty$gdp_j)] <- 0
 dy_cnty$sales_i[is.infinite(dy_cnty$sales_i)] <- 0
 dy_cnty$gdp_j[is.infinite(dy_cnty$gdp_j)] <- 0 
 
+dy_cnty$distance[is.na(dy_cnty$distance)] <- 0
+dy_cnty$distance[is.infinite(dy_cnty$distance)] <- 0
+
 # The following merges the necessary variables from the state level
 # dataset with our county level dataset  
 dy_stat <- dy_stat %>%
@@ -87,23 +90,25 @@ dy_cnty <- left_join(dy_cnty,
 # To allocate the Fixed Effect values (which are obtained at the state level-state dyadic)
 # to the counties, I count the number of county dyadic interactions belonging to eac
 # state dyadic interaction and the inverse of the weight is multiplied by the FE summation
-rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
+rm(list=setdiff(ls(), c("dy_cnty", "start.time", "answer_weights")))
 
 # Creating pair_id list based on states to assign the weights
-#dy_cnty <- dy_cnty %>%
-#  mutate(pair_id = group_indices(., orig_stName, dest_stName))
-#pair_id_list <- dy_cnty %>% distinct(pair_id) %>% pull()
+if(answer_weights) {
+  dy_cnty <- dy_cnty %>%
+    mutate(pair_id = group_indices(., orig_stName, dest_stName))
+  pair_id_list <- dy_cnty %>% distinct(pair_id) %>% pull()
 
-#dy_cnty$weight <- NA
-#p <- 0
-#for(id in pair_id_list) { # Creating the weights
+  dy_cnty$weight <- NA
+  p <- 0
+  for(id in pair_id_list) { # Creating the weights
   
-#  p <- p + 1
-#  cat(":::: Percentage: ", 100*(p/2304), "% ::::", "\n")
-#  w <- sum(dy_cnty$pair_id == id)
-#  dy_cnty$weight[dy_cnty$pair_id == id] <- w
+    p <- p + 1
+    cat(":::: Percentage: ", 100*(p/2304), "% ::::", "\n")
+    w <- sum(dy_cnty$pair_id == id)
+    dy_cnty$weight[dy_cnty$pair_id == id] <- w
   
-#}
+  }
+}
 
 # The following code uses the parameters and the variables to create the county flows ----
 # These are the parameters:
@@ -133,10 +138,13 @@ dy_cnty <- dy_cnty %>%
 # I conduct the following clean-up to make sure that county flows reflect reality----
 rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
 
+sum(is.na(dy_cnty$cnty_flows))
+sum(is.infinite(dy_cnty$cnty_flows))
+
 # 1st Step -- Adjust for the non-zero observations that we know they should not exist
 
 # The adjustments are done in this order:
-# 1) Zero cnty_flows if notrade == 0
+# 1) Zero cnty_flows if notrade == 1
 dy_cnty$cnty_flows[dy_cnty$notrade == 1] <- 0
 
 # 2) Zero cnty_flows if sales_i == 0
@@ -148,26 +156,44 @@ dy_cnty$cnty_flows[dy_cnty$gdp_j == 0] <- 0
 # 2nd Step -- Adjust dyadic county flows to match state dyadic flows
 st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
 i <- 0
-for(st_ori in st_list[1]) {
-  for(st_des in st_list[1]) {
+for(st_ori in st_list) {
+  for(st_des in st_list) {
+    
+    if(i == 0) {
+      note <- "These are the observed-to-simulated ratios for dyadic flows at the state level."
+      write(note, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+    }
     
     i <- i + 1
     cat("\n")
     cat(":::: Iteration number ", i, "out of 2,304")
     cat("\n")
     
-    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des 
+    indices <- (dy_cnty$gdp_j != 0 & dy_cnty$sales_i != 0)
     
-    a <- dy_cnty[indices,]
-    cnty_flw_sim <- sum(dy_cnty$cnty_flows[indices])
-    cnty_flw_obs <- mean(dy_cnty$trade[indices])
+    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des# & indices
     
-    if(cnty_flw_sim == 0) { #if simulated flows is zero, then we allocate as follows:
-      dy_cnty$cnty_flows[indices] <- cnty_flw_obs/length(dy_cnty$cnty_flows[indices])
+    st_flw_sim <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE)
+    st_flw_obs <- mean(dy_cnty$trade[indices], na.rm = TRUE)
+    
+    if(st_flw_sim == 0) { #if simulated flows is zero, then we allocate as follows:
+      dy_cnty$cnty_flows[indices] <- st_flw_obs/length(dy_cnty$cnty_flows[indices])
+      
+      if(st_flw_obs == 0 & st_flw_obs == 0) {
+        line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated value is zero!!!!")
+        write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+      }else{
+        line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated and observed value are zero!!!!")
+        write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+      }
+      
     }else{
-      diff <- (cnty_flw_obs/cnty_flw_sim)
+      diff <- (st_flw_obs/st_flw_sim)
       
       dy_cnty$cnty_flows[indices] <- dy_cnty$cnty_flows[indices]*diff
+      
+      line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Obs-to-sim ratio: ", diff)
+      write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
     }
   }
 }
@@ -182,15 +208,40 @@ dy_cnty <- dy_cnty %>%
          cnty_flows,
          sales_i,
          gdp_j)
+if(FALSE){
+i <- 0
+w <- 0
+for(st_ori in st_list) {
+  for(st_des in st_list) {
+    
+    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des
+    
+    val <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE) == mean(dy_cnty$trade[indices], na.rm = TRUE)
+    i <- i + 1
+    
+    #cat(":::: Iteration number ", i, "out of 2,304")
+    
+    
+    if(!val) {
+      cat("\n")
+      print(st_ori)
+      print(st_des)
+      print(sum(dy_cnty$cnty_flows[indices], na.rm = TRUE))
+      print(mean(dy_cnty$trade[indices], na.rm = TRUE))
+      w <- w + 1
+      cat("\n")
+    }
+  }
+}
+}
 
 saveRDS(dy_cnty, file = 'output/dyadic_county_flows_adjusted.rds')
-dy_cnty <- as.data.frame(dy_cnty)
-readstata13::save.dta13(dy_cnty, file = 'output/dyadic_county_flows_adjusted.dta')
+#dy_cnty <- as.data.frame(dy_cnty)
+#readstata13::save.dta13(dy_cnty, file = 'output/dyadic_county_flows_adjusted.dta')
 
 mins <- as.numeric(Sys.time() - start.time, units = "mins")
 cat("\n")
 cat("::: Script took ", mins, "minutes.")
-
 
 # The code below is not being used since 07/29/201
 #if(FALSE) {
