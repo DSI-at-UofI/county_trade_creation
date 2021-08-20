@@ -1,5 +1,7 @@
 # Creating county food flows
 
+**Note about branches:** On August 19th, we decided that estimation should not include Louisiana and Washington, but we still need to compare results from country trade flows creation in which those observations are included and when they are not. Therefore, the `main` branch excludes these states and the `alternative` branch excludes them. The datasets are moved into CFS_ROWex_adjustment to be compared and to write the technical paper.
+
 **Objective:** Build `output/dyadic_county_flows_adjusted.rds` and `output/dyadic_county_flows_adjusted.dta` datasets. These datasets are identical (`.rds` is a data object, and `.dta` is a Stata dataset). The following three (3) scripts are required to run in order. Notice that `data/cfs_cleaned_data` and `data/data_needs` are not in repository. Request [Noé J Nava](mailto:noejn2@illinois.edu) these two directories. Other R and Stata scripts are not necessary to build these datasets, but they are complimentary in the study of the reliability of our dataset or to create figures.
 
 ### 1) `code/dyadic_county_construction.R`
