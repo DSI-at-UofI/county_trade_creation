@@ -92,7 +92,11 @@ label var gdp_j "GDP"
 *tab clm_orig_time_id, gen(clm_orig_time_FE)
 *tab clm_dest_time_id, gen(clm_dest_time_FE)
 *tab intra, gen(intra_FE)
+preserve
+drop if orig == "louisiana" | dest == "louisiana"
+drop if orig == "washington" | dest == "washington"
 ppmlhdfe trade distance sales_i gdp_j, a(one clm_orig_time_id clm_dest_time_id intra contiguity) cl(orig_id dest_id) d(sum_FE)
+restore
 
 /* Saving the results */
 outreg2 using "output/state_reg", replace label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Contiguity YES, Intra FE, YES, Time FE, YES, Importer Climate Time FE, YES, Exporter Climate Time FE, YES)

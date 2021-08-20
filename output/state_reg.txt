@@ -1,21 +1,21 @@
 		(1)
 VARIABLES	LABELS	collapsed value of wgt_factor * shipmt_value
 		
-distance	Distance	-0.47147***
-		(0.10141)
-sales_i	Sales	0.63983***
-		(0.08499)
-gdp_j	GDP	0.66202***
-		(0.25422)
-Constant	Constant	-11.27216***
-		(3.30237)
+distance	Distance	-0.44952***
+		(0.12233)
+sales_i	Sales	0.68024***
+		(0.11953)
+gdp_j	GDP	0.97628***
+		(0.10405)
+Constant	Constant	-15.46002***
+		(2.46482)
 		
-Observations		4,513
+Observations		4,141
 Contiguity YES		Intra FE
 YES		Time FE
 YES		Importer Climate Time FE
 YES		Exporter Climate Time FE
 YES		
-Pseudo R2		0.778
+Pseudo R2		0.816
 Robust standard errors in parentheses		
 *** p<0.01, ** p<0.05, * p<0.1		

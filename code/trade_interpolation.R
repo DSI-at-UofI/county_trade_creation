@@ -113,18 +113,20 @@ if(answer_weights) {
 # The following code uses the parameters and the variables to create the county flows ----
 # These are the parameters:
 # These are directly typed from stata regression result by running state_gravity_reg.do
+# The estimates are from regression that excludes Louisiana and Washington as discussed on
+# August 20th, 2021 meeting
+ 
+dist_eta <- -0.4495181
+dist_SE  <- .1223285
 
-dist_eta <- -0.47147
-dist_SE  <- .1014149
+sale_eta <- 0.6802411
+sale_SE  <- 0.1195276
 
-sale_eta <- 0.6398341
-sale_SE  <- 0.0849893
+gdpj_eta <- 0.9762757
+gdpj_SE  <- 0.104049
 
-gdpj_eta <- 0.6620246
-gdpj_SE  <- 0.2542218
-
-cnst     <- -11.27216
-cnst_SE  <- 3.302367
+cnst     <- -15.46002
+cnst_SE  <- 2.464821
 
 # variance(beta_variance*variable) --- formula
 
@@ -156,7 +158,10 @@ dy_cnty$cnty_flows[dy_cnty$gdp_j == 0] <- 0
 # 2nd Step -- Adjust dyadic county flows to match state dyadic flows
 st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
 i <- 0
-for(st_ori in st_list) {
+# Notice that louisiana and washington are excluded from this adjustment
+st_list <- st_list[st_list != "louisiana"]
+st_list <- st_list[st_list != "washington"]
+for(st_ori in c(st_list, "louisiana", "washington")) {
   for(st_des in st_list) {
     
     if(i == 0) {
@@ -166,7 +171,7 @@ for(st_ori in st_list) {
     
     i <- i + 1
     cat("\n")
-    cat(":::: Iteration number ", i, "out of 2,304")
+    cat(":::: Iteration number ", i, "out of 2,208")
     cat("\n")
     
     indices <- (dy_cnty$gdp_j != 0 & dy_cnty$sales_i != 0)
