@@ -129,7 +129,11 @@ cnst     <- -15.46002
 cnst_SE  <- 2.464821
 
 # variance(beta_variance*variable) --- formula
-
+# The next line of code replaces the missing FE value for Louisiana and Washington for the average
+# of the FE. I did not modify the regression code because I believe that 
+# doing that would bias the FE estimates since the regression would include flows towards
+# Louisiana and Washington.
+dy_cnty$sum_FE[is.na(dy_cnty$sum_FE)] <- mean(dy_cnty$sum_FE, na.rm = TRUE)  
 dy_cnty <- dy_cnty %>%
   mutate(distance_c = distance*dist_eta) %>%
   mutate(sales_i_c  = sales_i*sale_eta) %>%

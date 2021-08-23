@@ -20945,3 +20945,2261 @@ Orig:  washington Dest:  virginia Simulated value is zero!!!!
 Orig:  washington Dest:  west virginia Simulated value is zero!!!!
 Orig:  washington Dest:  wisconsin Simulated and observed value are zero!!!!
 Orig:  washington Dest:  wyoming Simulated and observed value are zero!!!!
+These are the observed-to-simulated ratios for dyadic flows at the state level.
+Orig:  alabama Dest:  alabama Obs-to-sim ratio:  0.530850056546195
+Orig:  arizona Dest:  alabama Simulated value is zero!!!!
+Orig:  arkansas Dest:  alabama Obs-to-sim ratio:  0.0140983623650064
+Orig:  california Dest:  alabama Obs-to-sim ratio:  0.00722313071496925
+Orig:  colorado Dest:  alabama Simulated value is zero!!!!
+Orig:  connecticut Dest:  alabama Simulated value is zero!!!!
+Orig:  delaware Dest:  alabama Simulated value is zero!!!!
+Orig:  florida Dest:  alabama Simulated value is zero!!!!
+Orig:  georgia Dest:  alabama Obs-to-sim ratio:  0.286541498319574
+Orig:  idaho Dest:  alabama Obs-to-sim ratio:  0.000402610204488025
+Orig:  illinois Dest:  alabama Obs-to-sim ratio:  0.264920177924217
+Orig:  indiana Dest:  alabama Obs-to-sim ratio:  0.157819952506397
+Orig:  iowa Dest:  alabama Simulated value is zero!!!!
+Orig:  kansas Dest:  alabama Obs-to-sim ratio:  0.00546286114142661
+Orig:  kentucky Dest:  alabama Simulated value is zero!!!!
+Orig:  maine Dest:  alabama Simulated value is zero!!!!
+Orig:  maryland Dest:  alabama Simulated value is zero!!!!
+Orig:  massachusetts Dest:  alabama Simulated value is zero!!!!
+Orig:  michigan Dest:  alabama Simulated value is zero!!!!
+Orig:  minnesota Dest:  alabama Obs-to-sim ratio:  0.0946523695526014
+Orig:  mississippi Dest:  alabama Obs-to-sim ratio:  0.199466182979437
+Orig:  missouri Dest:  alabama Simulated value is zero!!!!
+Orig:  montana Dest:  alabama Simulated value is zero!!!!
+Orig:  nebraska Dest:  alabama Obs-to-sim ratio:  0.0810992577019102
+Orig:  nevada Dest:  alabama Simulated value is zero!!!!
+Orig:  new hampshire Dest:  alabama Simulated value is zero!!!!
+Orig:  new jersey Dest:  alabama Simulated value is zero!!!!
+Orig:  new mexico Dest:  alabama Simulated value is zero!!!!
+Orig:  new york Dest:  alabama Simulated value is zero!!!!
+Orig:  north carolina Dest:  alabama Simulated value is zero!!!!
+Orig:  north dakota Dest:  alabama Simulated value is zero!!!!
+Orig:  ohio Dest:  alabama Simulated value is zero!!!!
+Orig:  oklahoma Dest:  alabama Simulated value is zero!!!!
+Orig:  oregon Dest:  alabama Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  alabama Simulated value is zero!!!!
+Orig:  rhode island Dest:  alabama Simulated value is zero!!!!
+Orig:  south carolina Dest:  alabama Simulated value is zero!!!!
+Orig:  south dakota Dest:  alabama Simulated value is zero!!!!
+Orig:  tennessee Dest:  alabama Obs-to-sim ratio:  1.68572921049134
+Orig:  texas Dest:  alabama Obs-to-sim ratio:  0.212240349562593
+Orig:  utah Dest:  alabama Simulated value is zero!!!!
+Orig:  vermont Dest:  alabama Simulated value is zero!!!!
+Orig:  virginia Dest:  alabama Simulated value is zero!!!!
+Orig:  west virginia Dest:  alabama Simulated value is zero!!!!
+Orig:  wisconsin Dest:  alabama Simulated value is zero!!!!
+Orig:  wyoming Dest:  alabama Simulated value is zero!!!!
+Orig:  louisiana Dest:  alabama Simulated value is zero!!!!
+Orig:  washington Dest:  alabama Simulated value is zero!!!!
+These are the observed-to-simulated ratios for dyadic flows at the state level.
+Orig:  alabama Dest:  alabama Obs-to-sim ratio:  0.530850056546195
+Orig:  alabama Dest:  arizona Simulated value is zero!!!!
+Orig:  alabama Dest:  arkansas Simulated value is zero!!!!
+Orig:  alabama Dest:  california Simulated value is zero!!!!
+Orig:  alabama Dest:  colorado Simulated value is zero!!!!
+Orig:  alabama Dest:  connecticut Simulated value is zero!!!!
+Orig:  alabama Dest:  delaware Simulated value is zero!!!!
+Orig:  alabama Dest:  florida Obs-to-sim ratio:  0.12386042969748
+Orig:  alabama Dest:  georgia Obs-to-sim ratio:  0.347521078564992
+Orig:  alabama Dest:  idaho Simulated value is zero!!!!
+Orig:  alabama Dest:  illinois Obs-to-sim ratio:  0.0107958661831995
+Orig:  alabama Dest:  indiana Simulated value is zero!!!!
+Orig:  alabama Dest:  iowa Simulated value is zero!!!!
+Orig:  alabama Dest:  kansas Simulated value is zero!!!!
+Orig:  alabama Dest:  kentucky Simulated value is zero!!!!
+Orig:  alabama Dest:  maine Simulated value is zero!!!!
+Orig:  alabama Dest:  maryland Simulated value is zero!!!!
+Orig:  alabama Dest:  massachusetts Simulated value is zero!!!!
+Orig:  alabama Dest:  michigan Simulated value is zero!!!!
+Orig:  alabama Dest:  minnesota Simulated value is zero!!!!
+Orig:  alabama Dest:  mississippi Obs-to-sim ratio:  0.211389857598492
+Orig:  alabama Dest:  missouri Simulated value is zero!!!!
+Orig:  alabama Dest:  montana Simulated value is zero!!!!
+Orig:  alabama Dest:  nebraska Simulated value is zero!!!!
+Orig:  alabama Dest:  nevada Simulated value is zero!!!!
+Orig:  alabama Dest:  new hampshire Simulated value is zero!!!!
+Orig:  alabama Dest:  new jersey Simulated value is zero!!!!
+Orig:  alabama Dest:  new mexico Simulated value is zero!!!!
+Orig:  alabama Dest:  new york Obs-to-sim ratio:  0.0571999510479288
+Orig:  alabama Dest:  north carolina Obs-to-sim ratio:  0.0119677325888509
+Orig:  alabama Dest:  north dakota Simulated value is zero!!!!
+Orig:  alabama Dest:  ohio Obs-to-sim ratio:  0.0497530449070434
+Orig:  alabama Dest:  oklahoma Simulated value is zero!!!!
+Orig:  alabama Dest:  oregon Simulated value is zero!!!!
+Orig:  alabama Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  alabama Dest:  rhode island Simulated value is zero!!!!
+Orig:  alabama Dest:  south carolina Simulated value is zero!!!!
+Orig:  alabama Dest:  south dakota Simulated value is zero!!!!
+Orig:  alabama Dest:  tennessee Obs-to-sim ratio:  0.0303461898604813
+Orig:  alabama Dest:  texas Obs-to-sim ratio:  0.0626225750249633
+Orig:  alabama Dest:  utah Simulated value is zero!!!!
+Orig:  alabama Dest:  vermont Simulated value is zero!!!!
+Orig:  alabama Dest:  virginia Obs-to-sim ratio:  0.0556640668780116
+Orig:  alabama Dest:  west virginia Simulated value is zero!!!!
+Orig:  alabama Dest:  wisconsin Simulated value is zero!!!!
+Orig:  alabama Dest:  wyoming Simulated value is zero!!!!
+Orig:  arizona Dest:  alabama Simulated value is zero!!!!
+Orig:  arizona Dest:  arizona Obs-to-sim ratio:  3.13255494599489
+Orig:  arizona Dest:  arkansas Simulated value is zero!!!!
+Orig:  arizona Dest:  california Obs-to-sim ratio:  0.0808549022971328
+Orig:  arizona Dest:  colorado Simulated value is zero!!!!
+Orig:  arizona Dest:  connecticut Simulated value is zero!!!!
+Orig:  arizona Dest:  delaware Simulated value is zero!!!!
+Orig:  arizona Dest:  florida Simulated value is zero!!!!
+Orig:  arizona Dest:  georgia Simulated value is zero!!!!
+Orig:  arizona Dest:  idaho Obs-to-sim ratio:  1.31593695618805
+Orig:  arizona Dest:  illinois Simulated value is zero!!!!
+Orig:  arizona Dest:  indiana Simulated value is zero!!!!
+Orig:  arizona Dest:  iowa Simulated value is zero!!!!
+Orig:  arizona Dest:  kansas Simulated value is zero!!!!
+Orig:  arizona Dest:  kentucky Simulated value is zero!!!!
+Orig:  arizona Dest:  maine Simulated value is zero!!!!
+Orig:  arizona Dest:  maryland Simulated value is zero!!!!
+Orig:  arizona Dest:  massachusetts Simulated value is zero!!!!
+Orig:  arizona Dest:  michigan Simulated value is zero!!!!
+Orig:  arizona Dest:  minnesota Simulated value is zero!!!!
+Orig:  arizona Dest:  mississippi Simulated value is zero!!!!
+Orig:  arizona Dest:  missouri Simulated value is zero!!!!
+Orig:  arizona Dest:  montana Simulated value is zero!!!!
+Orig:  arizona Dest:  nebraska Obs-to-sim ratio:  1.28181984011723
+Orig:  arizona Dest:  nevada Simulated value is zero!!!!
+Orig:  arizona Dest:  new hampshire Simulated value is zero!!!!
+Orig:  arizona Dest:  new jersey Simulated value is zero!!!!
+Orig:  arizona Dest:  new mexico Obs-to-sim ratio:  0.0766036702552307
+Orig:  arizona Dest:  new york Simulated value is zero!!!!
+Orig:  arizona Dest:  north carolina Simulated value is zero!!!!
+Orig:  arizona Dest:  north dakota Simulated value is zero!!!!
+Orig:  arizona Dest:  ohio Simulated value is zero!!!!
+Orig:  arizona Dest:  oklahoma Simulated value is zero!!!!
+Orig:  arizona Dest:  oregon Simulated value is zero!!!!
+Orig:  arizona Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  arizona Dest:  rhode island Simulated value is zero!!!!
+Orig:  arizona Dest:  south carolina Simulated value is zero!!!!
+Orig:  arizona Dest:  south dakota Simulated value is zero!!!!
+Orig:  arizona Dest:  tennessee Simulated value is zero!!!!
+Orig:  arizona Dest:  texas Obs-to-sim ratio:  0.0206830091176698
+Orig:  arizona Dest:  utah Simulated value is zero!!!!
+Orig:  arizona Dest:  vermont Simulated value is zero!!!!
+Orig:  arizona Dest:  virginia Simulated value is zero!!!!
+Orig:  arizona Dest:  west virginia Simulated value is zero!!!!
+Orig:  arizona Dest:  wisconsin Simulated value is zero!!!!
+Orig:  arizona Dest:  wyoming Simulated value is zero!!!!
+Orig:  arkansas Dest:  alabama Obs-to-sim ratio:  0.0140983623650064
+Orig:  arkansas Dest:  arizona Simulated value is zero!!!!
+Orig:  arkansas Dest:  arkansas Obs-to-sim ratio:  0.29880010815323
+Orig:  arkansas Dest:  california Simulated value is zero!!!!
+Orig:  arkansas Dest:  colorado Obs-to-sim ratio:  0.0268417059411242
+Orig:  arkansas Dest:  connecticut Simulated value is zero!!!!
+Orig:  arkansas Dest:  delaware Simulated value is zero!!!!
+Orig:  arkansas Dest:  florida Simulated value is zero!!!!
+Orig:  arkansas Dest:  georgia Simulated value is zero!!!!
+Orig:  arkansas Dest:  idaho Simulated value is zero!!!!
+Orig:  arkansas Dest:  illinois Simulated value is zero!!!!
+Orig:  arkansas Dest:  indiana Obs-to-sim ratio:  0.0803330227272229
+Orig:  arkansas Dest:  iowa Obs-to-sim ratio:  0.0268754917408434
+Orig:  arkansas Dest:  kansas Simulated value is zero!!!!
+Orig:  arkansas Dest:  kentucky Simulated value is zero!!!!
+Orig:  arkansas Dest:  maine Simulated value is zero!!!!
+Orig:  arkansas Dest:  maryland Simulated value is zero!!!!
+Orig:  arkansas Dest:  massachusetts Simulated value is zero!!!!
+Orig:  arkansas Dest:  michigan Simulated value is zero!!!!
+Orig:  arkansas Dest:  minnesota Simulated value is zero!!!!
+Orig:  arkansas Dest:  mississippi Simulated value is zero!!!!
+Orig:  arkansas Dest:  missouri Obs-to-sim ratio:  0.154229347730627
+Orig:  arkansas Dest:  montana Simulated value is zero!!!!
+Orig:  arkansas Dest:  nebraska Simulated value is zero!!!!
+Orig:  arkansas Dest:  nevada Simulated value is zero!!!!
+Orig:  arkansas Dest:  new hampshire Simulated value is zero!!!!
+Orig:  arkansas Dest:  new jersey Simulated value is zero!!!!
+Orig:  arkansas Dest:  new mexico Simulated value is zero!!!!
+Orig:  arkansas Dest:  new york Simulated value is zero!!!!
+Orig:  arkansas Dest:  north carolina Obs-to-sim ratio:  0.00117094554550683
+Orig:  arkansas Dest:  north dakota Simulated value is zero!!!!
+Orig:  arkansas Dest:  ohio Simulated value is zero!!!!
+Orig:  arkansas Dest:  oklahoma Simulated value is zero!!!!
+Orig:  arkansas Dest:  oregon Simulated value is zero!!!!
+Orig:  arkansas Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  arkansas Dest:  rhode island Simulated value is zero!!!!
+Orig:  arkansas Dest:  south carolina Simulated value is zero!!!!
+Orig:  arkansas Dest:  south dakota Simulated value is zero!!!!
+Orig:  arkansas Dest:  tennessee Obs-to-sim ratio:  0.231637601216442
+Orig:  arkansas Dest:  texas Simulated value is zero!!!!
+Orig:  arkansas Dest:  utah Simulated value is zero!!!!
+Orig:  arkansas Dest:  vermont Simulated value is zero!!!!
+Orig:  arkansas Dest:  virginia Simulated value is zero!!!!
+Orig:  arkansas Dest:  west virginia Simulated value is zero!!!!
+Orig:  arkansas Dest:  wisconsin Simulated value is zero!!!!
+Orig:  arkansas Dest:  wyoming Simulated value is zero!!!!
+Orig:  california Dest:  alabama Obs-to-sim ratio:  0.00722313071496925
+Orig:  california Dest:  arizona Obs-to-sim ratio:  0.257543300297129
+Orig:  california Dest:  arkansas Simulated value is zero!!!!
+Orig:  california Dest:  california Obs-to-sim ratio:  0.500746254489299
+Orig:  california Dest:  colorado Obs-to-sim ratio:  0.365357820413385
+Orig:  california Dest:  connecticut Obs-to-sim ratio:  0.320413530185715
+Orig:  california Dest:  delaware Simulated value is zero!!!!
+Orig:  california Dest:  florida Obs-to-sim ratio:  3.28489531686176
+Orig:  california Dest:  georgia Simulated value is zero!!!!
+Orig:  california Dest:  idaho Obs-to-sim ratio:  0.743244657906364
+Orig:  california Dest:  illinois Obs-to-sim ratio:  0.43900242410226
+Orig:  california Dest:  indiana Obs-to-sim ratio:  0.109522601425236
+Orig:  california Dest:  iowa Simulated value is zero!!!!
+Orig:  california Dest:  kansas Simulated value is zero!!!!
+Orig:  california Dest:  kentucky Simulated value is zero!!!!
+Orig:  california Dest:  maine Simulated value is zero!!!!
+Orig:  california Dest:  maryland Simulated value is zero!!!!
+Orig:  california Dest:  massachusetts Simulated value is zero!!!!
+Orig:  california Dest:  michigan Simulated value is zero!!!!
+Orig:  california Dest:  minnesota Obs-to-sim ratio:  0.0114060074173815
+Orig:  california Dest:  mississippi Obs-to-sim ratio:  3.78806677026965
+Orig:  california Dest:  missouri Obs-to-sim ratio:  0.467436966282205
+Orig:  california Dest:  montana Obs-to-sim ratio:  0.219919973477339
+Orig:  california Dest:  nebraska Simulated value is zero!!!!
+Orig:  california Dest:  nevada Obs-to-sim ratio:  2.64183558709507
+Orig:  california Dest:  new hampshire Simulated value is zero!!!!
+Orig:  california Dest:  new jersey Simulated value is zero!!!!
+Orig:  california Dest:  new mexico Simulated value is zero!!!!
+Orig:  california Dest:  new york Obs-to-sim ratio:  0.160017817247557
+Orig:  california Dest:  north carolina Obs-to-sim ratio:  0.00556040134418808
+Orig:  california Dest:  north dakota Simulated value is zero!!!!
+Orig:  california Dest:  ohio Simulated value is zero!!!!
+Orig:  california Dest:  oklahoma Simulated value is zero!!!!
+Orig:  california Dest:  oregon Obs-to-sim ratio:  0.16174840666386
+Orig:  california Dest:  pennsylvania Obs-to-sim ratio:  0.385842920016654
+Orig:  california Dest:  rhode island Simulated value is zero!!!!
+Orig:  california Dest:  south carolina Obs-to-sim ratio:  0.0447617037686139
+Orig:  california Dest:  south dakota Simulated value is zero!!!!
+Orig:  california Dest:  tennessee Simulated value is zero!!!!
+Orig:  california Dest:  texas Obs-to-sim ratio:  0.250450433429615
+Orig:  california Dest:  utah Obs-to-sim ratio:  0.131700167100056
+Orig:  california Dest:  vermont Simulated value is zero!!!!
+Orig:  california Dest:  virginia Simulated value is zero!!!!
+Orig:  california Dest:  west virginia Simulated value is zero!!!!
+Orig:  california Dest:  wisconsin Obs-to-sim ratio:  0.0543361433254856
+Orig:  california Dest:  wyoming Simulated value is zero!!!!
+Orig:  colorado Dest:  alabama Simulated value is zero!!!!
+Orig:  colorado Dest:  arizona Obs-to-sim ratio:  0.0313133124186624
+Orig:  colorado Dest:  arkansas Simulated value is zero!!!!
+Orig:  colorado Dest:  california Obs-to-sim ratio:  0.708805655840501
+Orig:  colorado Dest:  colorado Obs-to-sim ratio:  0.359893487470425
+Orig:  colorado Dest:  connecticut Simulated value is zero!!!!
+Orig:  colorado Dest:  delaware Simulated value is zero!!!!
+Orig:  colorado Dest:  florida Simulated value is zero!!!!
+Orig:  colorado Dest:  georgia Obs-to-sim ratio:  0.235419167071444
+Orig:  colorado Dest:  idaho Obs-to-sim ratio:  0.000936645802552468
+Orig:  colorado Dest:  illinois Obs-to-sim ratio:  0.00441139495845794
+Orig:  colorado Dest:  indiana Simulated value is zero!!!!
+Orig:  colorado Dest:  iowa Simulated value is zero!!!!
+Orig:  colorado Dest:  kansas Obs-to-sim ratio:  0.162310272232609
+Orig:  colorado Dest:  kentucky Simulated value is zero!!!!
+Orig:  colorado Dest:  maine Simulated value is zero!!!!
+Orig:  colorado Dest:  maryland Simulated value is zero!!!!
+Orig:  colorado Dest:  massachusetts Simulated value is zero!!!!
+Orig:  colorado Dest:  michigan Simulated value is zero!!!!
+Orig:  colorado Dest:  minnesota Obs-to-sim ratio:  0.574652802859816
+Orig:  colorado Dest:  mississippi Simulated value is zero!!!!
+Orig:  colorado Dest:  missouri Obs-to-sim ratio:  3.32286316566452
+Orig:  colorado Dest:  montana Simulated value is zero!!!!
+Orig:  colorado Dest:  nebraska Obs-to-sim ratio:  0.504121493897792
+Orig:  colorado Dest:  nevada Simulated value is zero!!!!
+Orig:  colorado Dest:  new hampshire Simulated value is zero!!!!
+Orig:  colorado Dest:  new jersey Simulated value is zero!!!!
+Orig:  colorado Dest:  new mexico Obs-to-sim ratio:  0.0474646586494681
+Orig:  colorado Dest:  new york Simulated value is zero!!!!
+Orig:  colorado Dest:  north carolina Simulated value is zero!!!!
+Orig:  colorado Dest:  north dakota Obs-to-sim ratio:  1.95949803288952
+Orig:  colorado Dest:  ohio Simulated value is zero!!!!
+Orig:  colorado Dest:  oklahoma Simulated value is zero!!!!
+Orig:  colorado Dest:  oregon Obs-to-sim ratio:  0.164469308493592
+Orig:  colorado Dest:  pennsylvania Obs-to-sim ratio:  0.793940764411229
+Orig:  colorado Dest:  rhode island Simulated value is zero!!!!
+Orig:  colorado Dest:  south carolina Simulated value is zero!!!!
+Orig:  colorado Dest:  south dakota Simulated value is zero!!!!
+Orig:  colorado Dest:  tennessee Simulated value is zero!!!!
+Orig:  colorado Dest:  texas Obs-to-sim ratio:  0.207309263195577
+Orig:  colorado Dest:  utah Simulated value is zero!!!!
+Orig:  colorado Dest:  vermont Simulated value is zero!!!!
+Orig:  colorado Dest:  virginia Simulated value is zero!!!!
+Orig:  colorado Dest:  west virginia Simulated value is zero!!!!
+Orig:  colorado Dest:  wisconsin Simulated value is zero!!!!
+Orig:  colorado Dest:  wyoming Simulated value is zero!!!!
+Orig:  connecticut Dest:  alabama Simulated value is zero!!!!
+Orig:  connecticut Dest:  arizona Simulated value is zero!!!!
+Orig:  connecticut Dest:  arkansas Simulated value is zero!!!!
+Orig:  connecticut Dest:  california Simulated value is zero!!!!
+Orig:  connecticut Dest:  colorado Simulated value is zero!!!!
+Orig:  connecticut Dest:  connecticut Simulated value is zero!!!!
+Orig:  connecticut Dest:  delaware Simulated value is zero!!!!
+Orig:  connecticut Dest:  florida Simulated value is zero!!!!
+Orig:  connecticut Dest:  georgia Simulated value is zero!!!!
+Orig:  connecticut Dest:  idaho Simulated value is zero!!!!
+Orig:  connecticut Dest:  illinois Simulated value is zero!!!!
+Orig:  connecticut Dest:  indiana Simulated value is zero!!!!
+Orig:  connecticut Dest:  iowa Simulated value is zero!!!!
+Orig:  connecticut Dest:  kansas Simulated value is zero!!!!
+Orig:  connecticut Dest:  kentucky Simulated value is zero!!!!
+Orig:  connecticut Dest:  maine Simulated value is zero!!!!
+Orig:  connecticut Dest:  maryland Simulated value is zero!!!!
+Orig:  connecticut Dest:  massachusetts Simulated value is zero!!!!
+Orig:  connecticut Dest:  michigan Simulated value is zero!!!!
+Orig:  connecticut Dest:  minnesota Simulated value is zero!!!!
+Orig:  connecticut Dest:  mississippi Simulated value is zero!!!!
+Orig:  connecticut Dest:  missouri Simulated value is zero!!!!
+Orig:  connecticut Dest:  montana Simulated value is zero!!!!
+Orig:  connecticut Dest:  nebraska Simulated value is zero!!!!
+Orig:  connecticut Dest:  nevada Simulated value is zero!!!!
+Orig:  connecticut Dest:  new hampshire Simulated value is zero!!!!
+Orig:  connecticut Dest:  new jersey Simulated value is zero!!!!
+Orig:  connecticut Dest:  new mexico Simulated value is zero!!!!
+Orig:  connecticut Dest:  new york Simulated value is zero!!!!
+Orig:  connecticut Dest:  north carolina Simulated value is zero!!!!
+Orig:  connecticut Dest:  north dakota Simulated value is zero!!!!
+Orig:  connecticut Dest:  ohio Simulated value is zero!!!!
+Orig:  connecticut Dest:  oklahoma Simulated value is zero!!!!
+Orig:  connecticut Dest:  oregon Simulated value is zero!!!!
+Orig:  connecticut Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  connecticut Dest:  rhode island Simulated value is zero!!!!
+Orig:  connecticut Dest:  south carolina Simulated value is zero!!!!
+Orig:  connecticut Dest:  south dakota Simulated value is zero!!!!
+Orig:  connecticut Dest:  tennessee Simulated value is zero!!!!
+Orig:  connecticut Dest:  texas Simulated value is zero!!!!
+Orig:  connecticut Dest:  utah Simulated value is zero!!!!
+Orig:  connecticut Dest:  vermont Simulated value is zero!!!!
+Orig:  connecticut Dest:  virginia Simulated value is zero!!!!
+Orig:  connecticut Dest:  west virginia Simulated value is zero!!!!
+Orig:  connecticut Dest:  wisconsin Simulated value is zero!!!!
+Orig:  connecticut Dest:  wyoming Simulated value is zero!!!!
+Orig:  delaware Dest:  alabama Simulated value is zero!!!!
+Orig:  delaware Dest:  arizona Simulated value is zero!!!!
+Orig:  delaware Dest:  arkansas Simulated value is zero!!!!
+Orig:  delaware Dest:  california Simulated value is zero!!!!
+Orig:  delaware Dest:  colorado Simulated value is zero!!!!
+Orig:  delaware Dest:  connecticut Simulated value is zero!!!!
+Orig:  delaware Dest:  delaware Obs-to-sim ratio:  0.442009218103413
+Orig:  delaware Dest:  florida Simulated value is zero!!!!
+Orig:  delaware Dest:  georgia Simulated value is zero!!!!
+Orig:  delaware Dest:  idaho Simulated value is zero!!!!
+Orig:  delaware Dest:  illinois Simulated value is zero!!!!
+Orig:  delaware Dest:  indiana Simulated value is zero!!!!
+Orig:  delaware Dest:  iowa Simulated value is zero!!!!
+Orig:  delaware Dest:  kansas Simulated value is zero!!!!
+Orig:  delaware Dest:  kentucky Simulated value is zero!!!!
+Orig:  delaware Dest:  maine Simulated value is zero!!!!
+Orig:  delaware Dest:  maryland Obs-to-sim ratio:  3.33279697517735
+Orig:  delaware Dest:  massachusetts Simulated value is zero!!!!
+Orig:  delaware Dest:  michigan Simulated value is zero!!!!
+Orig:  delaware Dest:  minnesota Simulated value is zero!!!!
+Orig:  delaware Dest:  mississippi Simulated value is zero!!!!
+Orig:  delaware Dest:  missouri Simulated value is zero!!!!
+Orig:  delaware Dest:  montana Simulated value is zero!!!!
+Orig:  delaware Dest:  nebraska Simulated value is zero!!!!
+Orig:  delaware Dest:  nevada Simulated value is zero!!!!
+Orig:  delaware Dest:  new hampshire Simulated value is zero!!!!
+Orig:  delaware Dest:  new jersey Simulated value is zero!!!!
+Orig:  delaware Dest:  new mexico Simulated value is zero!!!!
+Orig:  delaware Dest:  new york Simulated value is zero!!!!
+Orig:  delaware Dest:  north carolina Obs-to-sim ratio:  0.00259134549438752
+Orig:  delaware Dest:  north dakota Simulated value is zero!!!!
+Orig:  delaware Dest:  ohio Simulated value is zero!!!!
+Orig:  delaware Dest:  oklahoma Simulated value is zero!!!!
+Orig:  delaware Dest:  oregon Simulated value is zero!!!!
+Orig:  delaware Dest:  pennsylvania Obs-to-sim ratio:  0.919563800065168
+Orig:  delaware Dest:  rhode island Simulated value is zero!!!!
+Orig:  delaware Dest:  south carolina Simulated value is zero!!!!
+Orig:  delaware Dest:  south dakota Simulated value is zero!!!!
+Orig:  delaware Dest:  tennessee Simulated value is zero!!!!
+Orig:  delaware Dest:  texas Simulated value is zero!!!!
+Orig:  delaware Dest:  utah Simulated value is zero!!!!
+Orig:  delaware Dest:  vermont Simulated value is zero!!!!
+Orig:  delaware Dest:  virginia Simulated value is zero!!!!
+Orig:  delaware Dest:  west virginia Simulated value is zero!!!!
+Orig:  delaware Dest:  wisconsin Simulated value is zero!!!!
+Orig:  delaware Dest:  wyoming Simulated value is zero!!!!
+Orig:  florida Dest:  alabama Simulated value is zero!!!!
+Orig:  florida Dest:  arizona Simulated value is zero!!!!
+Orig:  florida Dest:  arkansas Simulated value is zero!!!!
+Orig:  florida Dest:  california Simulated value is zero!!!!
+Orig:  florida Dest:  colorado Simulated value is zero!!!!
+Orig:  florida Dest:  connecticut Simulated value is zero!!!!
+Orig:  florida Dest:  delaware Simulated value is zero!!!!
+Orig:  florida Dest:  florida Obs-to-sim ratio:  6.54345611540113
+Orig:  florida Dest:  georgia Obs-to-sim ratio:  6.3611777588004
+Orig:  florida Dest:  idaho Simulated value is zero!!!!
+Orig:  florida Dest:  illinois Simulated value is zero!!!!
+Orig:  florida Dest:  indiana Simulated value is zero!!!!
+Orig:  florida Dest:  iowa Simulated value is zero!!!!
+Orig:  florida Dest:  kansas Simulated value is zero!!!!
+Orig:  florida Dest:  kentucky Simulated value is zero!!!!
+Orig:  florida Dest:  maine Simulated value is zero!!!!
+Orig:  florida Dest:  maryland Simulated value is zero!!!!
+Orig:  florida Dest:  massachusetts Simulated value is zero!!!!
+Orig:  florida Dest:  michigan Simulated value is zero!!!!
+Orig:  florida Dest:  minnesota Simulated value is zero!!!!
+Orig:  florida Dest:  mississippi Simulated value is zero!!!!
+Orig:  florida Dest:  missouri Simulated value is zero!!!!
+Orig:  florida Dest:  montana Simulated value is zero!!!!
+Orig:  florida Dest:  nebraska Simulated value is zero!!!!
+Orig:  florida Dest:  nevada Simulated value is zero!!!!
+Orig:  florida Dest:  new hampshire Simulated value is zero!!!!
+Orig:  florida Dest:  new jersey Simulated value is zero!!!!
+Orig:  florida Dest:  new mexico Simulated value is zero!!!!
+Orig:  florida Dest:  new york Simulated value is zero!!!!
+Orig:  florida Dest:  north carolina Simulated value is zero!!!!
+Orig:  florida Dest:  north dakota Simulated value is zero!!!!
+Orig:  florida Dest:  ohio Simulated value is zero!!!!
+Orig:  florida Dest:  oklahoma Simulated value is zero!!!!
+Orig:  florida Dest:  oregon Simulated value is zero!!!!
+Orig:  florida Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  florida Dest:  rhode island Simulated value is zero!!!!
+Orig:  florida Dest:  south carolina Simulated value is zero!!!!
+Orig:  florida Dest:  south dakota Simulated value is zero!!!!
+Orig:  florida Dest:  tennessee Simulated value is zero!!!!
+Orig:  florida Dest:  texas Simulated value is zero!!!!
+Orig:  florida Dest:  utah Simulated value is zero!!!!
+Orig:  florida Dest:  vermont Simulated value is zero!!!!
+Orig:  florida Dest:  virginia Simulated value is zero!!!!
+Orig:  florida Dest:  west virginia Simulated value is zero!!!!
+Orig:  florida Dest:  wisconsin Simulated value is zero!!!!
+Orig:  florida Dest:  wyoming Simulated value is zero!!!!
+Orig:  georgia Dest:  alabama Obs-to-sim ratio:  0.286541498319574
+Orig:  georgia Dest:  arizona Simulated value is zero!!!!
+Orig:  georgia Dest:  arkansas Simulated value is zero!!!!
+Orig:  georgia Dest:  california Simulated value is zero!!!!
+Orig:  georgia Dest:  colorado Simulated value is zero!!!!
+Orig:  georgia Dest:  connecticut Simulated value is zero!!!!
+Orig:  georgia Dest:  delaware Simulated value is zero!!!!
+Orig:  georgia Dest:  florida Obs-to-sim ratio:  0.785116279821542
+Orig:  georgia Dest:  georgia Obs-to-sim ratio:  0.228825410708293
+Orig:  georgia Dest:  idaho Simulated value is zero!!!!
+Orig:  georgia Dest:  illinois Simulated value is zero!!!!
+Orig:  georgia Dest:  indiana Simulated value is zero!!!!
+Orig:  georgia Dest:  iowa Simulated value is zero!!!!
+Orig:  georgia Dest:  kansas Simulated value is zero!!!!
+Orig:  georgia Dest:  kentucky Simulated value is zero!!!!
+Orig:  georgia Dest:  maine Simulated value is zero!!!!
+Orig:  georgia Dest:  maryland Simulated value is zero!!!!
+Orig:  georgia Dest:  massachusetts Simulated value is zero!!!!
+Orig:  georgia Dest:  michigan Simulated value is zero!!!!
+Orig:  georgia Dest:  minnesota Simulated value is zero!!!!
+Orig:  georgia Dest:  mississippi Simulated value is zero!!!!
+Orig:  georgia Dest:  missouri Obs-to-sim ratio:  0.597509676484372
+Orig:  georgia Dest:  montana Simulated value is zero!!!!
+Orig:  georgia Dest:  nebraska Simulated value is zero!!!!
+Orig:  georgia Dest:  nevada Simulated value is zero!!!!
+Orig:  georgia Dest:  new hampshire Simulated value is zero!!!!
+Orig:  georgia Dest:  new jersey Simulated value is zero!!!!
+Orig:  georgia Dest:  new mexico Simulated value is zero!!!!
+Orig:  georgia Dest:  new york Simulated value is zero!!!!
+Orig:  georgia Dest:  north carolina Simulated value is zero!!!!
+Orig:  georgia Dest:  north dakota Simulated value is zero!!!!
+Orig:  georgia Dest:  ohio Simulated value is zero!!!!
+Orig:  georgia Dest:  oklahoma Simulated value is zero!!!!
+Orig:  georgia Dest:  oregon Simulated value is zero!!!!
+Orig:  georgia Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  georgia Dest:  rhode island Simulated value is zero!!!!
+Orig:  georgia Dest:  south carolina Obs-to-sim ratio:  1.45134348636123
+Orig:  georgia Dest:  south dakota Simulated value is zero!!!!
+Orig:  georgia Dest:  tennessee Obs-to-sim ratio:  3.29396074536022
+Orig:  georgia Dest:  texas Simulated value is zero!!!!
+Orig:  georgia Dest:  utah Simulated value is zero!!!!
+Orig:  georgia Dest:  vermont Simulated value is zero!!!!
+Orig:  georgia Dest:  virginia Simulated value is zero!!!!
+Orig:  georgia Dest:  west virginia Simulated value is zero!!!!
+Orig:  georgia Dest:  wisconsin Simulated value is zero!!!!
+Orig:  georgia Dest:  wyoming Simulated value is zero!!!!
+Orig:  idaho Dest:  alabama Obs-to-sim ratio:  0.000402610204488025
+Orig:  idaho Dest:  arizona Obs-to-sim ratio:  0.0188041038213197
+Orig:  idaho Dest:  arkansas Obs-to-sim ratio:  0.406595428123676
+Orig:  idaho Dest:  california Obs-to-sim ratio:  0.155426683021634
+Orig:  idaho Dest:  colorado Obs-to-sim ratio:  0.101079349201794
+Orig:  idaho Dest:  connecticut Simulated value is zero!!!!
+Orig:  idaho Dest:  delaware Simulated value is zero!!!!
+Orig:  idaho Dest:  florida Obs-to-sim ratio:  0.000885047994141092
+Orig:  idaho Dest:  georgia Obs-to-sim ratio:  0.263318186389829
+Orig:  idaho Dest:  idaho Obs-to-sim ratio:  0.561442673916129
+Orig:  idaho Dest:  illinois Obs-to-sim ratio:  3.00641919894894e-05
+Orig:  idaho Dest:  indiana Obs-to-sim ratio:  2.98430852328053e-05
+Orig:  idaho Dest:  iowa Obs-to-sim ratio:  0.0266839593278313
+Orig:  idaho Dest:  kansas Obs-to-sim ratio:  0.0439435979610508
+Orig:  idaho Dest:  kentucky Obs-to-sim ratio:  0.00162100505502406
+Orig:  idaho Dest:  maine Simulated value is zero!!!!
+Orig:  idaho Dest:  maryland Simulated value is zero!!!!
+Orig:  idaho Dest:  massachusetts Simulated value is zero!!!!
+Orig:  idaho Dest:  michigan Obs-to-sim ratio:  0.000346273396949204
+Orig:  idaho Dest:  minnesota Obs-to-sim ratio:  1.47192054094049
+Orig:  idaho Dest:  mississippi Simulated value is zero!!!!
+Orig:  idaho Dest:  missouri Obs-to-sim ratio:  9.26138466317561e-05
+Orig:  idaho Dest:  montana Obs-to-sim ratio:  0.0457129995627955
+Orig:  idaho Dest:  nebraska Simulated value is zero!!!!
+Orig:  idaho Dest:  nevada Obs-to-sim ratio:  2.016385101371
+Orig:  idaho Dest:  new hampshire Simulated value is zero!!!!
+Orig:  idaho Dest:  new jersey Simulated value is zero!!!!
+Orig:  idaho Dest:  new mexico Obs-to-sim ratio:  0.353586267942421
+Orig:  idaho Dest:  new york Obs-to-sim ratio:  7.00101391757992e-05
+Orig:  idaho Dest:  north carolina Obs-to-sim ratio:  9.80122804667559e-05
+Orig:  idaho Dest:  north dakota Simulated value is zero!!!!
+Orig:  idaho Dest:  ohio Obs-to-sim ratio:  0.251148431253719
+Orig:  idaho Dest:  oklahoma Obs-to-sim ratio:  0.00038130743171836
+Orig:  idaho Dest:  oregon Obs-to-sim ratio:  0.292554094298942
+Orig:  idaho Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  idaho Dest:  rhode island Simulated value is zero!!!!
+Orig:  idaho Dest:  south carolina Simulated value is zero!!!!
+Orig:  idaho Dest:  south dakota Simulated value is zero!!!!
+Orig:  idaho Dest:  tennessee Obs-to-sim ratio:  0.582018592504135
+Orig:  idaho Dest:  texas Obs-to-sim ratio:  3.0812403214125e-06
+Orig:  idaho Dest:  utah Obs-to-sim ratio:  1.36212746827913
+Orig:  idaho Dest:  vermont Simulated value is zero!!!!
+Orig:  idaho Dest:  virginia Obs-to-sim ratio:  4.88138021650321e-05
+Orig:  idaho Dest:  west virginia Simulated value is zero!!!!
+Orig:  idaho Dest:  wisconsin Obs-to-sim ratio:  0.338795916404796
+Orig:  idaho Dest:  wyoming Obs-to-sim ratio:  0.00028356640538436
+Orig:  illinois Dest:  alabama Obs-to-sim ratio:  0.264920177924217
+Orig:  illinois Dest:  arizona Simulated value is zero!!!!
+Orig:  illinois Dest:  arkansas Simulated value is zero!!!!
+Orig:  illinois Dest:  california Obs-to-sim ratio:  0.0916197678369311
+Orig:  illinois Dest:  colorado Simulated value is zero!!!!
+Orig:  illinois Dest:  connecticut Simulated value is zero!!!!
+Orig:  illinois Dest:  delaware Simulated value is zero!!!!
+Orig:  illinois Dest:  florida Obs-to-sim ratio:  0.311533854212935
+Orig:  illinois Dest:  georgia Obs-to-sim ratio:  1.53237414741128
+Orig:  illinois Dest:  idaho Simulated value is zero!!!!
+Orig:  illinois Dest:  illinois Obs-to-sim ratio:  0.255462168418379
+Orig:  illinois Dest:  indiana Obs-to-sim ratio:  0.903519688024723
+Orig:  illinois Dest:  iowa Obs-to-sim ratio:  0.0316723987887352
+Orig:  illinois Dest:  kansas Simulated value is zero!!!!
+Orig:  illinois Dest:  kentucky Simulated value is zero!!!!
+Orig:  illinois Dest:  maine Simulated value is zero!!!!
+Orig:  illinois Dest:  maryland Obs-to-sim ratio:  0.162511635109324
+Orig:  illinois Dest:  massachusetts Simulated value is zero!!!!
+Orig:  illinois Dest:  michigan Obs-to-sim ratio:  0.260583916429453
+Orig:  illinois Dest:  minnesota Obs-to-sim ratio:  0.0175423853533444
+Orig:  illinois Dest:  mississippi Obs-to-sim ratio:  1.29339066817984
+Orig:  illinois Dest:  missouri Obs-to-sim ratio:  0.496886373018889
+Orig:  illinois Dest:  montana Simulated value is zero!!!!
+Orig:  illinois Dest:  nebraska Simulated value is zero!!!!
+Orig:  illinois Dest:  nevada Simulated value is zero!!!!
+Orig:  illinois Dest:  new hampshire Simulated value is zero!!!!
+Orig:  illinois Dest:  new jersey Simulated value is zero!!!!
+Orig:  illinois Dest:  new mexico Simulated value is zero!!!!
+Orig:  illinois Dest:  new york Simulated value is zero!!!!
+Orig:  illinois Dest:  north carolina Obs-to-sim ratio:  0.11924212097003
+Orig:  illinois Dest:  north dakota Simulated value is zero!!!!
+Orig:  illinois Dest:  ohio Simulated value is zero!!!!
+Orig:  illinois Dest:  oklahoma Simulated value is zero!!!!
+Orig:  illinois Dest:  oregon Simulated value is zero!!!!
+Orig:  illinois Dest:  pennsylvania Obs-to-sim ratio:  0.123583480362077
+Orig:  illinois Dest:  rhode island Simulated value is zero!!!!
+Orig:  illinois Dest:  south carolina Simulated value is zero!!!!
+Orig:  illinois Dest:  south dakota Simulated value is zero!!!!
+Orig:  illinois Dest:  tennessee Obs-to-sim ratio:  0.36103571525103
+Orig:  illinois Dest:  texas Obs-to-sim ratio:  0.236681382573984
+Orig:  illinois Dest:  utah Simulated value is zero!!!!
+Orig:  illinois Dest:  vermont Simulated value is zero!!!!
+Orig:  illinois Dest:  virginia Simulated value is zero!!!!
+Orig:  illinois Dest:  west virginia Simulated value is zero!!!!
+Orig:  illinois Dest:  wisconsin Obs-to-sim ratio:  0.029482489595147
+Orig:  illinois Dest:  wyoming Simulated value is zero!!!!
+Orig:  indiana Dest:  alabama Obs-to-sim ratio:  0.157819952506397
+Orig:  indiana Dest:  arizona Simulated value is zero!!!!
+Orig:  indiana Dest:  arkansas Simulated value is zero!!!!
+Orig:  indiana Dest:  california Obs-to-sim ratio:  0.0092311652159461
+Orig:  indiana Dest:  colorado Obs-to-sim ratio:  0.438963266398787
+Orig:  indiana Dest:  connecticut Simulated value is zero!!!!
+Orig:  indiana Dest:  delaware Simulated value is zero!!!!
+Orig:  indiana Dest:  florida Obs-to-sim ratio:  0.471393682914408
+Orig:  indiana Dest:  georgia Obs-to-sim ratio:  6.68758010836271
+Orig:  indiana Dest:  idaho Simulated value is zero!!!!
+Orig:  indiana Dest:  illinois Obs-to-sim ratio:  0.129371986573774
+Orig:  indiana Dest:  indiana Obs-to-sim ratio:  0.202552822584155
+Orig:  indiana Dest:  iowa Obs-to-sim ratio:  0.00700268149994456
+Orig:  indiana Dest:  kansas Obs-to-sim ratio:  0.00500059991552368
+Orig:  indiana Dest:  kentucky Obs-to-sim ratio:  0.107268259572913
+Orig:  indiana Dest:  maine Simulated value is zero!!!!
+Orig:  indiana Dest:  maryland Obs-to-sim ratio:  1.18141248222893
+Orig:  indiana Dest:  massachusetts Simulated value is zero!!!!
+Orig:  indiana Dest:  michigan Obs-to-sim ratio:  0.0682872086601883
+Orig:  indiana Dest:  minnesota Obs-to-sim ratio:  0.00393437540996184
+Orig:  indiana Dest:  mississippi Simulated value is zero!!!!
+Orig:  indiana Dest:  missouri Obs-to-sim ratio:  0.0834302274677442
+Orig:  indiana Dest:  montana Simulated value is zero!!!!
+Orig:  indiana Dest:  nebraska Obs-to-sim ratio:  0.00379482973100157
+Orig:  indiana Dest:  nevada Simulated value is zero!!!!
+Orig:  indiana Dest:  new hampshire Simulated value is zero!!!!
+Orig:  indiana Dest:  new jersey Obs-to-sim ratio:  0.0285396934169889
+Orig:  indiana Dest:  new mexico Simulated value is zero!!!!
+Orig:  indiana Dest:  new york Obs-to-sim ratio:  0.0533932148094209
+Orig:  indiana Dest:  north carolina Obs-to-sim ratio:  0.357537117167743
+Orig:  indiana Dest:  north dakota Simulated value is zero!!!!
+Orig:  indiana Dest:  ohio Obs-to-sim ratio:  0.158226370443859
+Orig:  indiana Dest:  oklahoma Simulated value is zero!!!!
+Orig:  indiana Dest:  oregon Simulated value is zero!!!!
+Orig:  indiana Dest:  pennsylvania Obs-to-sim ratio:  0.0364906666718146
+Orig:  indiana Dest:  rhode island Simulated value is zero!!!!
+Orig:  indiana Dest:  south carolina Obs-to-sim ratio:  1.43268372309457
+Orig:  indiana Dest:  south dakota Obs-to-sim ratio:  0.0144268399816938
+Orig:  indiana Dest:  tennessee Obs-to-sim ratio:  1.46198542345357
+Orig:  indiana Dest:  texas Obs-to-sim ratio:  0.000878187169016548
+Orig:  indiana Dest:  utah Simulated value is zero!!!!
+Orig:  indiana Dest:  vermont Simulated value is zero!!!!
+Orig:  indiana Dest:  virginia Obs-to-sim ratio:  0.11731384992347
+Orig:  indiana Dest:  west virginia Simulated value is zero!!!!
+Orig:  indiana Dest:  wisconsin Obs-to-sim ratio:  0.177820415834907
+Orig:  indiana Dest:  wyoming Simulated value is zero!!!!
+Orig:  iowa Dest:  alabama Simulated value is zero!!!!
+Orig:  iowa Dest:  arizona Simulated value is zero!!!!
+Orig:  iowa Dest:  arkansas Simulated value is zero!!!!
+Orig:  iowa Dest:  california Simulated value is zero!!!!
+Orig:  iowa Dest:  colorado Obs-to-sim ratio:  0.0551390496724272
+Orig:  iowa Dest:  connecticut Simulated value is zero!!!!
+Orig:  iowa Dest:  delaware Simulated value is zero!!!!
+Orig:  iowa Dest:  florida Simulated value is zero!!!!
+Orig:  iowa Dest:  georgia Simulated value is zero!!!!
+Orig:  iowa Dest:  idaho Obs-to-sim ratio:  0.00574510140661948
+Orig:  iowa Dest:  illinois Obs-to-sim ratio:  0.0440989350455115
+Orig:  iowa Dest:  indiana Obs-to-sim ratio:  0.118818876286918
+Orig:  iowa Dest:  iowa Obs-to-sim ratio:  0.259009320248761
+Orig:  iowa Dest:  kansas Obs-to-sim ratio:  0.0667038419542921
+Orig:  iowa Dest:  kentucky Simulated value is zero!!!!
+Orig:  iowa Dest:  maine Simulated value is zero!!!!
+Orig:  iowa Dest:  maryland Simulated value is zero!!!!
+Orig:  iowa Dest:  massachusetts Simulated value is zero!!!!
+Orig:  iowa Dest:  michigan Obs-to-sim ratio:  0.00724452318028208
+Orig:  iowa Dest:  minnesota Obs-to-sim ratio:  0.0540962255511602
+Orig:  iowa Dest:  mississippi Simulated value is zero!!!!
+Orig:  iowa Dest:  missouri Obs-to-sim ratio:  0.0153852125257535
+Orig:  iowa Dest:  montana Simulated value is zero!!!!
+Orig:  iowa Dest:  nebraska Obs-to-sim ratio:  0.152397166013483
+Orig:  iowa Dest:  nevada Simulated value is zero!!!!
+Orig:  iowa Dest:  new hampshire Simulated value is zero!!!!
+Orig:  iowa Dest:  new jersey Simulated value is zero!!!!
+Orig:  iowa Dest:  new mexico Simulated value is zero!!!!
+Orig:  iowa Dest:  new york Simulated value is zero!!!!
+Orig:  iowa Dest:  north carolina Simulated value is zero!!!!
+Orig:  iowa Dest:  north dakota Obs-to-sim ratio:  0.131436617790236
+Orig:  iowa Dest:  ohio Obs-to-sim ratio:  4.88789439862273e-05
+Orig:  iowa Dest:  oklahoma Obs-to-sim ratio:  0.00303490109776816
+Orig:  iowa Dest:  oregon Simulated value is zero!!!!
+Orig:  iowa Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  iowa Dest:  rhode island Simulated value is zero!!!!
+Orig:  iowa Dest:  south carolina Simulated value is zero!!!!
+Orig:  iowa Dest:  south dakota Obs-to-sim ratio:  0.00538071345451832
+Orig:  iowa Dest:  tennessee Simulated value is zero!!!!
+Orig:  iowa Dest:  texas Obs-to-sim ratio:  0.530988889208676
+Orig:  iowa Dest:  utah Simulated value is zero!!!!
+Orig:  iowa Dest:  vermont Obs-to-sim ratio:  0.000675565839073463
+Orig:  iowa Dest:  virginia Simulated value is zero!!!!
+Orig:  iowa Dest:  west virginia Simulated value is zero!!!!
+Orig:  iowa Dest:  wisconsin Obs-to-sim ratio:  0.0188603449386371
+Orig:  iowa Dest:  wyoming Simulated value is zero!!!!
+Orig:  kansas Dest:  alabama Obs-to-sim ratio:  0.00546286114142661
+Orig:  kansas Dest:  arizona Obs-to-sim ratio:  0.857718505871242
+Orig:  kansas Dest:  arkansas Obs-to-sim ratio:  0.471845337675485
+Orig:  kansas Dest:  california Obs-to-sim ratio:  0.17343039213932
+Orig:  kansas Dest:  colorado Simulated value is zero!!!!
+Orig:  kansas Dest:  connecticut Simulated value is zero!!!!
+Orig:  kansas Dest:  delaware Simulated value is zero!!!!
+Orig:  kansas Dest:  florida Simulated value is zero!!!!
+Orig:  kansas Dest:  georgia Simulated value is zero!!!!
+Orig:  kansas Dest:  idaho Simulated value is zero!!!!
+Orig:  kansas Dest:  illinois Simulated value is zero!!!!
+Orig:  kansas Dest:  indiana Simulated value is zero!!!!
+Orig:  kansas Dest:  iowa Simulated value is zero!!!!
+Orig:  kansas Dest:  kansas Obs-to-sim ratio:  0.312877679118585
+Orig:  kansas Dest:  kentucky Simulated value is zero!!!!
+Orig:  kansas Dest:  maine Simulated value is zero!!!!
+Orig:  kansas Dest:  maryland Simulated value is zero!!!!
+Orig:  kansas Dest:  massachusetts Obs-to-sim ratio:  0.853854575969342
+Orig:  kansas Dest:  michigan Simulated value is zero!!!!
+Orig:  kansas Dest:  minnesota Simulated value is zero!!!!
+Orig:  kansas Dest:  mississippi Simulated value is zero!!!!
+Orig:  kansas Dest:  missouri Obs-to-sim ratio:  0.622784663432809
+Orig:  kansas Dest:  montana Simulated value is zero!!!!
+Orig:  kansas Dest:  nebraska Obs-to-sim ratio:  0.0922057748297742
+Orig:  kansas Dest:  nevada Simulated value is zero!!!!
+Orig:  kansas Dest:  new hampshire Simulated value is zero!!!!
+Orig:  kansas Dest:  new jersey Simulated value is zero!!!!
+Orig:  kansas Dest:  new mexico Simulated value is zero!!!!
+Orig:  kansas Dest:  new york Simulated value is zero!!!!
+Orig:  kansas Dest:  north carolina Obs-to-sim ratio:  0.467003732503515
+Orig:  kansas Dest:  north dakota Simulated value is zero!!!!
+Orig:  kansas Dest:  ohio Simulated value is zero!!!!
+Orig:  kansas Dest:  oklahoma Obs-to-sim ratio:  1.19169835660421
+Orig:  kansas Dest:  oregon Simulated value is zero!!!!
+Orig:  kansas Dest:  pennsylvania Obs-to-sim ratio:  0.187780126408439
+Orig:  kansas Dest:  rhode island Simulated value is zero!!!!
+Orig:  kansas Dest:  south carolina Simulated value is zero!!!!
+Orig:  kansas Dest:  south dakota Simulated value is zero!!!!
+Orig:  kansas Dest:  tennessee Simulated value is zero!!!!
+Orig:  kansas Dest:  texas Obs-to-sim ratio:  2.70998372287209
+Orig:  kansas Dest:  utah Simulated value is zero!!!!
+Orig:  kansas Dest:  vermont Simulated value is zero!!!!
+Orig:  kansas Dest:  virginia Simulated value is zero!!!!
+Orig:  kansas Dest:  west virginia Simulated value is zero!!!!
+Orig:  kansas Dest:  wisconsin Simulated value is zero!!!!
+Orig:  kansas Dest:  wyoming Simulated value is zero!!!!
+Orig:  kentucky Dest:  alabama Simulated value is zero!!!!
+Orig:  kentucky Dest:  arizona Simulated value is zero!!!!
+Orig:  kentucky Dest:  arkansas Simulated value is zero!!!!
+Orig:  kentucky Dest:  california Obs-to-sim ratio:  0.00820925249759256
+Orig:  kentucky Dest:  colorado Obs-to-sim ratio:  0.00693542600693033
+Orig:  kentucky Dest:  connecticut Simulated value is zero!!!!
+Orig:  kentucky Dest:  delaware Simulated value is zero!!!!
+Orig:  kentucky Dest:  florida Obs-to-sim ratio:  0.00522638535464313
+Orig:  kentucky Dest:  georgia Obs-to-sim ratio:  0.298675907772838
+Orig:  kentucky Dest:  idaho Simulated value is zero!!!!
+Orig:  kentucky Dest:  illinois Obs-to-sim ratio:  1.26483534843715
+Orig:  kentucky Dest:  indiana Obs-to-sim ratio:  0.0556152920486614
+Orig:  kentucky Dest:  iowa Simulated value is zero!!!!
+Orig:  kentucky Dest:  kansas Obs-to-sim ratio:  0.00202050876160138
+Orig:  kentucky Dest:  kentucky Obs-to-sim ratio:  0.380684213660248
+Orig:  kentucky Dest:  maine Obs-to-sim ratio:  0.247150051873606
+Orig:  kentucky Dest:  maryland Simulated value is zero!!!!
+Orig:  kentucky Dest:  massachusetts Simulated value is zero!!!!
+Orig:  kentucky Dest:  michigan Obs-to-sim ratio:  0.00896456319247553
+Orig:  kentucky Dest:  minnesota Simulated value is zero!!!!
+Orig:  kentucky Dest:  mississippi Simulated value is zero!!!!
+Orig:  kentucky Dest:  missouri Simulated value is zero!!!!
+Orig:  kentucky Dest:  montana Simulated value is zero!!!!
+Orig:  kentucky Dest:  nebraska Simulated value is zero!!!!
+Orig:  kentucky Dest:  nevada Obs-to-sim ratio:  0.0188233217616657
+Orig:  kentucky Dest:  new hampshire Simulated value is zero!!!!
+Orig:  kentucky Dest:  new jersey Simulated value is zero!!!!
+Orig:  kentucky Dest:  new mexico Simulated value is zero!!!!
+Orig:  kentucky Dest:  new york Simulated value is zero!!!!
+Orig:  kentucky Dest:  north carolina Obs-to-sim ratio:  0.0010805536185218
+Orig:  kentucky Dest:  north dakota Simulated value is zero!!!!
+Orig:  kentucky Dest:  ohio Obs-to-sim ratio:  0.0246208251095174
+Orig:  kentucky Dest:  oklahoma Simulated value is zero!!!!
+Orig:  kentucky Dest:  oregon Obs-to-sim ratio:  4.31074741518191e-05
+Orig:  kentucky Dest:  pennsylvania Obs-to-sim ratio:  0.0134498542099404
+Orig:  kentucky Dest:  rhode island Simulated value is zero!!!!
+Orig:  kentucky Dest:  south carolina Simulated value is zero!!!!
+Orig:  kentucky Dest:  south dakota Simulated value is zero!!!!
+Orig:  kentucky Dest:  tennessee Obs-to-sim ratio:  0.535865493882444
+Orig:  kentucky Dest:  texas Obs-to-sim ratio:  0.00865982505014899
+Orig:  kentucky Dest:  utah Simulated value is zero!!!!
+Orig:  kentucky Dest:  vermont Simulated value is zero!!!!
+Orig:  kentucky Dest:  virginia Obs-to-sim ratio:  0.0622072651062175
+Orig:  kentucky Dest:  west virginia Simulated value is zero!!!!
+Orig:  kentucky Dest:  wisconsin Obs-to-sim ratio:  0.0140839439079405
+Orig:  kentucky Dest:  wyoming Simulated value is zero!!!!
+Orig:  maine Dest:  alabama Simulated value is zero!!!!
+Orig:  maine Dest:  arizona Simulated value is zero!!!!
+Orig:  maine Dest:  arkansas Simulated value is zero!!!!
+Orig:  maine Dest:  california Simulated value is zero!!!!
+Orig:  maine Dest:  colorado Simulated value is zero!!!!
+Orig:  maine Dest:  connecticut Simulated value is zero!!!!
+Orig:  maine Dest:  delaware Simulated value is zero!!!!
+Orig:  maine Dest:  florida Simulated value is zero!!!!
+Orig:  maine Dest:  georgia Simulated value is zero!!!!
+Orig:  maine Dest:  idaho Simulated value is zero!!!!
+Orig:  maine Dest:  illinois Simulated value is zero!!!!
+Orig:  maine Dest:  indiana Simulated value is zero!!!!
+Orig:  maine Dest:  iowa Simulated value is zero!!!!
+Orig:  maine Dest:  kansas Simulated value is zero!!!!
+Orig:  maine Dest:  kentucky Simulated value is zero!!!!
+Orig:  maine Dest:  maine Obs-to-sim ratio:  0.976309898205751
+Orig:  maine Dest:  maryland Simulated value is zero!!!!
+Orig:  maine Dest:  massachusetts Simulated value is zero!!!!
+Orig:  maine Dest:  michigan Simulated value is zero!!!!
+Orig:  maine Dest:  minnesota Simulated value is zero!!!!
+Orig:  maine Dest:  mississippi Simulated value is zero!!!!
+Orig:  maine Dest:  missouri Simulated value is zero!!!!
+Orig:  maine Dest:  montana Simulated value is zero!!!!
+Orig:  maine Dest:  nebraska Simulated value is zero!!!!
+Orig:  maine Dest:  nevada Simulated value is zero!!!!
+Orig:  maine Dest:  new hampshire Simulated value is zero!!!!
+Orig:  maine Dest:  new jersey Simulated value is zero!!!!
+Orig:  maine Dest:  new mexico Simulated value is zero!!!!
+Orig:  maine Dest:  new york Obs-to-sim ratio:  0.0241039708824172
+Orig:  maine Dest:  north carolina Simulated value is zero!!!!
+Orig:  maine Dest:  north dakota Simulated value is zero!!!!
+Orig:  maine Dest:  ohio Simulated value is zero!!!!
+Orig:  maine Dest:  oklahoma Simulated value is zero!!!!
+Orig:  maine Dest:  oregon Simulated value is zero!!!!
+Orig:  maine Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  maine Dest:  rhode island Simulated value is zero!!!!
+Orig:  maine Dest:  south carolina Simulated value is zero!!!!
+Orig:  maine Dest:  south dakota Simulated value is zero!!!!
+Orig:  maine Dest:  tennessee Simulated value is zero!!!!
+Orig:  maine Dest:  texas Simulated value is zero!!!!
+Orig:  maine Dest:  utah Simulated value is zero!!!!
+Orig:  maine Dest:  vermont Simulated value is zero!!!!
+Orig:  maine Dest:  virginia Simulated value is zero!!!!
+Orig:  maine Dest:  west virginia Simulated value is zero!!!!
+Orig:  maine Dest:  wisconsin Simulated value is zero!!!!
+Orig:  maine Dest:  wyoming Simulated value is zero!!!!
+Orig:  maryland Dest:  alabama Simulated value is zero!!!!
+Orig:  maryland Dest:  arizona Simulated value is zero!!!!
+Orig:  maryland Dest:  arkansas Simulated value is zero!!!!
+Orig:  maryland Dest:  california Simulated value is zero!!!!
+Orig:  maryland Dest:  colorado Simulated value is zero!!!!
+Orig:  maryland Dest:  connecticut Simulated value is zero!!!!
+Orig:  maryland Dest:  delaware Obs-to-sim ratio:  16.4763109508453
+Orig:  maryland Dest:  florida Simulated value is zero!!!!
+Orig:  maryland Dest:  georgia Simulated value is zero!!!!
+Orig:  maryland Dest:  idaho Simulated value is zero!!!!
+Orig:  maryland Dest:  illinois Simulated value is zero!!!!
+Orig:  maryland Dest:  indiana Simulated value is zero!!!!
+Orig:  maryland Dest:  iowa Simulated value is zero!!!!
+Orig:  maryland Dest:  kansas Simulated value is zero!!!!
+Orig:  maryland Dest:  kentucky Simulated value is zero!!!!
+Orig:  maryland Dest:  maine Simulated value is zero!!!!
+Orig:  maryland Dest:  maryland Obs-to-sim ratio:  0.361056726975917
+Orig:  maryland Dest:  massachusetts Simulated value is zero!!!!
+Orig:  maryland Dest:  michigan Simulated value is zero!!!!
+Orig:  maryland Dest:  minnesota Simulated value is zero!!!!
+Orig:  maryland Dest:  mississippi Simulated value is zero!!!!
+Orig:  maryland Dest:  missouri Simulated value is zero!!!!
+Orig:  maryland Dest:  montana Simulated value is zero!!!!
+Orig:  maryland Dest:  nebraska Simulated value is zero!!!!
+Orig:  maryland Dest:  nevada Simulated value is zero!!!!
+Orig:  maryland Dest:  new hampshire Simulated value is zero!!!!
+Orig:  maryland Dest:  new jersey Simulated value is zero!!!!
+Orig:  maryland Dest:  new mexico Simulated value is zero!!!!
+Orig:  maryland Dest:  new york Simulated value is zero!!!!
+Orig:  maryland Dest:  north carolina Simulated value is zero!!!!
+Orig:  maryland Dest:  north dakota Simulated value is zero!!!!
+Orig:  maryland Dest:  ohio Simulated value is zero!!!!
+Orig:  maryland Dest:  oklahoma Simulated value is zero!!!!
+Orig:  maryland Dest:  oregon Simulated value is zero!!!!
+Orig:  maryland Dest:  pennsylvania Obs-to-sim ratio:  1.69825175579973
+Orig:  maryland Dest:  rhode island Simulated value is zero!!!!
+Orig:  maryland Dest:  south carolina Simulated value is zero!!!!
+Orig:  maryland Dest:  south dakota Simulated value is zero!!!!
+Orig:  maryland Dest:  tennessee Simulated value is zero!!!!
+Orig:  maryland Dest:  texas Simulated value is zero!!!!
+Orig:  maryland Dest:  utah Simulated value is zero!!!!
+Orig:  maryland Dest:  vermont Simulated value is zero!!!!
+Orig:  maryland Dest:  virginia Obs-to-sim ratio:  0.179087640544876
+Orig:  maryland Dest:  west virginia Simulated value is zero!!!!
+Orig:  maryland Dest:  wisconsin Simulated value is zero!!!!
+Orig:  maryland Dest:  wyoming Simulated value is zero!!!!
+Orig:  massachusetts Dest:  alabama Simulated value is zero!!!!
+Orig:  massachusetts Dest:  arizona Simulated value is zero!!!!
+Orig:  massachusetts Dest:  arkansas Simulated value is zero!!!!
+Orig:  massachusetts Dest:  california Obs-to-sim ratio:  2.99002521963701
+Orig:  massachusetts Dest:  colorado Obs-to-sim ratio:  0.131700213982108
+Orig:  massachusetts Dest:  connecticut Simulated value is zero!!!!
+Orig:  massachusetts Dest:  delaware Simulated value is zero!!!!
+Orig:  massachusetts Dest:  florida Obs-to-sim ratio:  0.13483492244155
+Orig:  massachusetts Dest:  georgia Obs-to-sim ratio:  0.0161941727305593
+Orig:  massachusetts Dest:  idaho Simulated value is zero!!!!
+Orig:  massachusetts Dest:  illinois Obs-to-sim ratio:  1.70053698041448
+Orig:  massachusetts Dest:  indiana Obs-to-sim ratio:  4.31454878747472
+Orig:  massachusetts Dest:  iowa Simulated value is zero!!!!
+Orig:  massachusetts Dest:  kansas Simulated value is zero!!!!
+Orig:  massachusetts Dest:  kentucky Simulated value is zero!!!!
+Orig:  massachusetts Dest:  maine Obs-to-sim ratio:  0.737546737233154
+Orig:  massachusetts Dest:  maryland Simulated value is zero!!!!
+Orig:  massachusetts Dest:  massachusetts Obs-to-sim ratio:  1.26066021701123
+Orig:  massachusetts Dest:  michigan Obs-to-sim ratio:  4.41160840096354
+Orig:  massachusetts Dest:  minnesota Simulated value is zero!!!!
+Orig:  massachusetts Dest:  mississippi Simulated value is zero!!!!
+Orig:  massachusetts Dest:  missouri Obs-to-sim ratio:  2.26979078525929
+Orig:  massachusetts Dest:  montana Simulated value is zero!!!!
+Orig:  massachusetts Dest:  nebraska Simulated value is zero!!!!
+Orig:  massachusetts Dest:  nevada Obs-to-sim ratio:  18.3192621991611
+Orig:  massachusetts Dest:  new hampshire Obs-to-sim ratio:  8.53496683811553
+Orig:  massachusetts Dest:  new jersey Obs-to-sim ratio:  0.474135361074688
+Orig:  massachusetts Dest:  new mexico Simulated value is zero!!!!
+Orig:  massachusetts Dest:  new york Obs-to-sim ratio:  2.90558814740135
+Orig:  massachusetts Dest:  north carolina Obs-to-sim ratio:  0.805787604324783
+Orig:  massachusetts Dest:  north dakota Simulated value is zero!!!!
+Orig:  massachusetts Dest:  ohio Obs-to-sim ratio:  1.41861584019982
+Orig:  massachusetts Dest:  oklahoma Simulated value is zero!!!!
+Orig:  massachusetts Dest:  oregon Simulated value is zero!!!!
+Orig:  massachusetts Dest:  pennsylvania Obs-to-sim ratio:  0.98049955518349
+Orig:  massachusetts Dest:  rhode island Obs-to-sim ratio:  60.5151299021176
+Orig:  massachusetts Dest:  south carolina Obs-to-sim ratio:  0.0632643268963125
+Orig:  massachusetts Dest:  south dakota Simulated value is zero!!!!
+Orig:  massachusetts Dest:  tennessee Simulated value is zero!!!!
+Orig:  massachusetts Dest:  texas Obs-to-sim ratio:  6.45117793589142
+Orig:  massachusetts Dest:  utah Simulated value is zero!!!!
+Orig:  massachusetts Dest:  vermont Simulated value is zero!!!!
+Orig:  massachusetts Dest:  virginia Simulated value is zero!!!!
+Orig:  massachusetts Dest:  west virginia Simulated value is zero!!!!
+Orig:  massachusetts Dest:  wisconsin Obs-to-sim ratio:  2.4851879479817
+Orig:  massachusetts Dest:  wyoming Simulated value is zero!!!!
+Orig:  michigan Dest:  alabama Simulated value is zero!!!!
+Orig:  michigan Dest:  arizona Simulated value is zero!!!!
+Orig:  michigan Dest:  arkansas Simulated value is zero!!!!
+Orig:  michigan Dest:  california Simulated value is zero!!!!
+Orig:  michigan Dest:  colorado Obs-to-sim ratio:  0.00376058566628596
+Orig:  michigan Dest:  connecticut Simulated value is zero!!!!
+Orig:  michigan Dest:  delaware Obs-to-sim ratio:  1.36316839032122
+Orig:  michigan Dest:  florida Obs-to-sim ratio:  0.000383222918834962
+Orig:  michigan Dest:  georgia Obs-to-sim ratio:  0.00063495288289493
+Orig:  michigan Dest:  idaho Simulated value is zero!!!!
+Orig:  michigan Dest:  illinois Simulated value is zero!!!!
+Orig:  michigan Dest:  indiana Obs-to-sim ratio:  0.263991639704892
+Orig:  michigan Dest:  iowa Obs-to-sim ratio:  0.00155094983919833
+Orig:  michigan Dest:  kansas Simulated value is zero!!!!
+Orig:  michigan Dest:  kentucky Simulated value is zero!!!!
+Orig:  michigan Dest:  maine Simulated value is zero!!!!
+Orig:  michigan Dest:  maryland Obs-to-sim ratio:  0.00108596894968425
+Orig:  michigan Dest:  massachusetts Obs-to-sim ratio:  0.00128725790748446
+Orig:  michigan Dest:  michigan Obs-to-sim ratio:  0.217369988870793
+Orig:  michigan Dest:  minnesota Obs-to-sim ratio:  0.00021659703032604
+Orig:  michigan Dest:  mississippi Simulated value is zero!!!!
+Orig:  michigan Dest:  missouri Simulated value is zero!!!!
+Orig:  michigan Dest:  montana Simulated value is zero!!!!
+Orig:  michigan Dest:  nebraska Simulated value is zero!!!!
+Orig:  michigan Dest:  nevada Simulated value is zero!!!!
+Orig:  michigan Dest:  new hampshire Simulated value is zero!!!!
+Orig:  michigan Dest:  new jersey Obs-to-sim ratio:  0.000330833945892846
+Orig:  michigan Dest:  new mexico Simulated value is zero!!!!
+Orig:  michigan Dest:  new york Obs-to-sim ratio:  0.000788219914448678
+Orig:  michigan Dest:  north carolina Obs-to-sim ratio:  1.77025262668198
+Orig:  michigan Dest:  north dakota Simulated value is zero!!!!
+Orig:  michigan Dest:  ohio Obs-to-sim ratio:  0.16600540390556
+Orig:  michigan Dest:  oklahoma Simulated value is zero!!!!
+Orig:  michigan Dest:  oregon Simulated value is zero!!!!
+Orig:  michigan Dest:  pennsylvania Obs-to-sim ratio:  0.00161818930303724
+Orig:  michigan Dest:  rhode island Simulated value is zero!!!!
+Orig:  michigan Dest:  south carolina Simulated value is zero!!!!
+Orig:  michigan Dest:  south dakota Simulated value is zero!!!!
+Orig:  michigan Dest:  tennessee Obs-to-sim ratio:  0.000845790931094195
+Orig:  michigan Dest:  texas Simulated value is zero!!!!
+Orig:  michigan Dest:  utah Simulated value is zero!!!!
+Orig:  michigan Dest:  vermont Simulated value is zero!!!!
+Orig:  michigan Dest:  virginia Obs-to-sim ratio:  0.000263960833700569
+Orig:  michigan Dest:  west virginia Obs-to-sim ratio:  0.00494071676908279
+Orig:  michigan Dest:  wisconsin Obs-to-sim ratio:  0.00125802386846141
+Orig:  michigan Dest:  wyoming Simulated value is zero!!!!
+Orig:  minnesota Dest:  alabama Obs-to-sim ratio:  0.0946523695526014
+Orig:  minnesota Dest:  arizona Obs-to-sim ratio:  0.17207510360154
+Orig:  minnesota Dest:  arkansas Simulated value is zero!!!!
+Orig:  minnesota Dest:  california Obs-to-sim ratio:  0.489100608640121
+Orig:  minnesota Dest:  colorado Obs-to-sim ratio:  0.00639342247854345
+Orig:  minnesota Dest:  connecticut Simulated value is zero!!!!
+Orig:  minnesota Dest:  delaware Simulated value is zero!!!!
+Orig:  minnesota Dest:  florida Obs-to-sim ratio:  0.165588283858271
+Orig:  minnesota Dest:  georgia Obs-to-sim ratio:  0.064629999005608
+Orig:  minnesota Dest:  idaho Obs-to-sim ratio:  0.688495922476758
+Orig:  minnesota Dest:  illinois Obs-to-sim ratio:  0.137152623662325
+Orig:  minnesota Dest:  indiana Obs-to-sim ratio:  0.23725528875344
+Orig:  minnesota Dest:  iowa Obs-to-sim ratio:  0.320898398042348
+Orig:  minnesota Dest:  kansas Obs-to-sim ratio:  1.07847201438071
+Orig:  minnesota Dest:  kentucky Simulated value is zero!!!!
+Orig:  minnesota Dest:  maine Obs-to-sim ratio:  0.183990816450492
+Orig:  minnesota Dest:  maryland Simulated value is zero!!!!
+Orig:  minnesota Dest:  massachusetts Simulated value is zero!!!!
+Orig:  minnesota Dest:  michigan Simulated value is zero!!!!
+Orig:  minnesota Dest:  minnesota Obs-to-sim ratio:  0.435689862081135
+Orig:  minnesota Dest:  mississippi Simulated value is zero!!!!
+Orig:  minnesota Dest:  missouri Obs-to-sim ratio:  0.279923456177328
+Orig:  minnesota Dest:  montana Simulated value is zero!!!!
+Orig:  minnesota Dest:  nebraska Simulated value is zero!!!!
+Orig:  minnesota Dest:  nevada Obs-to-sim ratio:  0.369556076706972
+Orig:  minnesota Dest:  new hampshire Simulated value is zero!!!!
+Orig:  minnesota Dest:  new jersey Obs-to-sim ratio:  0.107034135131032
+Orig:  minnesota Dest:  new mexico Simulated value is zero!!!!
+Orig:  minnesota Dest:  new york Obs-to-sim ratio:  0.236708451365517
+Orig:  minnesota Dest:  north carolina Obs-to-sim ratio:  0.0436994627221279
+Orig:  minnesota Dest:  north dakota Obs-to-sim ratio:  6.98822695172266
+Orig:  minnesota Dest:  ohio Obs-to-sim ratio:  2.24894106801902
+Orig:  minnesota Dest:  oklahoma Simulated value is zero!!!!
+Orig:  minnesota Dest:  oregon Obs-to-sim ratio:  0.00925170411738013
+Orig:  minnesota Dest:  pennsylvania Obs-to-sim ratio:  0.335942875475112
+Orig:  minnesota Dest:  rhode island Obs-to-sim ratio:  0.806768094894814
+Orig:  minnesota Dest:  south carolina Simulated value is zero!!!!
+Orig:  minnesota Dest:  south dakota Obs-to-sim ratio:  0.0530944017794381
+Orig:  minnesota Dest:  tennessee Obs-to-sim ratio:  0.496913780398469
+Orig:  minnesota Dest:  texas Obs-to-sim ratio:  0.403306469360492
+Orig:  minnesota Dest:  utah Obs-to-sim ratio:  0.00930750763489932
+Orig:  minnesota Dest:  vermont Simulated value is zero!!!!
+Orig:  minnesota Dest:  virginia Obs-to-sim ratio:  0.0681681375767087
+Orig:  minnesota Dest:  west virginia Simulated value is zero!!!!
+Orig:  minnesota Dest:  wisconsin Obs-to-sim ratio:  0.0429408220561118
+Orig:  minnesota Dest:  wyoming Simulated value is zero!!!!
+Orig:  mississippi Dest:  alabama Obs-to-sim ratio:  0.199466182979437
+Orig:  mississippi Dest:  arizona Simulated value is zero!!!!
+Orig:  mississippi Dest:  arkansas Simulated value is zero!!!!
+Orig:  mississippi Dest:  california Simulated value is zero!!!!
+Orig:  mississippi Dest:  colorado Simulated value is zero!!!!
+Orig:  mississippi Dest:  connecticut Simulated value is zero!!!!
+Orig:  mississippi Dest:  delaware Simulated value is zero!!!!
+Orig:  mississippi Dest:  florida Obs-to-sim ratio:  0.0164988642673781
+Orig:  mississippi Dest:  georgia Obs-to-sim ratio:  0.151514377926282
+Orig:  mississippi Dest:  idaho Simulated value is zero!!!!
+Orig:  mississippi Dest:  illinois Simulated value is zero!!!!
+Orig:  mississippi Dest:  indiana Simulated value is zero!!!!
+Orig:  mississippi Dest:  iowa Simulated value is zero!!!!
+Orig:  mississippi Dest:  kansas Simulated value is zero!!!!
+Orig:  mississippi Dest:  kentucky Simulated value is zero!!!!
+Orig:  mississippi Dest:  maine Simulated value is zero!!!!
+Orig:  mississippi Dest:  maryland Simulated value is zero!!!!
+Orig:  mississippi Dest:  massachusetts Simulated value is zero!!!!
+Orig:  mississippi Dest:  michigan Simulated value is zero!!!!
+Orig:  mississippi Dest:  minnesota Simulated value is zero!!!!
+Orig:  mississippi Dest:  mississippi Obs-to-sim ratio:  0.430841377719252
+Orig:  mississippi Dest:  missouri Simulated value is zero!!!!
+Orig:  mississippi Dest:  montana Simulated value is zero!!!!
+Orig:  mississippi Dest:  nebraska Simulated value is zero!!!!
+Orig:  mississippi Dest:  nevada Simulated value is zero!!!!
+Orig:  mississippi Dest:  new hampshire Simulated value is zero!!!!
+Orig:  mississippi Dest:  new jersey Simulated value is zero!!!!
+Orig:  mississippi Dest:  new mexico Simulated value is zero!!!!
+Orig:  mississippi Dest:  new york Simulated value is zero!!!!
+Orig:  mississippi Dest:  north carolina Simulated value is zero!!!!
+Orig:  mississippi Dest:  north dakota Simulated value is zero!!!!
+Orig:  mississippi Dest:  ohio Simulated value is zero!!!!
+Orig:  mississippi Dest:  oklahoma Simulated value is zero!!!!
+Orig:  mississippi Dest:  oregon Simulated value is zero!!!!
+Orig:  mississippi Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  mississippi Dest:  rhode island Simulated value is zero!!!!
+Orig:  mississippi Dest:  south carolina Simulated value is zero!!!!
+Orig:  mississippi Dest:  south dakota Simulated value is zero!!!!
+Orig:  mississippi Dest:  tennessee Obs-to-sim ratio:  0.720981515047479
+Orig:  mississippi Dest:  texas Simulated value is zero!!!!
+Orig:  mississippi Dest:  utah Simulated value is zero!!!!
+Orig:  mississippi Dest:  vermont Simulated value is zero!!!!
+Orig:  mississippi Dest:  virginia Simulated value is zero!!!!
+Orig:  mississippi Dest:  west virginia Simulated value is zero!!!!
+Orig:  mississippi Dest:  wisconsin Simulated value is zero!!!!
+Orig:  mississippi Dest:  wyoming Simulated value is zero!!!!
+Orig:  missouri Dest:  alabama Simulated value is zero!!!!
+Orig:  missouri Dest:  arizona Obs-to-sim ratio:  7.68441823466485
+Orig:  missouri Dest:  arkansas Obs-to-sim ratio:  0.226130362145828
+Orig:  missouri Dest:  california Obs-to-sim ratio:  1.54131905405453
+Orig:  missouri Dest:  colorado Simulated value is zero!!!!
+Orig:  missouri Dest:  connecticut Simulated value is zero!!!!
+Orig:  missouri Dest:  delaware Simulated value is zero!!!!
+Orig:  missouri Dest:  florida Simulated value is zero!!!!
+Orig:  missouri Dest:  georgia Obs-to-sim ratio:  0.490605452005821
+Orig:  missouri Dest:  idaho Simulated value is zero!!!!
+Orig:  missouri Dest:  illinois Obs-to-sim ratio:  0.224651010323813
+Orig:  missouri Dest:  indiana Simulated value is zero!!!!
+Orig:  missouri Dest:  iowa Obs-to-sim ratio:  0.00287537270008673
+Orig:  missouri Dest:  kansas Obs-to-sim ratio:  0.0115502573976262
+Orig:  missouri Dest:  kentucky Simulated value is zero!!!!
+Orig:  missouri Dest:  maine Simulated value is zero!!!!
+Orig:  missouri Dest:  maryland Obs-to-sim ratio:  0.0280411793196171
+Orig:  missouri Dest:  massachusetts Simulated value is zero!!!!
+Orig:  missouri Dest:  michigan Simulated value is zero!!!!
+Orig:  missouri Dest:  minnesota Simulated value is zero!!!!
+Orig:  missouri Dest:  mississippi Obs-to-sim ratio:  6.41399786873154
+Orig:  missouri Dest:  missouri Obs-to-sim ratio:  0.400821740656968
+Orig:  missouri Dest:  montana Simulated value is zero!!!!
+Orig:  missouri Dest:  nebraska Obs-to-sim ratio:  0.00562495745334615
+Orig:  missouri Dest:  nevada Simulated value is zero!!!!
+Orig:  missouri Dest:  new hampshire Simulated value is zero!!!!
+Orig:  missouri Dest:  new jersey Simulated value is zero!!!!
+Orig:  missouri Dest:  new mexico Simulated value is zero!!!!
+Orig:  missouri Dest:  new york Simulated value is zero!!!!
+Orig:  missouri Dest:  north carolina Obs-to-sim ratio:  0.00916715019190346
+Orig:  missouri Dest:  north dakota Simulated value is zero!!!!
+Orig:  missouri Dest:  ohio Simulated value is zero!!!!
+Orig:  missouri Dest:  oklahoma Obs-to-sim ratio:  0.021030955343804
+Orig:  missouri Dest:  oregon Simulated value is zero!!!!
+Orig:  missouri Dest:  pennsylvania Obs-to-sim ratio:  0.0400599313070381
+Orig:  missouri Dest:  rhode island Simulated value is zero!!!!
+Orig:  missouri Dest:  south carolina Simulated value is zero!!!!
+Orig:  missouri Dest:  south dakota Simulated value is zero!!!!
+Orig:  missouri Dest:  tennessee Simulated value is zero!!!!
+Orig:  missouri Dest:  texas Obs-to-sim ratio:  3.53308445328387
+Orig:  missouri Dest:  utah Simulated value is zero!!!!
+Orig:  missouri Dest:  vermont Simulated value is zero!!!!
+Orig:  missouri Dest:  virginia Obs-to-sim ratio:  0.513665133730321
+Orig:  missouri Dest:  west virginia Simulated value is zero!!!!
+Orig:  missouri Dest:  wisconsin Simulated value is zero!!!!
+Orig:  missouri Dest:  wyoming Simulated value is zero!!!!
+Orig:  montana Dest:  alabama Simulated value is zero!!!!
+Orig:  montana Dest:  arizona Simulated value is zero!!!!
+Orig:  montana Dest:  arkansas Simulated value is zero!!!!
+Orig:  montana Dest:  california Obs-to-sim ratio:  0.0544672359850032
+Orig:  montana Dest:  colorado Simulated value is zero!!!!
+Orig:  montana Dest:  connecticut Simulated value is zero!!!!
+Orig:  montana Dest:  delaware Simulated value is zero!!!!
+Orig:  montana Dest:  florida Simulated value is zero!!!!
+Orig:  montana Dest:  georgia Simulated value is zero!!!!
+Orig:  montana Dest:  idaho Simulated value is zero!!!!
+Orig:  montana Dest:  illinois Simulated value is zero!!!!
+Orig:  montana Dest:  indiana Simulated value is zero!!!!
+Orig:  montana Dest:  iowa Simulated value is zero!!!!
+Orig:  montana Dest:  kansas Simulated value is zero!!!!
+Orig:  montana Dest:  kentucky Simulated value is zero!!!!
+Orig:  montana Dest:  maine Simulated value is zero!!!!
+Orig:  montana Dest:  maryland Obs-to-sim ratio:  8.04882724996619
+Orig:  montana Dest:  massachusetts Simulated value is zero!!!!
+Orig:  montana Dest:  michigan Simulated value is zero!!!!
+Orig:  montana Dest:  minnesota Obs-to-sim ratio:  1.51716849859293
+Orig:  montana Dest:  mississippi Simulated value is zero!!!!
+Orig:  montana Dest:  missouri Simulated value is zero!!!!
+Orig:  montana Dest:  montana Obs-to-sim ratio:  0.46035497982679
+Orig:  montana Dest:  nebraska Simulated value is zero!!!!
+Orig:  montana Dest:  nevada Simulated value is zero!!!!
+Orig:  montana Dest:  new hampshire Simulated value is zero!!!!
+Orig:  montana Dest:  new jersey Simulated value is zero!!!!
+Orig:  montana Dest:  new mexico Simulated value is zero!!!!
+Orig:  montana Dest:  new york Obs-to-sim ratio:  0.00394791760653922
+Orig:  montana Dest:  north carolina Simulated value is zero!!!!
+Orig:  montana Dest:  north dakota Obs-to-sim ratio:  5.20405475155852
+Orig:  montana Dest:  ohio Simulated value is zero!!!!
+Orig:  montana Dest:  oklahoma Simulated value is zero!!!!
+Orig:  montana Dest:  oregon Obs-to-sim ratio:  8.66568997400793
+Orig:  montana Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  montana Dest:  rhode island Simulated value is zero!!!!
+Orig:  montana Dest:  south carolina Obs-to-sim ratio:  0.0481748797037331
+Orig:  montana Dest:  south dakota Simulated value is zero!!!!
+Orig:  montana Dest:  tennessee Simulated value is zero!!!!
+Orig:  montana Dest:  texas Obs-to-sim ratio:  0.00400373636720821
+Orig:  montana Dest:  utah Obs-to-sim ratio:  0.370559462518644
+Orig:  montana Dest:  vermont Simulated value is zero!!!!
+Orig:  montana Dest:  virginia Obs-to-sim ratio:  0.0883084446084906
+Orig:  montana Dest:  west virginia Simulated value is zero!!!!
+Orig:  montana Dest:  wisconsin Simulated value is zero!!!!
+Orig:  montana Dest:  wyoming Simulated value is zero!!!!
+Orig:  nebraska Dest:  alabama Obs-to-sim ratio:  0.0810992577019102
+Orig:  nebraska Dest:  arizona Simulated value is zero!!!!
+Orig:  nebraska Dest:  arkansas Simulated value is zero!!!!
+Orig:  nebraska Dest:  california Obs-to-sim ratio:  0.629072534355668
+Orig:  nebraska Dest:  colorado Obs-to-sim ratio:  0.294095626827944
+Orig:  nebraska Dest:  connecticut Simulated value is zero!!!!
+Orig:  nebraska Dest:  delaware Simulated value is zero!!!!
+Orig:  nebraska Dest:  florida Simulated value is zero!!!!
+Orig:  nebraska Dest:  georgia Simulated value is zero!!!!
+Orig:  nebraska Dest:  idaho Simulated value is zero!!!!
+Orig:  nebraska Dest:  illinois Obs-to-sim ratio:  0.680878942714274
+Orig:  nebraska Dest:  indiana Simulated value is zero!!!!
+Orig:  nebraska Dest:  iowa Obs-to-sim ratio:  0.0171074713035855
+Orig:  nebraska Dest:  kansas Obs-to-sim ratio:  0.0370499074240223
+Orig:  nebraska Dest:  kentucky Simulated value is zero!!!!
+Orig:  nebraska Dest:  maine Simulated value is zero!!!!
+Orig:  nebraska Dest:  maryland Simulated value is zero!!!!
+Orig:  nebraska Dest:  massachusetts Simulated value is zero!!!!
+Orig:  nebraska Dest:  michigan Simulated value is zero!!!!
+Orig:  nebraska Dest:  minnesota Simulated value is zero!!!!
+Orig:  nebraska Dest:  mississippi Simulated value is zero!!!!
+Orig:  nebraska Dest:  missouri Simulated value is zero!!!!
+Orig:  nebraska Dest:  montana Simulated value is zero!!!!
+Orig:  nebraska Dest:  nebraska Obs-to-sim ratio:  0.221243335766045
+Orig:  nebraska Dest:  nevada Simulated value is zero!!!!
+Orig:  nebraska Dest:  new hampshire Simulated value is zero!!!!
+Orig:  nebraska Dest:  new jersey Simulated value is zero!!!!
+Orig:  nebraska Dest:  new mexico Simulated value is zero!!!!
+Orig:  nebraska Dest:  new york Obs-to-sim ratio:  0.352634266414873
+Orig:  nebraska Dest:  north carolina Simulated value is zero!!!!
+Orig:  nebraska Dest:  north dakota Simulated value is zero!!!!
+Orig:  nebraska Dest:  ohio Simulated value is zero!!!!
+Orig:  nebraska Dest:  oklahoma Simulated value is zero!!!!
+Orig:  nebraska Dest:  oregon Simulated value is zero!!!!
+Orig:  nebraska Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  nebraska Dest:  rhode island Simulated value is zero!!!!
+Orig:  nebraska Dest:  south carolina Simulated value is zero!!!!
+Orig:  nebraska Dest:  south dakota Obs-to-sim ratio:  0.00478054066818537
+Orig:  nebraska Dest:  tennessee Obs-to-sim ratio:  1.61937806234177
+Orig:  nebraska Dest:  texas Obs-to-sim ratio:  0.702652405100269
+Orig:  nebraska Dest:  utah Simulated value is zero!!!!
+Orig:  nebraska Dest:  vermont Simulated value is zero!!!!
+Orig:  nebraska Dest:  virginia Simulated value is zero!!!!
+Orig:  nebraska Dest:  west virginia Simulated value is zero!!!!
+Orig:  nebraska Dest:  wisconsin Simulated value is zero!!!!
+Orig:  nebraska Dest:  wyoming Simulated value is zero!!!!
+Orig:  nevada Dest:  alabama Simulated value is zero!!!!
+Orig:  nevada Dest:  arizona Simulated value is zero!!!!
+Orig:  nevada Dest:  arkansas Simulated value is zero!!!!
+Orig:  nevada Dest:  california Simulated value is zero!!!!
+Orig:  nevada Dest:  colorado Simulated value is zero!!!!
+Orig:  nevada Dest:  connecticut Simulated value is zero!!!!
+Orig:  nevada Dest:  delaware Simulated value is zero!!!!
+Orig:  nevada Dest:  florida Simulated value is zero!!!!
+Orig:  nevada Dest:  georgia Simulated value is zero!!!!
+Orig:  nevada Dest:  idaho Simulated value is zero!!!!
+Orig:  nevada Dest:  illinois Simulated value is zero!!!!
+Orig:  nevada Dest:  indiana Simulated value is zero!!!!
+Orig:  nevada Dest:  iowa Simulated value is zero!!!!
+Orig:  nevada Dest:  kansas Simulated value is zero!!!!
+Orig:  nevada Dest:  kentucky Simulated value is zero!!!!
+Orig:  nevada Dest:  maine Simulated value is zero!!!!
+Orig:  nevada Dest:  maryland Simulated value is zero!!!!
+Orig:  nevada Dest:  massachusetts Simulated value is zero!!!!
+Orig:  nevada Dest:  michigan Simulated value is zero!!!!
+Orig:  nevada Dest:  minnesota Simulated value is zero!!!!
+Orig:  nevada Dest:  mississippi Simulated value is zero!!!!
+Orig:  nevada Dest:  missouri Simulated value is zero!!!!
+Orig:  nevada Dest:  montana Simulated value is zero!!!!
+Orig:  nevada Dest:  nebraska Simulated value is zero!!!!
+Orig:  nevada Dest:  nevada Obs-to-sim ratio:  0.782179628549249
+Orig:  nevada Dest:  new hampshire Simulated value is zero!!!!
+Orig:  nevada Dest:  new jersey Simulated value is zero!!!!
+Orig:  nevada Dest:  new mexico Simulated value is zero!!!!
+Orig:  nevada Dest:  new york Simulated value is zero!!!!
+Orig:  nevada Dest:  north carolina Simulated value is zero!!!!
+Orig:  nevada Dest:  north dakota Simulated value is zero!!!!
+Orig:  nevada Dest:  ohio Simulated value is zero!!!!
+Orig:  nevada Dest:  oklahoma Simulated value is zero!!!!
+Orig:  nevada Dest:  oregon Simulated value is zero!!!!
+Orig:  nevada Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  nevada Dest:  rhode island Simulated value is zero!!!!
+Orig:  nevada Dest:  south carolina Simulated value is zero!!!!
+Orig:  nevada Dest:  south dakota Simulated value is zero!!!!
+Orig:  nevada Dest:  tennessee Simulated value is zero!!!!
+Orig:  nevada Dest:  texas Simulated value is zero!!!!
+Orig:  nevada Dest:  utah Simulated value is zero!!!!
+Orig:  nevada Dest:  vermont Simulated value is zero!!!!
+Orig:  nevada Dest:  virginia Simulated value is zero!!!!
+Orig:  nevada Dest:  west virginia Simulated value is zero!!!!
+Orig:  nevada Dest:  wisconsin Simulated value is zero!!!!
+Orig:  nevada Dest:  wyoming Simulated value is zero!!!!
+Orig:  new hampshire Dest:  alabama Simulated value is zero!!!!
+Orig:  new hampshire Dest:  arizona Simulated value is zero!!!!
+Orig:  new hampshire Dest:  arkansas Simulated value is zero!!!!
+Orig:  new hampshire Dest:  california Simulated value is zero!!!!
+Orig:  new hampshire Dest:  colorado Simulated value is zero!!!!
+Orig:  new hampshire Dest:  connecticut Simulated value is zero!!!!
+Orig:  new hampshire Dest:  delaware Simulated value is zero!!!!
+Orig:  new hampshire Dest:  florida Simulated value is zero!!!!
+Orig:  new hampshire Dest:  georgia Simulated value is zero!!!!
+Orig:  new hampshire Dest:  idaho Simulated value is zero!!!!
+Orig:  new hampshire Dest:  illinois Simulated value is zero!!!!
+Orig:  new hampshire Dest:  indiana Simulated value is zero!!!!
+Orig:  new hampshire Dest:  iowa Simulated value is zero!!!!
+Orig:  new hampshire Dest:  kansas Simulated value is zero!!!!
+Orig:  new hampshire Dest:  kentucky Simulated value is zero!!!!
+Orig:  new hampshire Dest:  maine Simulated value is zero!!!!
+Orig:  new hampshire Dest:  maryland Simulated value is zero!!!!
+Orig:  new hampshire Dest:  massachusetts Simulated value is zero!!!!
+Orig:  new hampshire Dest:  michigan Simulated value is zero!!!!
+Orig:  new hampshire Dest:  minnesota Simulated value is zero!!!!
+Orig:  new hampshire Dest:  mississippi Simulated value is zero!!!!
+Orig:  new hampshire Dest:  missouri Simulated value is zero!!!!
+Orig:  new hampshire Dest:  montana Simulated value is zero!!!!
+Orig:  new hampshire Dest:  nebraska Simulated value is zero!!!!
+Orig:  new hampshire Dest:  nevada Simulated value is zero!!!!
+Orig:  new hampshire Dest:  new hampshire Simulated value is zero!!!!
+Orig:  new hampshire Dest:  new jersey Simulated value is zero!!!!
+Orig:  new hampshire Dest:  new mexico Simulated value is zero!!!!
+Orig:  new hampshire Dest:  new york Simulated value is zero!!!!
+Orig:  new hampshire Dest:  north carolina Simulated value is zero!!!!
+Orig:  new hampshire Dest:  north dakota Simulated value is zero!!!!
+Orig:  new hampshire Dest:  ohio Simulated value is zero!!!!
+Orig:  new hampshire Dest:  oklahoma Simulated value is zero!!!!
+Orig:  new hampshire Dest:  oregon Simulated value is zero!!!!
+Orig:  new hampshire Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  new hampshire Dest:  rhode island Simulated value is zero!!!!
+Orig:  new hampshire Dest:  south carolina Simulated value is zero!!!!
+Orig:  new hampshire Dest:  south dakota Simulated value is zero!!!!
+Orig:  new hampshire Dest:  tennessee Simulated value is zero!!!!
+Orig:  new hampshire Dest:  texas Simulated value is zero!!!!
+Orig:  new hampshire Dest:  utah Simulated value is zero!!!!
+Orig:  new hampshire Dest:  vermont Simulated value is zero!!!!
+Orig:  new hampshire Dest:  virginia Simulated value is zero!!!!
+Orig:  new hampshire Dest:  west virginia Simulated value is zero!!!!
+Orig:  new hampshire Dest:  wisconsin Simulated value is zero!!!!
+Orig:  new hampshire Dest:  wyoming Simulated value is zero!!!!
+Orig:  new jersey Dest:  alabama Simulated value is zero!!!!
+Orig:  new jersey Dest:  arizona Simulated value is zero!!!!
+Orig:  new jersey Dest:  arkansas Simulated value is zero!!!!
+Orig:  new jersey Dest:  california Simulated value is zero!!!!
+Orig:  new jersey Dest:  colorado Simulated value is zero!!!!
+Orig:  new jersey Dest:  connecticut Simulated value is zero!!!!
+Orig:  new jersey Dest:  delaware Obs-to-sim ratio:  14.8278680003887
+Orig:  new jersey Dest:  florida Simulated value is zero!!!!
+Orig:  new jersey Dest:  georgia Obs-to-sim ratio:  0.0087154372357609
+Orig:  new jersey Dest:  idaho Simulated value is zero!!!!
+Orig:  new jersey Dest:  illinois Simulated value is zero!!!!
+Orig:  new jersey Dest:  indiana Simulated value is zero!!!!
+Orig:  new jersey Dest:  iowa Simulated value is zero!!!!
+Orig:  new jersey Dest:  kansas Simulated value is zero!!!!
+Orig:  new jersey Dest:  kentucky Simulated value is zero!!!!
+Orig:  new jersey Dest:  maine Simulated value is zero!!!!
+Orig:  new jersey Dest:  maryland Obs-to-sim ratio:  15.03298822076
+Orig:  new jersey Dest:  massachusetts Simulated value is zero!!!!
+Orig:  new jersey Dest:  michigan Simulated value is zero!!!!
+Orig:  new jersey Dest:  minnesota Simulated value is zero!!!!
+Orig:  new jersey Dest:  mississippi Simulated value is zero!!!!
+Orig:  new jersey Dest:  missouri Simulated value is zero!!!!
+Orig:  new jersey Dest:  montana Simulated value is zero!!!!
+Orig:  new jersey Dest:  nebraska Simulated value is zero!!!!
+Orig:  new jersey Dest:  nevada Simulated value is zero!!!!
+Orig:  new jersey Dest:  new hampshire Simulated value is zero!!!!
+Orig:  new jersey Dest:  new jersey Obs-to-sim ratio:  0.0384015457673906
+Orig:  new jersey Dest:  new mexico Simulated value is zero!!!!
+Orig:  new jersey Dest:  new york Obs-to-sim ratio:  0.210771504732157
+Orig:  new jersey Dest:  north carolina Simulated value is zero!!!!
+Orig:  new jersey Dest:  north dakota Simulated value is zero!!!!
+Orig:  new jersey Dest:  ohio Simulated value is zero!!!!
+Orig:  new jersey Dest:  oklahoma Simulated value is zero!!!!
+Orig:  new jersey Dest:  oregon Simulated value is zero!!!!
+Orig:  new jersey Dest:  pennsylvania Obs-to-sim ratio:  4.910056944773
+Orig:  new jersey Dest:  rhode island Simulated value is zero!!!!
+Orig:  new jersey Dest:  south carolina Simulated value is zero!!!!
+Orig:  new jersey Dest:  south dakota Simulated value is zero!!!!
+Orig:  new jersey Dest:  tennessee Simulated value is zero!!!!
+Orig:  new jersey Dest:  texas Simulated value is zero!!!!
+Orig:  new jersey Dest:  utah Simulated value is zero!!!!
+Orig:  new jersey Dest:  vermont Simulated value is zero!!!!
+Orig:  new jersey Dest:  virginia Simulated value is zero!!!!
+Orig:  new jersey Dest:  west virginia Simulated value is zero!!!!
+Orig:  new jersey Dest:  wisconsin Obs-to-sim ratio:  0.150041177444216
+Orig:  new jersey Dest:  wyoming Simulated value is zero!!!!
+Orig:  new mexico Dest:  alabama Simulated value is zero!!!!
+Orig:  new mexico Dest:  arizona Simulated value is zero!!!!
+Orig:  new mexico Dest:  arkansas Simulated value is zero!!!!
+Orig:  new mexico Dest:  california Obs-to-sim ratio:  0.00276837654003567
+Orig:  new mexico Dest:  colorado Simulated value is zero!!!!
+Orig:  new mexico Dest:  connecticut Simulated value is zero!!!!
+Orig:  new mexico Dest:  delaware Simulated value is zero!!!!
+Orig:  new mexico Dest:  florida Obs-to-sim ratio:  1.37872024794852
+Orig:  new mexico Dest:  georgia Simulated value is zero!!!!
+Orig:  new mexico Dest:  idaho Simulated value is zero!!!!
+Orig:  new mexico Dest:  illinois Simulated value is zero!!!!
+Orig:  new mexico Dest:  indiana Simulated value is zero!!!!
+Orig:  new mexico Dest:  iowa Simulated value is zero!!!!
+Orig:  new mexico Dest:  kansas Simulated value is zero!!!!
+Orig:  new mexico Dest:  kentucky Simulated value is zero!!!!
+Orig:  new mexico Dest:  maine Obs-to-sim ratio:  0.193056683531143
+Orig:  new mexico Dest:  maryland Simulated value is zero!!!!
+Orig:  new mexico Dest:  massachusetts Simulated value is zero!!!!
+Orig:  new mexico Dest:  michigan Obs-to-sim ratio:  0.0476959548660903
+Orig:  new mexico Dest:  minnesota Simulated value is zero!!!!
+Orig:  new mexico Dest:  mississippi Simulated value is zero!!!!
+Orig:  new mexico Dest:  missouri Obs-to-sim ratio:  0.0130993267460783
+Orig:  new mexico Dest:  montana Simulated value is zero!!!!
+Orig:  new mexico Dest:  nebraska Simulated value is zero!!!!
+Orig:  new mexico Dest:  nevada Simulated value is zero!!!!
+Orig:  new mexico Dest:  new hampshire Simulated value is zero!!!!
+Orig:  new mexico Dest:  new jersey Simulated value is zero!!!!
+Orig:  new mexico Dest:  new mexico Obs-to-sim ratio:  0.931191034284893
+Orig:  new mexico Dest:  new york Obs-to-sim ratio:  0.0192968650519502
+Orig:  new mexico Dest:  north carolina Simulated value is zero!!!!
+Orig:  new mexico Dest:  north dakota Simulated value is zero!!!!
+Orig:  new mexico Dest:  ohio Simulated value is zero!!!!
+Orig:  new mexico Dest:  oklahoma Simulated value is zero!!!!
+Orig:  new mexico Dest:  oregon Simulated value is zero!!!!
+Orig:  new mexico Dest:  pennsylvania Obs-to-sim ratio:  0.00690074181255682
+Orig:  new mexico Dest:  rhode island Simulated value is zero!!!!
+Orig:  new mexico Dest:  south carolina Simulated value is zero!!!!
+Orig:  new mexico Dest:  south dakota Simulated value is zero!!!!
+Orig:  new mexico Dest:  tennessee Simulated value is zero!!!!
+Orig:  new mexico Dest:  texas Obs-to-sim ratio:  0.497078844834802
+Orig:  new mexico Dest:  utah Simulated value is zero!!!!
+Orig:  new mexico Dest:  vermont Simulated value is zero!!!!
+Orig:  new mexico Dest:  virginia Obs-to-sim ratio:  0.00557954109999431
+Orig:  new mexico Dest:  west virginia Simulated value is zero!!!!
+Orig:  new mexico Dest:  wisconsin Simulated value is zero!!!!
+Orig:  new mexico Dest:  wyoming Simulated value is zero!!!!
+Orig:  new york Dest:  alabama Simulated value is zero!!!!
+Orig:  new york Dest:  arizona Simulated value is zero!!!!
+Orig:  new york Dest:  arkansas Simulated value is zero!!!!
+Orig:  new york Dest:  california Obs-to-sim ratio:  1.24200448374137
+Orig:  new york Dest:  colorado Simulated value is zero!!!!
+Orig:  new york Dest:  connecticut Simulated value is zero!!!!
+Orig:  new york Dest:  delaware Obs-to-sim ratio:  11.4648783892859
+Orig:  new york Dest:  florida Obs-to-sim ratio:  0.568972952415207
+Orig:  new york Dest:  georgia Obs-to-sim ratio:  2.39636808673098
+Orig:  new york Dest:  idaho Simulated value is zero!!!!
+Orig:  new york Dest:  illinois Obs-to-sim ratio:  2.3328582040357
+Orig:  new york Dest:  indiana Obs-to-sim ratio:  4.70075607694682
+Orig:  new york Dest:  iowa Simulated value is zero!!!!
+Orig:  new york Dest:  kansas Simulated value is zero!!!!
+Orig:  new york Dest:  kentucky Simulated value is zero!!!!
+Orig:  new york Dest:  maine Simulated value is zero!!!!
+Orig:  new york Dest:  maryland Obs-to-sim ratio:  0.0349762884848735
+Orig:  new york Dest:  massachusetts Simulated value is zero!!!!
+Orig:  new york Dest:  michigan Obs-to-sim ratio:  0.209669249996021
+Orig:  new york Dest:  minnesota Simulated value is zero!!!!
+Orig:  new york Dest:  mississippi Simulated value is zero!!!!
+Orig:  new york Dest:  missouri Simulated value is zero!!!!
+Orig:  new york Dest:  montana Simulated value is zero!!!!
+Orig:  new york Dest:  nebraska Simulated value is zero!!!!
+Orig:  new york Dest:  nevada Simulated value is zero!!!!
+Orig:  new york Dest:  new hampshire Simulated value is zero!!!!
+Orig:  new york Dest:  new jersey Obs-to-sim ratio:  0.014100258684794
+Orig:  new york Dest:  new mexico Simulated value is zero!!!!
+Orig:  new york Dest:  new york Obs-to-sim ratio:  0.935850369537121
+Orig:  new york Dest:  north carolina Simulated value is zero!!!!
+Orig:  new york Dest:  north dakota Simulated value is zero!!!!
+Orig:  new york Dest:  ohio Simulated value is zero!!!!
+Orig:  new york Dest:  oklahoma Simulated value is zero!!!!
+Orig:  new york Dest:  oregon Simulated value is zero!!!!
+Orig:  new york Dest:  pennsylvania Obs-to-sim ratio:  2.33421059490268
+Orig:  new york Dest:  rhode island Simulated value is zero!!!!
+Orig:  new york Dest:  south carolina Simulated value is zero!!!!
+Orig:  new york Dest:  south dakota Simulated value is zero!!!!
+Orig:  new york Dest:  tennessee Obs-to-sim ratio:  0.485814311766205
+Orig:  new york Dest:  texas Obs-to-sim ratio:  1.00942293434286
+Orig:  new york Dest:  utah Simulated value is zero!!!!
+Orig:  new york Dest:  vermont Obs-to-sim ratio:  1.12508487232309
+Orig:  new york Dest:  virginia Obs-to-sim ratio:  0.0219951066290661
+Orig:  new york Dest:  west virginia Simulated value is zero!!!!
+Orig:  new york Dest:  wisconsin Simulated value is zero!!!!
+Orig:  new york Dest:  wyoming Simulated value is zero!!!!
+Orig:  north carolina Dest:  alabama Simulated value is zero!!!!
+Orig:  north carolina Dest:  arizona Simulated value is zero!!!!
+Orig:  north carolina Dest:  arkansas Simulated value is zero!!!!
+Orig:  north carolina Dest:  california Simulated value is zero!!!!
+Orig:  north carolina Dest:  colorado Simulated value is zero!!!!
+Orig:  north carolina Dest:  connecticut Simulated value is zero!!!!
+Orig:  north carolina Dest:  delaware Simulated value is zero!!!!
+Orig:  north carolina Dest:  florida Simulated value is zero!!!!
+Orig:  north carolina Dest:  georgia Obs-to-sim ratio:  0.298558024682241
+Orig:  north carolina Dest:  idaho Simulated value is zero!!!!
+Orig:  north carolina Dest:  illinois Simulated value is zero!!!!
+Orig:  north carolina Dest:  indiana Simulated value is zero!!!!
+Orig:  north carolina Dest:  iowa Simulated value is zero!!!!
+Orig:  north carolina Dest:  kansas Simulated value is zero!!!!
+Orig:  north carolina Dest:  kentucky Simulated value is zero!!!!
+Orig:  north carolina Dest:  maine Simulated value is zero!!!!
+Orig:  north carolina Dest:  maryland Simulated value is zero!!!!
+Orig:  north carolina Dest:  massachusetts Simulated value is zero!!!!
+Orig:  north carolina Dest:  michigan Simulated value is zero!!!!
+Orig:  north carolina Dest:  minnesota Simulated value is zero!!!!
+Orig:  north carolina Dest:  mississippi Simulated value is zero!!!!
+Orig:  north carolina Dest:  missouri Simulated value is zero!!!!
+Orig:  north carolina Dest:  montana Simulated value is zero!!!!
+Orig:  north carolina Dest:  nebraska Simulated value is zero!!!!
+Orig:  north carolina Dest:  nevada Simulated value is zero!!!!
+Orig:  north carolina Dest:  new hampshire Simulated value is zero!!!!
+Orig:  north carolina Dest:  new jersey Simulated value is zero!!!!
+Orig:  north carolina Dest:  new mexico Simulated value is zero!!!!
+Orig:  north carolina Dest:  new york Simulated value is zero!!!!
+Orig:  north carolina Dest:  north carolina Obs-to-sim ratio:  0.341830901111395
+Orig:  north carolina Dest:  north dakota Simulated value is zero!!!!
+Orig:  north carolina Dest:  ohio Simulated value is zero!!!!
+Orig:  north carolina Dest:  oklahoma Simulated value is zero!!!!
+Orig:  north carolina Dest:  oregon Simulated value is zero!!!!
+Orig:  north carolina Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  north carolina Dest:  rhode island Simulated value is zero!!!!
+Orig:  north carolina Dest:  south carolina Obs-to-sim ratio:  0.255180510941725
+Orig:  north carolina Dest:  south dakota Simulated value is zero!!!!
+Orig:  north carolina Dest:  tennessee Simulated value is zero!!!!
+Orig:  north carolina Dest:  texas Simulated value is zero!!!!
+Orig:  north carolina Dest:  utah Simulated value is zero!!!!
+Orig:  north carolina Dest:  vermont Simulated value is zero!!!!
+Orig:  north carolina Dest:  virginia Obs-to-sim ratio:  0.182833006677511
+Orig:  north carolina Dest:  west virginia Simulated value is zero!!!!
+Orig:  north carolina Dest:  wisconsin Simulated value is zero!!!!
+Orig:  north carolina Dest:  wyoming Simulated value is zero!!!!
+Orig:  north dakota Dest:  alabama Simulated value is zero!!!!
+Orig:  north dakota Dest:  arizona Obs-to-sim ratio:  0.135078527365557
+Orig:  north dakota Dest:  arkansas Obs-to-sim ratio:  0.000369101997819961
+Orig:  north dakota Dest:  california Obs-to-sim ratio:  0.0402074057310365
+Orig:  north dakota Dest:  colorado Simulated value is zero!!!!
+Orig:  north dakota Dest:  connecticut Simulated value is zero!!!!
+Orig:  north dakota Dest:  delaware Simulated value is zero!!!!
+Orig:  north dakota Dest:  florida Simulated value is zero!!!!
+Orig:  north dakota Dest:  georgia Simulated value is zero!!!!
+Orig:  north dakota Dest:  idaho Obs-to-sim ratio:  0.00732893260845433
+Orig:  north dakota Dest:  illinois Obs-to-sim ratio:  0.944909344628338
+Orig:  north dakota Dest:  indiana Obs-to-sim ratio:  0.0290047613508143
+Orig:  north dakota Dest:  iowa Obs-to-sim ratio:  0.683925270962975
+Orig:  north dakota Dest:  kansas Obs-to-sim ratio:  0.00727131313765964
+Orig:  north dakota Dest:  kentucky Simulated value is zero!!!!
+Orig:  north dakota Dest:  maine Simulated value is zero!!!!
+Orig:  north dakota Dest:  maryland Simulated value is zero!!!!
+Orig:  north dakota Dest:  massachusetts Simulated value is zero!!!!
+Orig:  north dakota Dest:  michigan Simulated value is zero!!!!
+Orig:  north dakota Dest:  minnesota Obs-to-sim ratio:  2.17218772195914
+Orig:  north dakota Dest:  mississippi Simulated value is zero!!!!
+Orig:  north dakota Dest:  missouri Obs-to-sim ratio:  0.847463426972359
+Orig:  north dakota Dest:  montana Obs-to-sim ratio:  0.0135233249873459
+Orig:  north dakota Dest:  nebraska Obs-to-sim ratio:  0.42348472433982
+Orig:  north dakota Dest:  nevada Simulated value is zero!!!!
+Orig:  north dakota Dest:  new hampshire Simulated value is zero!!!!
+Orig:  north dakota Dest:  new jersey Obs-to-sim ratio:  0.808225116302429
+Orig:  north dakota Dest:  new mexico Obs-to-sim ratio:  0.862245717335535
+Orig:  north dakota Dest:  new york Obs-to-sim ratio:  0.0845936468445686
+Orig:  north dakota Dest:  north carolina Obs-to-sim ratio:  0.767427776433047
+Orig:  north dakota Dest:  north dakota Obs-to-sim ratio:  0.73943123591337
+Orig:  north dakota Dest:  ohio Simulated value is zero!!!!
+Orig:  north dakota Dest:  oklahoma Obs-to-sim ratio:  0.0559575868545827
+Orig:  north dakota Dest:  oregon Obs-to-sim ratio:  0.0368278441700813
+Orig:  north dakota Dest:  pennsylvania Obs-to-sim ratio:  0.115039911012051
+Orig:  north dakota Dest:  rhode island Simulated value is zero!!!!
+Orig:  north dakota Dest:  south carolina Simulated value is zero!!!!
+Orig:  north dakota Dest:  south dakota Obs-to-sim ratio:  1.04354689152613
+Orig:  north dakota Dest:  tennessee Obs-to-sim ratio:  0.00640317647769799
+Orig:  north dakota Dest:  texas Obs-to-sim ratio:  0.00145051582351754
+Orig:  north dakota Dest:  utah Simulated value is zero!!!!
+Orig:  north dakota Dest:  vermont Simulated value is zero!!!!
+Orig:  north dakota Dest:  virginia Obs-to-sim ratio:  0.349858447414715
+Orig:  north dakota Dest:  west virginia Simulated value is zero!!!!
+Orig:  north dakota Dest:  wisconsin Obs-to-sim ratio:  1.30188315359156
+Orig:  north dakota Dest:  wyoming Simulated value is zero!!!!
+Orig:  ohio Dest:  alabama Simulated value is zero!!!!
+Orig:  ohio Dest:  arizona Simulated value is zero!!!!
+Orig:  ohio Dest:  arkansas Obs-to-sim ratio:  0.00431122977131098
+Orig:  ohio Dest:  california Obs-to-sim ratio:  4.18762975206135e-06
+Orig:  ohio Dest:  colorado Obs-to-sim ratio:  0.0106190021130759
+Orig:  ohio Dest:  connecticut Simulated value is zero!!!!
+Orig:  ohio Dest:  delaware Simulated value is zero!!!!
+Orig:  ohio Dest:  florida Simulated value is zero!!!!
+Orig:  ohio Dest:  georgia Obs-to-sim ratio:  0.048966137223072
+Orig:  ohio Dest:  idaho Simulated value is zero!!!!
+Orig:  ohio Dest:  illinois Simulated value is zero!!!!
+Orig:  ohio Dest:  indiana Obs-to-sim ratio:  3.9289693514757
+Orig:  ohio Dest:  iowa Obs-to-sim ratio:  0.000793913181419015
+Orig:  ohio Dest:  kansas Obs-to-sim ratio:  0.000494513972607289
+Orig:  ohio Dest:  kentucky Obs-to-sim ratio:  0.046415522001678
+Orig:  ohio Dest:  maine Simulated value is zero!!!!
+Orig:  ohio Dest:  maryland Simulated value is zero!!!!
+Orig:  ohio Dest:  massachusetts Simulated value is zero!!!!
+Orig:  ohio Dest:  michigan Obs-to-sim ratio:  0.0503952790201531
+Orig:  ohio Dest:  minnesota Simulated value is zero!!!!
+Orig:  ohio Dest:  mississippi Simulated value is zero!!!!
+Orig:  ohio Dest:  missouri Obs-to-sim ratio:  0.00991328539625981
+Orig:  ohio Dest:  montana Simulated value is zero!!!!
+Orig:  ohio Dest:  nebraska Simulated value is zero!!!!
+Orig:  ohio Dest:  nevada Simulated value is zero!!!!
+Orig:  ohio Dest:  new hampshire Obs-to-sim ratio:  0.196940865155534
+Orig:  ohio Dest:  new jersey Obs-to-sim ratio:  0.00384640756427848
+Orig:  ohio Dest:  new mexico Simulated value is zero!!!!
+Orig:  ohio Dest:  new york Obs-to-sim ratio:  0.00215013135343894
+Orig:  ohio Dest:  north carolina Obs-to-sim ratio:  1.74478328924153
+Orig:  ohio Dest:  north dakota Simulated value is zero!!!!
+Orig:  ohio Dest:  ohio Obs-to-sim ratio:  0.335695875142437
+Orig:  ohio Dest:  oklahoma Simulated value is zero!!!!
+Orig:  ohio Dest:  oregon Simulated value is zero!!!!
+Orig:  ohio Dest:  pennsylvania Obs-to-sim ratio:  0.314276288141997
+Orig:  ohio Dest:  rhode island Simulated value is zero!!!!
+Orig:  ohio Dest:  south carolina Obs-to-sim ratio:  3.28659805048946
+Orig:  ohio Dest:  south dakota Simulated value is zero!!!!
+Orig:  ohio Dest:  tennessee Obs-to-sim ratio:  0.115548764615121
+Orig:  ohio Dest:  texas Simulated value is zero!!!!
+Orig:  ohio Dest:  utah Simulated value is zero!!!!
+Orig:  ohio Dest:  vermont Simulated value is zero!!!!
+Orig:  ohio Dest:  virginia Obs-to-sim ratio:  0.0526136353474375
+Orig:  ohio Dest:  west virginia Obs-to-sim ratio:  0.532347197997368
+Orig:  ohio Dest:  wisconsin Simulated value is zero!!!!
+Orig:  ohio Dest:  wyoming Simulated value is zero!!!!
+Orig:  oklahoma Dest:  alabama Simulated value is zero!!!!
+Orig:  oklahoma Dest:  arizona Simulated value is zero!!!!
+Orig:  oklahoma Dest:  arkansas Obs-to-sim ratio:  0.127733288169044
+Orig:  oklahoma Dest:  california Simulated value is zero!!!!
+Orig:  oklahoma Dest:  colorado Simulated value is zero!!!!
+Orig:  oklahoma Dest:  connecticut Simulated value is zero!!!!
+Orig:  oklahoma Dest:  delaware Simulated value is zero!!!!
+Orig:  oklahoma Dest:  florida Simulated value is zero!!!!
+Orig:  oklahoma Dest:  georgia Simulated value is zero!!!!
+Orig:  oklahoma Dest:  idaho Simulated value is zero!!!!
+Orig:  oklahoma Dest:  illinois Simulated value is zero!!!!
+Orig:  oklahoma Dest:  indiana Simulated value is zero!!!!
+Orig:  oklahoma Dest:  iowa Simulated value is zero!!!!
+Orig:  oklahoma Dest:  kansas Obs-to-sim ratio:  0.0157437954399498
+Orig:  oklahoma Dest:  kentucky Simulated value is zero!!!!
+Orig:  oklahoma Dest:  maine Simulated value is zero!!!!
+Orig:  oklahoma Dest:  maryland Simulated value is zero!!!!
+Orig:  oklahoma Dest:  massachusetts Simulated value is zero!!!!
+Orig:  oklahoma Dest:  michigan Simulated value is zero!!!!
+Orig:  oklahoma Dest:  minnesota Simulated value is zero!!!!
+Orig:  oklahoma Dest:  mississippi Simulated value is zero!!!!
+Orig:  oklahoma Dest:  missouri Obs-to-sim ratio:  0.00675374313210563
+Orig:  oklahoma Dest:  montana Simulated value is zero!!!!
+Orig:  oklahoma Dest:  nebraska Obs-to-sim ratio:  0.889982335805821
+Orig:  oklahoma Dest:  nevada Simulated value is zero!!!!
+Orig:  oklahoma Dest:  new hampshire Simulated value is zero!!!!
+Orig:  oklahoma Dest:  new jersey Simulated value is zero!!!!
+Orig:  oklahoma Dest:  new mexico Simulated value is zero!!!!
+Orig:  oklahoma Dest:  new york Simulated value is zero!!!!
+Orig:  oklahoma Dest:  north carolina Simulated value is zero!!!!
+Orig:  oklahoma Dest:  north dakota Simulated value is zero!!!!
+Orig:  oklahoma Dest:  ohio Simulated value is zero!!!!
+Orig:  oklahoma Dest:  oklahoma Obs-to-sim ratio:  0.636539148440447
+Orig:  oklahoma Dest:  oregon Simulated value is zero!!!!
+Orig:  oklahoma Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  oklahoma Dest:  rhode island Simulated value is zero!!!!
+Orig:  oklahoma Dest:  south carolina Simulated value is zero!!!!
+Orig:  oklahoma Dest:  south dakota Simulated value is zero!!!!
+Orig:  oklahoma Dest:  tennessee Simulated value is zero!!!!
+Orig:  oklahoma Dest:  texas Obs-to-sim ratio:  0.0548963710188888
+Orig:  oklahoma Dest:  utah Simulated value is zero!!!!
+Orig:  oklahoma Dest:  vermont Simulated value is zero!!!!
+Orig:  oklahoma Dest:  virginia Simulated value is zero!!!!
+Orig:  oklahoma Dest:  west virginia Simulated value is zero!!!!
+Orig:  oklahoma Dest:  wisconsin Simulated value is zero!!!!
+Orig:  oklahoma Dest:  wyoming Simulated value is zero!!!!
+Orig:  oregon Dest:  alabama Simulated value is zero!!!!
+Orig:  oregon Dest:  arizona Simulated value is zero!!!!
+Orig:  oregon Dest:  arkansas Simulated value is zero!!!!
+Orig:  oregon Dest:  california Obs-to-sim ratio:  0.115873797765075
+Orig:  oregon Dest:  colorado Obs-to-sim ratio:  0.0524384405658537
+Orig:  oregon Dest:  connecticut Simulated value is zero!!!!
+Orig:  oregon Dest:  delaware Simulated value is zero!!!!
+Orig:  oregon Dest:  florida Obs-to-sim ratio:  0.234257956569217
+Orig:  oregon Dest:  georgia Simulated value is zero!!!!
+Orig:  oregon Dest:  idaho Obs-to-sim ratio:  0.00072542674153526
+Orig:  oregon Dest:  illinois Obs-to-sim ratio:  2.2579055195465
+Orig:  oregon Dest:  indiana Obs-to-sim ratio:  0.561038896827313
+Orig:  oregon Dest:  iowa Simulated value is zero!!!!
+Orig:  oregon Dest:  kansas Simulated value is zero!!!!
+Orig:  oregon Dest:  kentucky Simulated value is zero!!!!
+Orig:  oregon Dest:  maine Simulated value is zero!!!!
+Orig:  oregon Dest:  maryland Obs-to-sim ratio:  1.20299145857817
+Orig:  oregon Dest:  massachusetts Simulated value is zero!!!!
+Orig:  oregon Dest:  michigan Simulated value is zero!!!!
+Orig:  oregon Dest:  minnesota Simulated value is zero!!!!
+Orig:  oregon Dest:  mississippi Simulated value is zero!!!!
+Orig:  oregon Dest:  missouri Simulated value is zero!!!!
+Orig:  oregon Dest:  montana Simulated value is zero!!!!
+Orig:  oregon Dest:  nebraska Simulated value is zero!!!!
+Orig:  oregon Dest:  nevada Simulated value is zero!!!!
+Orig:  oregon Dest:  new hampshire Simulated value is zero!!!!
+Orig:  oregon Dest:  new jersey Obs-to-sim ratio:  0.290424938846982
+Orig:  oregon Dest:  new mexico Simulated value is zero!!!!
+Orig:  oregon Dest:  new york Obs-to-sim ratio:  0.113212739822671
+Orig:  oregon Dest:  north carolina Obs-to-sim ratio:  0.153258516709097
+Orig:  oregon Dest:  north dakota Simulated value is zero!!!!
+Orig:  oregon Dest:  ohio Obs-to-sim ratio:  1.58820818374385
+Orig:  oregon Dest:  oklahoma Simulated value is zero!!!!
+Orig:  oregon Dest:  oregon Obs-to-sim ratio:  0.356098725336391
+Orig:  oregon Dest:  pennsylvania Obs-to-sim ratio:  0.0937798261463782
+Orig:  oregon Dest:  rhode island Simulated value is zero!!!!
+Orig:  oregon Dest:  south carolina Simulated value is zero!!!!
+Orig:  oregon Dest:  south dakota Simulated value is zero!!!!
+Orig:  oregon Dest:  tennessee Simulated value is zero!!!!
+Orig:  oregon Dest:  texas Obs-to-sim ratio:  0.496057594616116
+Orig:  oregon Dest:  utah Simulated value is zero!!!!
+Orig:  oregon Dest:  vermont Simulated value is zero!!!!
+Orig:  oregon Dest:  virginia Simulated value is zero!!!!
+Orig:  oregon Dest:  west virginia Simulated value is zero!!!!
+Orig:  oregon Dest:  wisconsin Obs-to-sim ratio:  0.260159729032705
+Orig:  oregon Dest:  wyoming Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  alabama Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  arizona Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  arkansas Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  california Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  colorado Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  connecticut Obs-to-sim ratio:  0.000130487260289164
+Orig:  pennsylvania Dest:  delaware Obs-to-sim ratio:  0.324618689501017
+Orig:  pennsylvania Dest:  florida Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  georgia Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  idaho Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  illinois Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  indiana Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  iowa Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  kansas Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  kentucky Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  maine Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  maryland Obs-to-sim ratio:  0.650615985391714
+Orig:  pennsylvania Dest:  massachusetts Obs-to-sim ratio:  0.916957252292819
+Orig:  pennsylvania Dest:  michigan Obs-to-sim ratio:  1.53954526479457
+Orig:  pennsylvania Dest:  minnesota Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  mississippi Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  missouri Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  montana Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  nebraska Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  nevada Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  new hampshire Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  new jersey Obs-to-sim ratio:  0.0243998127618227
+Orig:  pennsylvania Dest:  new mexico Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  new york Obs-to-sim ratio:  0.0117588922329748
+Orig:  pennsylvania Dest:  north carolina Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  north dakota Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  ohio Obs-to-sim ratio:  0.138916879561363
+Orig:  pennsylvania Dest:  oklahoma Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  oregon Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  pennsylvania Obs-to-sim ratio:  0.149248583753641
+Orig:  pennsylvania Dest:  rhode island Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  south carolina Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  south dakota Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  tennessee Obs-to-sim ratio:  0.269853635320653
+Orig:  pennsylvania Dest:  texas Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  utah Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  vermont Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  virginia Obs-to-sim ratio:  0.241751256021668
+Orig:  pennsylvania Dest:  west virginia Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  wisconsin Simulated value is zero!!!!
+Orig:  pennsylvania Dest:  wyoming Simulated value is zero!!!!
+Orig:  rhode island Dest:  alabama Simulated value is zero!!!!
+Orig:  rhode island Dest:  arizona Simulated value is zero!!!!
+Orig:  rhode island Dest:  arkansas Simulated value is zero!!!!
+Orig:  rhode island Dest:  california Simulated value is zero!!!!
+Orig:  rhode island Dest:  colorado Simulated value is zero!!!!
+Orig:  rhode island Dest:  connecticut Simulated value is zero!!!!
+Orig:  rhode island Dest:  delaware Simulated value is zero!!!!
+Orig:  rhode island Dest:  florida Simulated value is zero!!!!
+Orig:  rhode island Dest:  georgia Simulated value is zero!!!!
+Orig:  rhode island Dest:  idaho Simulated value is zero!!!!
+Orig:  rhode island Dest:  illinois Simulated value is zero!!!!
+Orig:  rhode island Dest:  indiana Simulated value is zero!!!!
+Orig:  rhode island Dest:  iowa Simulated value is zero!!!!
+Orig:  rhode island Dest:  kansas Simulated value is zero!!!!
+Orig:  rhode island Dest:  kentucky Simulated value is zero!!!!
+Orig:  rhode island Dest:  maine Simulated value is zero!!!!
+Orig:  rhode island Dest:  maryland Simulated value is zero!!!!
+Orig:  rhode island Dest:  massachusetts Simulated value is zero!!!!
+Orig:  rhode island Dest:  michigan Simulated value is zero!!!!
+Orig:  rhode island Dest:  minnesota Simulated value is zero!!!!
+Orig:  rhode island Dest:  mississippi Simulated value is zero!!!!
+Orig:  rhode island Dest:  missouri Simulated value is zero!!!!
+Orig:  rhode island Dest:  montana Simulated value is zero!!!!
+Orig:  rhode island Dest:  nebraska Simulated value is zero!!!!
+Orig:  rhode island Dest:  nevada Simulated value is zero!!!!
+Orig:  rhode island Dest:  new hampshire Simulated value is zero!!!!
+Orig:  rhode island Dest:  new jersey Simulated value is zero!!!!
+Orig:  rhode island Dest:  new mexico Simulated value is zero!!!!
+Orig:  rhode island Dest:  new york Simulated value is zero!!!!
+Orig:  rhode island Dest:  north carolina Simulated value is zero!!!!
+Orig:  rhode island Dest:  north dakota Simulated value is zero!!!!
+Orig:  rhode island Dest:  ohio Simulated value is zero!!!!
+Orig:  rhode island Dest:  oklahoma Simulated value is zero!!!!
+Orig:  rhode island Dest:  oregon Simulated value is zero!!!!
+Orig:  rhode island Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  rhode island Dest:  rhode island Simulated value is zero!!!!
+Orig:  rhode island Dest:  south carolina Simulated value is zero!!!!
+Orig:  rhode island Dest:  south dakota Simulated value is zero!!!!
+Orig:  rhode island Dest:  tennessee Simulated value is zero!!!!
+Orig:  rhode island Dest:  texas Simulated value is zero!!!!
+Orig:  rhode island Dest:  utah Simulated value is zero!!!!
+Orig:  rhode island Dest:  vermont Simulated value is zero!!!!
+Orig:  rhode island Dest:  virginia Simulated value is zero!!!!
+Orig:  rhode island Dest:  west virginia Simulated value is zero!!!!
+Orig:  rhode island Dest:  wisconsin Simulated value is zero!!!!
+Orig:  rhode island Dest:  wyoming Simulated value is zero!!!!
+Orig:  south carolina Dest:  alabama Simulated value is zero!!!!
+Orig:  south carolina Dest:  arizona Simulated value is zero!!!!
+Orig:  south carolina Dest:  arkansas Simulated value is zero!!!!
+Orig:  south carolina Dest:  california Simulated value is zero!!!!
+Orig:  south carolina Dest:  colorado Simulated value is zero!!!!
+Orig:  south carolina Dest:  connecticut Simulated value is zero!!!!
+Orig:  south carolina Dest:  delaware Simulated value is zero!!!!
+Orig:  south carolina Dest:  florida Simulated value is zero!!!!
+Orig:  south carolina Dest:  georgia Simulated value is zero!!!!
+Orig:  south carolina Dest:  idaho Simulated value is zero!!!!
+Orig:  south carolina Dest:  illinois Simulated value is zero!!!!
+Orig:  south carolina Dest:  indiana Simulated value is zero!!!!
+Orig:  south carolina Dest:  iowa Simulated value is zero!!!!
+Orig:  south carolina Dest:  kansas Simulated value is zero!!!!
+Orig:  south carolina Dest:  kentucky Simulated value is zero!!!!
+Orig:  south carolina Dest:  maine Simulated value is zero!!!!
+Orig:  south carolina Dest:  maryland Simulated value is zero!!!!
+Orig:  south carolina Dest:  massachusetts Simulated value is zero!!!!
+Orig:  south carolina Dest:  michigan Simulated value is zero!!!!
+Orig:  south carolina Dest:  minnesota Simulated value is zero!!!!
+Orig:  south carolina Dest:  mississippi Simulated value is zero!!!!
+Orig:  south carolina Dest:  missouri Simulated value is zero!!!!
+Orig:  south carolina Dest:  montana Simulated value is zero!!!!
+Orig:  south carolina Dest:  nebraska Simulated value is zero!!!!
+Orig:  south carolina Dest:  nevada Simulated value is zero!!!!
+Orig:  south carolina Dest:  new hampshire Simulated value is zero!!!!
+Orig:  south carolina Dest:  new jersey Simulated value is zero!!!!
+Orig:  south carolina Dest:  new mexico Simulated value is zero!!!!
+Orig:  south carolina Dest:  new york Simulated value is zero!!!!
+Orig:  south carolina Dest:  north carolina Obs-to-sim ratio:  0.0564219682774666
+Orig:  south carolina Dest:  north dakota Simulated value is zero!!!!
+Orig:  south carolina Dest:  ohio Simulated value is zero!!!!
+Orig:  south carolina Dest:  oklahoma Simulated value is zero!!!!
+Orig:  south carolina Dest:  oregon Simulated value is zero!!!!
+Orig:  south carolina Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  south carolina Dest:  rhode island Simulated value is zero!!!!
+Orig:  south carolina Dest:  south carolina Obs-to-sim ratio:  0.208432048324586
+Orig:  south carolina Dest:  south dakota Simulated value is zero!!!!
+Orig:  south carolina Dest:  tennessee Simulated value is zero!!!!
+Orig:  south carolina Dest:  texas Simulated value is zero!!!!
+Orig:  south carolina Dest:  utah Simulated value is zero!!!!
+Orig:  south carolina Dest:  vermont Simulated value is zero!!!!
+Orig:  south carolina Dest:  virginia Simulated value is zero!!!!
+Orig:  south carolina Dest:  west virginia Simulated value is zero!!!!
+Orig:  south carolina Dest:  wisconsin Simulated value is zero!!!!
+Orig:  south carolina Dest:  wyoming Simulated value is zero!!!!
+Orig:  south dakota Dest:  alabama Simulated value is zero!!!!
+Orig:  south dakota Dest:  arizona Obs-to-sim ratio:  0.34435815068068
+Orig:  south dakota Dest:  arkansas Simulated value is zero!!!!
+Orig:  south dakota Dest:  california Obs-to-sim ratio:  0.362047206908649
+Orig:  south dakota Dest:  colorado Simulated value is zero!!!!
+Orig:  south dakota Dest:  connecticut Simulated value is zero!!!!
+Orig:  south dakota Dest:  delaware Simulated value is zero!!!!
+Orig:  south dakota Dest:  florida Simulated value is zero!!!!
+Orig:  south dakota Dest:  georgia Simulated value is zero!!!!
+Orig:  south dakota Dest:  idaho Obs-to-sim ratio:  0.0179989218547984
+Orig:  south dakota Dest:  illinois Obs-to-sim ratio:  2.27655922332529
+Orig:  south dakota Dest:  indiana Simulated value is zero!!!!
+Orig:  south dakota Dest:  iowa Obs-to-sim ratio:  0.462501474963206
+Orig:  south dakota Dest:  kansas Obs-to-sim ratio:  0.127794260562077
+Orig:  south dakota Dest:  kentucky Simulated value is zero!!!!
+Orig:  south dakota Dest:  maine Simulated value is zero!!!!
+Orig:  south dakota Dest:  maryland Simulated value is zero!!!!
+Orig:  south dakota Dest:  massachusetts Simulated value is zero!!!!
+Orig:  south dakota Dest:  michigan Simulated value is zero!!!!
+Orig:  south dakota Dest:  minnesota Obs-to-sim ratio:  1.49035335892997
+Orig:  south dakota Dest:  mississippi Simulated value is zero!!!!
+Orig:  south dakota Dest:  missouri Obs-to-sim ratio:  0.180898264443451
+Orig:  south dakota Dest:  montana Obs-to-sim ratio:  0.00618626087751795
+Orig:  south dakota Dest:  nebraska Obs-to-sim ratio:  0.0910544953739529
+Orig:  south dakota Dest:  nevada Simulated value is zero!!!!
+Orig:  south dakota Dest:  new hampshire Simulated value is zero!!!!
+Orig:  south dakota Dest:  new jersey Simulated value is zero!!!!
+Orig:  south dakota Dest:  new mexico Simulated value is zero!!!!
+Orig:  south dakota Dest:  new york Simulated value is zero!!!!
+Orig:  south dakota Dest:  north carolina Obs-to-sim ratio:  0.0216706744694564
+Orig:  south dakota Dest:  north dakota Obs-to-sim ratio:  0.061192111329489
+Orig:  south dakota Dest:  ohio Simulated value is zero!!!!
+Orig:  south dakota Dest:  oklahoma Simulated value is zero!!!!
+Orig:  south dakota Dest:  oregon Simulated value is zero!!!!
+Orig:  south dakota Dest:  pennsylvania Obs-to-sim ratio:  0.0787422719338654
+Orig:  south dakota Dest:  rhode island Simulated value is zero!!!!
+Orig:  south dakota Dest:  south carolina Simulated value is zero!!!!
+Orig:  south dakota Dest:  south dakota Obs-to-sim ratio:  0.423224351673282
+Orig:  south dakota Dest:  tennessee Obs-to-sim ratio:  1.77139700880207
+Orig:  south dakota Dest:  texas Obs-to-sim ratio:  0.325241254340233
+Orig:  south dakota Dest:  utah Obs-to-sim ratio:  0.0332127234804607
+Orig:  south dakota Dest:  vermont Simulated value is zero!!!!
+Orig:  south dakota Dest:  virginia Simulated value is zero!!!!
+Orig:  south dakota Dest:  west virginia Simulated value is zero!!!!
+Orig:  south dakota Dest:  wisconsin Obs-to-sim ratio:  0.173180955270476
+Orig:  south dakota Dest:  wyoming Simulated value is zero!!!!
+Orig:  tennessee Dest:  alabama Obs-to-sim ratio:  1.68572921049134
+Orig:  tennessee Dest:  arizona Simulated value is zero!!!!
+Orig:  tennessee Dest:  arkansas Simulated value is zero!!!!
+Orig:  tennessee Dest:  california Simulated value is zero!!!!
+Orig:  tennessee Dest:  colorado Simulated value is zero!!!!
+Orig:  tennessee Dest:  connecticut Simulated value is zero!!!!
+Orig:  tennessee Dest:  delaware Simulated value is zero!!!!
+Orig:  tennessee Dest:  florida Obs-to-sim ratio:  0.710148020629888
+Orig:  tennessee Dest:  georgia Obs-to-sim ratio:  3.0808069583454
+Orig:  tennessee Dest:  idaho Simulated value is zero!!!!
+Orig:  tennessee Dest:  illinois Simulated value is zero!!!!
+Orig:  tennessee Dest:  indiana Simulated value is zero!!!!
+Orig:  tennessee Dest:  iowa Simulated value is zero!!!!
+Orig:  tennessee Dest:  kansas Simulated value is zero!!!!
+Orig:  tennessee Dest:  kentucky Obs-to-sim ratio:  0.123300290813391
+Orig:  tennessee Dest:  maine Simulated value is zero!!!!
+Orig:  tennessee Dest:  maryland Simulated value is zero!!!!
+Orig:  tennessee Dest:  massachusetts Simulated value is zero!!!!
+Orig:  tennessee Dest:  michigan Simulated value is zero!!!!
+Orig:  tennessee Dest:  minnesota Simulated value is zero!!!!
+Orig:  tennessee Dest:  mississippi Obs-to-sim ratio:  2.6724247723841
+Orig:  tennessee Dest:  missouri Simulated value is zero!!!!
+Orig:  tennessee Dest:  montana Simulated value is zero!!!!
+Orig:  tennessee Dest:  nebraska Simulated value is zero!!!!
+Orig:  tennessee Dest:  nevada Simulated value is zero!!!!
+Orig:  tennessee Dest:  new hampshire Simulated value is zero!!!!
+Orig:  tennessee Dest:  new jersey Simulated value is zero!!!!
+Orig:  tennessee Dest:  new mexico Simulated value is zero!!!!
+Orig:  tennessee Dest:  new york Obs-to-sim ratio:  0.148921963380202
+Orig:  tennessee Dest:  north carolina Obs-to-sim ratio:  0.00788618032813781
+Orig:  tennessee Dest:  north dakota Simulated value is zero!!!!
+Orig:  tennessee Dest:  ohio Simulated value is zero!!!!
+Orig:  tennessee Dest:  oklahoma Simulated value is zero!!!!
+Orig:  tennessee Dest:  oregon Simulated value is zero!!!!
+Orig:  tennessee Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  tennessee Dest:  rhode island Simulated value is zero!!!!
+Orig:  tennessee Dest:  south carolina Simulated value is zero!!!!
+Orig:  tennessee Dest:  south dakota Simulated value is zero!!!!
+Orig:  tennessee Dest:  tennessee Obs-to-sim ratio:  0.341841867333222
+Orig:  tennessee Dest:  texas Simulated value is zero!!!!
+Orig:  tennessee Dest:  utah Simulated value is zero!!!!
+Orig:  tennessee Dest:  vermont Simulated value is zero!!!!
+Orig:  tennessee Dest:  virginia Simulated value is zero!!!!
+Orig:  tennessee Dest:  west virginia Simulated value is zero!!!!
+Orig:  tennessee Dest:  wisconsin Simulated value is zero!!!!
+Orig:  tennessee Dest:  wyoming Simulated value is zero!!!!
+Orig:  texas Dest:  alabama Obs-to-sim ratio:  0.212240349562593
+Orig:  texas Dest:  arizona Obs-to-sim ratio:  0.18491473328544
+Orig:  texas Dest:  arkansas Obs-to-sim ratio:  0.0548667840895339
+Orig:  texas Dest:  california Obs-to-sim ratio:  0.110411953754403
+Orig:  texas Dest:  colorado Obs-to-sim ratio:  2.19531825578441
+Orig:  texas Dest:  connecticut Simulated value is zero!!!!
+Orig:  texas Dest:  delaware Simulated value is zero!!!!
+Orig:  texas Dest:  florida Simulated value is zero!!!!
+Orig:  texas Dest:  georgia Obs-to-sim ratio:  0.881814776180659
+Orig:  texas Dest:  idaho Obs-to-sim ratio:  0.085591147552104
+Orig:  texas Dest:  illinois Obs-to-sim ratio:  0.238120914846347
+Orig:  texas Dest:  indiana Obs-to-sim ratio:  0.811116260133343
+Orig:  texas Dest:  iowa Simulated value is zero!!!!
+Orig:  texas Dest:  kansas Obs-to-sim ratio:  0.00586771379470395
+Orig:  texas Dest:  kentucky Simulated value is zero!!!!
+Orig:  texas Dest:  maine Simulated value is zero!!!!
+Orig:  texas Dest:  maryland Simulated value is zero!!!!
+Orig:  texas Dest:  massachusetts Simulated value is zero!!!!
+Orig:  texas Dest:  michigan Simulated value is zero!!!!
+Orig:  texas Dest:  minnesota Simulated value is zero!!!!
+Orig:  texas Dest:  mississippi Simulated value is zero!!!!
+Orig:  texas Dest:  missouri Obs-to-sim ratio:  0.186984525464839
+Orig:  texas Dest:  montana Obs-to-sim ratio:  0.868884598489186
+Orig:  texas Dest:  nebraska Obs-to-sim ratio:  0.0537208469471592
+Orig:  texas Dest:  nevada Simulated value is zero!!!!
+Orig:  texas Dest:  new hampshire Simulated value is zero!!!!
+Orig:  texas Dest:  new jersey Simulated value is zero!!!!
+Orig:  texas Dest:  new mexico Obs-to-sim ratio:  0.846418518670381
+Orig:  texas Dest:  new york Simulated value is zero!!!!
+Orig:  texas Dest:  north carolina Simulated value is zero!!!!
+Orig:  texas Dest:  north dakota Simulated value is zero!!!!
+Orig:  texas Dest:  ohio Simulated value is zero!!!!
+Orig:  texas Dest:  oklahoma Obs-to-sim ratio:  0.215518730095576
+Orig:  texas Dest:  oregon Obs-to-sim ratio:  0.0225603711657138
+Orig:  texas Dest:  pennsylvania Obs-to-sim ratio:  0.884545148378647
+Orig:  texas Dest:  rhode island Simulated value is zero!!!!
+Orig:  texas Dest:  south carolina Simulated value is zero!!!!
+Orig:  texas Dest:  south dakota Obs-to-sim ratio:  0.000833847621877215
+Orig:  texas Dest:  tennessee Simulated value is zero!!!!
+Orig:  texas Dest:  texas Obs-to-sim ratio:  0.313233294811737
+Orig:  texas Dest:  utah Obs-to-sim ratio:  0.268676352018187
+Orig:  texas Dest:  vermont Simulated value is zero!!!!
+Orig:  texas Dest:  virginia Simulated value is zero!!!!
+Orig:  texas Dest:  west virginia Simulated value is zero!!!!
+Orig:  texas Dest:  wisconsin Simulated value is zero!!!!
+Orig:  texas Dest:  wyoming Simulated value is zero!!!!
+Orig:  utah Dest:  alabama Simulated value is zero!!!!
+Orig:  utah Dest:  arizona Obs-to-sim ratio:  0.0153057074005336
+Orig:  utah Dest:  arkansas Simulated value is zero!!!!
+Orig:  utah Dest:  california Simulated value is zero!!!!
+Orig:  utah Dest:  colorado Obs-to-sim ratio:  0.00532333197741108
+Orig:  utah Dest:  connecticut Simulated value is zero!!!!
+Orig:  utah Dest:  delaware Simulated value is zero!!!!
+Orig:  utah Dest:  florida Simulated value is zero!!!!
+Orig:  utah Dest:  georgia Simulated value is zero!!!!
+Orig:  utah Dest:  idaho Obs-to-sim ratio:  0.161534045687012
+Orig:  utah Dest:  illinois Simulated value is zero!!!!
+Orig:  utah Dest:  indiana Simulated value is zero!!!!
+Orig:  utah Dest:  iowa Simulated value is zero!!!!
+Orig:  utah Dest:  kansas Simulated value is zero!!!!
+Orig:  utah Dest:  kentucky Simulated value is zero!!!!
+Orig:  utah Dest:  maine Simulated value is zero!!!!
+Orig:  utah Dest:  maryland Simulated value is zero!!!!
+Orig:  utah Dest:  massachusetts Simulated value is zero!!!!
+Orig:  utah Dest:  michigan Simulated value is zero!!!!
+Orig:  utah Dest:  minnesota Simulated value is zero!!!!
+Orig:  utah Dest:  mississippi Simulated value is zero!!!!
+Orig:  utah Dest:  missouri Simulated value is zero!!!!
+Orig:  utah Dest:  montana Simulated value is zero!!!!
+Orig:  utah Dest:  nebraska Simulated value is zero!!!!
+Orig:  utah Dest:  nevada Obs-to-sim ratio:  0.370370873693895
+Orig:  utah Dest:  new hampshire Simulated value is zero!!!!
+Orig:  utah Dest:  new jersey Simulated value is zero!!!!
+Orig:  utah Dest:  new mexico Simulated value is zero!!!!
+Orig:  utah Dest:  new york Simulated value is zero!!!!
+Orig:  utah Dest:  north carolina Simulated value is zero!!!!
+Orig:  utah Dest:  north dakota Simulated value is zero!!!!
+Orig:  utah Dest:  ohio Simulated value is zero!!!!
+Orig:  utah Dest:  oklahoma Simulated value is zero!!!!
+Orig:  utah Dest:  oregon Obs-to-sim ratio:  0.00287777181758381
+Orig:  utah Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  utah Dest:  rhode island Simulated value is zero!!!!
+Orig:  utah Dest:  south carolina Simulated value is zero!!!!
+Orig:  utah Dest:  south dakota Simulated value is zero!!!!
+Orig:  utah Dest:  tennessee Simulated value is zero!!!!
+Orig:  utah Dest:  texas Simulated value is zero!!!!
+Orig:  utah Dest:  utah Obs-to-sim ratio:  0.772792471130484
+Orig:  utah Dest:  vermont Simulated value is zero!!!!
+Orig:  utah Dest:  virginia Simulated value is zero!!!!
+Orig:  utah Dest:  west virginia Simulated value is zero!!!!
+Orig:  utah Dest:  wisconsin Simulated value is zero!!!!
+Orig:  utah Dest:  wyoming Simulated value is zero!!!!
+Orig:  vermont Dest:  alabama Simulated value is zero!!!!
+Orig:  vermont Dest:  arizona Simulated value is zero!!!!
+Orig:  vermont Dest:  arkansas Simulated value is zero!!!!
+Orig:  vermont Dest:  california Simulated value is zero!!!!
+Orig:  vermont Dest:  colorado Simulated value is zero!!!!
+Orig:  vermont Dest:  connecticut Simulated value is zero!!!!
+Orig:  vermont Dest:  delaware Simulated value is zero!!!!
+Orig:  vermont Dest:  florida Simulated value is zero!!!!
+Orig:  vermont Dest:  georgia Simulated value is zero!!!!
+Orig:  vermont Dest:  idaho Simulated value is zero!!!!
+Orig:  vermont Dest:  illinois Simulated value is zero!!!!
+Orig:  vermont Dest:  indiana Simulated value is zero!!!!
+Orig:  vermont Dest:  iowa Simulated value is zero!!!!
+Orig:  vermont Dest:  kansas Simulated value is zero!!!!
+Orig:  vermont Dest:  kentucky Simulated value is zero!!!!
+Orig:  vermont Dest:  maine Obs-to-sim ratio:  57.2745835814757
+Orig:  vermont Dest:  maryland Simulated value is zero!!!!
+Orig:  vermont Dest:  massachusetts Simulated value is zero!!!!
+Orig:  vermont Dest:  michigan Simulated value is zero!!!!
+Orig:  vermont Dest:  minnesota Simulated value is zero!!!!
+Orig:  vermont Dest:  mississippi Simulated value is zero!!!!
+Orig:  vermont Dest:  missouri Simulated value is zero!!!!
+Orig:  vermont Dest:  montana Simulated value is zero!!!!
+Orig:  vermont Dest:  nebraska Simulated value is zero!!!!
+Orig:  vermont Dest:  nevada Simulated value is zero!!!!
+Orig:  vermont Dest:  new hampshire Obs-to-sim ratio:  13.4568424042294
+Orig:  vermont Dest:  new jersey Simulated value is zero!!!!
+Orig:  vermont Dest:  new mexico Simulated value is zero!!!!
+Orig:  vermont Dest:  new york Obs-to-sim ratio:  4.17191968411966
+Orig:  vermont Dest:  north carolina Simulated value is zero!!!!
+Orig:  vermont Dest:  north dakota Simulated value is zero!!!!
+Orig:  vermont Dest:  ohio Simulated value is zero!!!!
+Orig:  vermont Dest:  oklahoma Simulated value is zero!!!!
+Orig:  vermont Dest:  oregon Simulated value is zero!!!!
+Orig:  vermont Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  vermont Dest:  rhode island Simulated value is zero!!!!
+Orig:  vermont Dest:  south carolina Simulated value is zero!!!!
+Orig:  vermont Dest:  south dakota Simulated value is zero!!!!
+Orig:  vermont Dest:  tennessee Simulated value is zero!!!!
+Orig:  vermont Dest:  texas Simulated value is zero!!!!
+Orig:  vermont Dest:  utah Simulated value is zero!!!!
+Orig:  vermont Dest:  vermont Obs-to-sim ratio:  2.33601795284826
+Orig:  vermont Dest:  virginia Simulated value is zero!!!!
+Orig:  vermont Dest:  west virginia Simulated value is zero!!!!
+Orig:  vermont Dest:  wisconsin Simulated value is zero!!!!
+Orig:  vermont Dest:  wyoming Simulated value is zero!!!!
+Orig:  virginia Dest:  alabama Simulated value is zero!!!!
+Orig:  virginia Dest:  arizona Simulated value is zero!!!!
+Orig:  virginia Dest:  arkansas Simulated value is zero!!!!
+Orig:  virginia Dest:  california Obs-to-sim ratio:  0.11271379305555
+Orig:  virginia Dest:  colorado Simulated value is zero!!!!
+Orig:  virginia Dest:  connecticut Obs-to-sim ratio:  1.0399085950867
+Orig:  virginia Dest:  delaware Simulated value is zero!!!!
+Orig:  virginia Dest:  florida Simulated value is zero!!!!
+Orig:  virginia Dest:  georgia Simulated value is zero!!!!
+Orig:  virginia Dest:  idaho Simulated value is zero!!!!
+Orig:  virginia Dest:  illinois Obs-to-sim ratio:  0.0683230940460686
+Orig:  virginia Dest:  indiana Simulated value is zero!!!!
+Orig:  virginia Dest:  iowa Simulated value is zero!!!!
+Orig:  virginia Dest:  kansas Simulated value is zero!!!!
+Orig:  virginia Dest:  kentucky Simulated value is zero!!!!
+Orig:  virginia Dest:  maine Simulated value is zero!!!!
+Orig:  virginia Dest:  maryland Obs-to-sim ratio:  29.3191421523287
+Orig:  virginia Dest:  massachusetts Simulated value is zero!!!!
+Orig:  virginia Dest:  michigan Simulated value is zero!!!!
+Orig:  virginia Dest:  minnesota Simulated value is zero!!!!
+Orig:  virginia Dest:  mississippi Simulated value is zero!!!!
+Orig:  virginia Dest:  missouri Simulated value is zero!!!!
+Orig:  virginia Dest:  montana Simulated value is zero!!!!
+Orig:  virginia Dest:  nebraska Simulated value is zero!!!!
+Orig:  virginia Dest:  nevada Simulated value is zero!!!!
+Orig:  virginia Dest:  new hampshire Simulated value is zero!!!!
+Orig:  virginia Dest:  new jersey Simulated value is zero!!!!
+Orig:  virginia Dest:  new mexico Simulated value is zero!!!!
+Orig:  virginia Dest:  new york Obs-to-sim ratio:  0.046997939306988
+Orig:  virginia Dest:  north carolina Obs-to-sim ratio:  0.819832508070224
+Orig:  virginia Dest:  north dakota Obs-to-sim ratio:  1.11166825420077
+Orig:  virginia Dest:  ohio Obs-to-sim ratio:  0.0703059866978388
+Orig:  virginia Dest:  oklahoma Obs-to-sim ratio:  0.925227196235642
+Orig:  virginia Dest:  oregon Simulated value is zero!!!!
+Orig:  virginia Dest:  pennsylvania Obs-to-sim ratio:  2.35022573823097
+Orig:  virginia Dest:  rhode island Simulated value is zero!!!!
+Orig:  virginia Dest:  south carolina Obs-to-sim ratio:  0.00301005465481943
+Orig:  virginia Dest:  south dakota Simulated value is zero!!!!
+Orig:  virginia Dest:  tennessee Simulated value is zero!!!!
+Orig:  virginia Dest:  texas Simulated value is zero!!!!
+Orig:  virginia Dest:  utah Obs-to-sim ratio:  0.155646332468995
+Orig:  virginia Dest:  vermont Simulated value is zero!!!!
+Orig:  virginia Dest:  virginia Obs-to-sim ratio:  0.160761515351655
+Orig:  virginia Dest:  west virginia Simulated value is zero!!!!
+Orig:  virginia Dest:  wisconsin Simulated value is zero!!!!
+Orig:  virginia Dest:  wyoming Simulated value is zero!!!!
+Orig:  west virginia Dest:  alabama Simulated value is zero!!!!
+Orig:  west virginia Dest:  arizona Simulated value is zero!!!!
+Orig:  west virginia Dest:  arkansas Simulated value is zero!!!!
+Orig:  west virginia Dest:  california Simulated value is zero!!!!
+Orig:  west virginia Dest:  colorado Simulated value is zero!!!!
+Orig:  west virginia Dest:  connecticut Simulated value is zero!!!!
+Orig:  west virginia Dest:  delaware Simulated value is zero!!!!
+Orig:  west virginia Dest:  florida Simulated value is zero!!!!
+Orig:  west virginia Dest:  georgia Simulated value is zero!!!!
+Orig:  west virginia Dest:  idaho Simulated value is zero!!!!
+Orig:  west virginia Dest:  illinois Simulated value is zero!!!!
+Orig:  west virginia Dest:  indiana Simulated value is zero!!!!
+Orig:  west virginia Dest:  iowa Simulated value is zero!!!!
+Orig:  west virginia Dest:  kansas Simulated value is zero!!!!
+Orig:  west virginia Dest:  kentucky Simulated value is zero!!!!
+Orig:  west virginia Dest:  maine Simulated value is zero!!!!
+Orig:  west virginia Dest:  maryland Simulated value is zero!!!!
+Orig:  west virginia Dest:  massachusetts Simulated value is zero!!!!
+Orig:  west virginia Dest:  michigan Simulated value is zero!!!!
+Orig:  west virginia Dest:  minnesota Simulated value is zero!!!!
+Orig:  west virginia Dest:  mississippi Simulated value is zero!!!!
+Orig:  west virginia Dest:  missouri Simulated value is zero!!!!
+Orig:  west virginia Dest:  montana Simulated value is zero!!!!
+Orig:  west virginia Dest:  nebraska Simulated value is zero!!!!
+Orig:  west virginia Dest:  nevada Simulated value is zero!!!!
+Orig:  west virginia Dest:  new hampshire Simulated value is zero!!!!
+Orig:  west virginia Dest:  new jersey Simulated value is zero!!!!
+Orig:  west virginia Dest:  new mexico Simulated value is zero!!!!
+Orig:  west virginia Dest:  new york Simulated value is zero!!!!
+Orig:  west virginia Dest:  north carolina Simulated value is zero!!!!
+Orig:  west virginia Dest:  north dakota Simulated value is zero!!!!
+Orig:  west virginia Dest:  ohio Simulated value is zero!!!!
+Orig:  west virginia Dest:  oklahoma Simulated value is zero!!!!
+Orig:  west virginia Dest:  oregon Simulated value is zero!!!!
+Orig:  west virginia Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  west virginia Dest:  rhode island Simulated value is zero!!!!
+Orig:  west virginia Dest:  south carolina Simulated value is zero!!!!
+Orig:  west virginia Dest:  south dakota Simulated value is zero!!!!
+Orig:  west virginia Dest:  tennessee Simulated value is zero!!!!
+Orig:  west virginia Dest:  texas Simulated value is zero!!!!
+Orig:  west virginia Dest:  utah Simulated value is zero!!!!
+Orig:  west virginia Dest:  vermont Simulated value is zero!!!!
+Orig:  west virginia Dest:  virginia Simulated value is zero!!!!
+Orig:  west virginia Dest:  west virginia Simulated value is zero!!!!
+Orig:  west virginia Dest:  wisconsin Simulated value is zero!!!!
+Orig:  west virginia Dest:  wyoming Simulated value is zero!!!!
+Orig:  wisconsin Dest:  alabama Simulated value is zero!!!!
+Orig:  wisconsin Dest:  arizona Simulated value is zero!!!!
+Orig:  wisconsin Dest:  arkansas Simulated value is zero!!!!
+Orig:  wisconsin Dest:  california Simulated value is zero!!!!
+Orig:  wisconsin Dest:  colorado Simulated value is zero!!!!
+Orig:  wisconsin Dest:  connecticut Simulated value is zero!!!!
+Orig:  wisconsin Dest:  delaware Simulated value is zero!!!!
+Orig:  wisconsin Dest:  florida Simulated value is zero!!!!
+Orig:  wisconsin Dest:  georgia Simulated value is zero!!!!
+Orig:  wisconsin Dest:  idaho Simulated value is zero!!!!
+Orig:  wisconsin Dest:  illinois Obs-to-sim ratio:  0.582089719665899
+Orig:  wisconsin Dest:  indiana Obs-to-sim ratio:  7.18219282683518
+Orig:  wisconsin Dest:  iowa Obs-to-sim ratio:  0.0661633300793385
+Orig:  wisconsin Dest:  kansas Simulated value is zero!!!!
+Orig:  wisconsin Dest:  kentucky Simulated value is zero!!!!
+Orig:  wisconsin Dest:  maine Simulated value is zero!!!!
+Orig:  wisconsin Dest:  maryland Simulated value is zero!!!!
+Orig:  wisconsin Dest:  massachusetts Simulated value is zero!!!!
+Orig:  wisconsin Dest:  michigan Obs-to-sim ratio:  1.95488105418634
+Orig:  wisconsin Dest:  minnesota Obs-to-sim ratio:  0.023195746972414
+Orig:  wisconsin Dest:  mississippi Simulated value is zero!!!!
+Orig:  wisconsin Dest:  missouri Obs-to-sim ratio:  0.00286995615968104
+Orig:  wisconsin Dest:  montana Simulated value is zero!!!!
+Orig:  wisconsin Dest:  nebraska Simulated value is zero!!!!
+Orig:  wisconsin Dest:  nevada Simulated value is zero!!!!
+Orig:  wisconsin Dest:  new hampshire Simulated value is zero!!!!
+Orig:  wisconsin Dest:  new jersey Simulated value is zero!!!!
+Orig:  wisconsin Dest:  new mexico Simulated value is zero!!!!
+Orig:  wisconsin Dest:  new york Obs-to-sim ratio:  0.251247753855868
+Orig:  wisconsin Dest:  north carolina Obs-to-sim ratio:  0.172509727707278
+Orig:  wisconsin Dest:  north dakota Simulated value is zero!!!!
+Orig:  wisconsin Dest:  ohio Obs-to-sim ratio:  0.137107869336311
+Orig:  wisconsin Dest:  oklahoma Simulated value is zero!!!!
+Orig:  wisconsin Dest:  oregon Simulated value is zero!!!!
+Orig:  wisconsin Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  wisconsin Dest:  rhode island Simulated value is zero!!!!
+Orig:  wisconsin Dest:  south carolina Simulated value is zero!!!!
+Orig:  wisconsin Dest:  south dakota Simulated value is zero!!!!
+Orig:  wisconsin Dest:  tennessee Obs-to-sim ratio:  0.864870725662932
+Orig:  wisconsin Dest:  texas Obs-to-sim ratio:  1.3452678380601
+Orig:  wisconsin Dest:  utah Simulated value is zero!!!!
+Orig:  wisconsin Dest:  vermont Simulated value is zero!!!!
+Orig:  wisconsin Dest:  virginia Simulated value is zero!!!!
+Orig:  wisconsin Dest:  west virginia Simulated value is zero!!!!
+Orig:  wisconsin Dest:  wisconsin Obs-to-sim ratio:  0.321951637900215
+Orig:  wisconsin Dest:  wyoming Simulated value is zero!!!!
+Orig:  wyoming Dest:  alabama Simulated value is zero!!!!
+Orig:  wyoming Dest:  arizona Simulated value is zero!!!!
+Orig:  wyoming Dest:  arkansas Simulated value is zero!!!!
+Orig:  wyoming Dest:  california Obs-to-sim ratio:  0.0136216580328828
+Orig:  wyoming Dest:  colorado Obs-to-sim ratio:  0.0539270951464767
+Orig:  wyoming Dest:  connecticut Obs-to-sim ratio:  0.011781375582266
+Orig:  wyoming Dest:  delaware Obs-to-sim ratio:  0.0013567239540183
+Orig:  wyoming Dest:  florida Obs-to-sim ratio:  0.000618417918897987
+Orig:  wyoming Dest:  georgia Obs-to-sim ratio:  0.000878550287306341
+Orig:  wyoming Dest:  idaho Obs-to-sim ratio:  0.158530935088797
+Orig:  wyoming Dest:  illinois Obs-to-sim ratio:  0.00436039852630088
+Orig:  wyoming Dest:  indiana Obs-to-sim ratio:  0.000752895986773393
+Orig:  wyoming Dest:  iowa Obs-to-sim ratio:  0.000483988603055442
+Orig:  wyoming Dest:  kansas Simulated value is zero!!!!
+Orig:  wyoming Dest:  kentucky Obs-to-sim ratio:  0.0501373357610627
+Orig:  wyoming Dest:  maine Simulated value is zero!!!!
+Orig:  wyoming Dest:  maryland Simulated value is zero!!!!
+Orig:  wyoming Dest:  massachusetts Obs-to-sim ratio:  0.00154862125552369
+Orig:  wyoming Dest:  michigan Obs-to-sim ratio:  0.00217856701615169
+Orig:  wyoming Dest:  minnesota Obs-to-sim ratio:  2.10302905652326
+Orig:  wyoming Dest:  mississippi Simulated value is zero!!!!
+Orig:  wyoming Dest:  missouri Simulated value is zero!!!!
+Orig:  wyoming Dest:  montana Obs-to-sim ratio:  0.114737599146877
+Orig:  wyoming Dest:  nebraska Obs-to-sim ratio:  0.000307352110333595
+Orig:  wyoming Dest:  nevada Simulated value is zero!!!!
+Orig:  wyoming Dest:  new hampshire Simulated value is zero!!!!
+Orig:  wyoming Dest:  new jersey Obs-to-sim ratio:  0.0247465630774346
+Orig:  wyoming Dest:  new mexico Simulated value is zero!!!!
+Orig:  wyoming Dest:  new york Obs-to-sim ratio:  0.00091815428072172
+Orig:  wyoming Dest:  north carolina Obs-to-sim ratio:  0.000515474684257912
+Orig:  wyoming Dest:  north dakota Simulated value is zero!!!!
+Orig:  wyoming Dest:  ohio Obs-to-sim ratio:  0.00124639494879353
+Orig:  wyoming Dest:  oklahoma Simulated value is zero!!!!
+Orig:  wyoming Dest:  oregon Obs-to-sim ratio:  0.000290123041027217
+Orig:  wyoming Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  wyoming Dest:  rhode island Simulated value is zero!!!!
+Orig:  wyoming Dest:  south carolina Simulated value is zero!!!!
+Orig:  wyoming Dest:  south dakota Simulated value is zero!!!!
+Orig:  wyoming Dest:  tennessee Obs-to-sim ratio:  0.0124873678156297
+Orig:  wyoming Dest:  texas Obs-to-sim ratio:  0.0202002629518471
+Orig:  wyoming Dest:  utah Obs-to-sim ratio:  0.00252924345419495
+Orig:  wyoming Dest:  vermont Simulated value is zero!!!!
+Orig:  wyoming Dest:  virginia Obs-to-sim ratio:  0.000254334803316369
+Orig:  wyoming Dest:  west virginia Simulated value is zero!!!!
+Orig:  wyoming Dest:  wisconsin Obs-to-sim ratio:  6.24830772738492
+Orig:  wyoming Dest:  wyoming Obs-to-sim ratio:  0.00351213904861923
+Orig:  louisiana Dest:  alabama Simulated value is zero!!!!
+Orig:  louisiana Dest:  arizona Simulated value is zero!!!!
+Orig:  louisiana Dest:  arkansas Obs-to-sim ratio:  0.0859618356369084
+Orig:  louisiana Dest:  california Simulated value is zero!!!!
+Orig:  louisiana Dest:  colorado Simulated value is zero!!!!
+Orig:  louisiana Dest:  connecticut Simulated value is zero!!!!
+Orig:  louisiana Dest:  delaware Simulated value is zero!!!!
+Orig:  louisiana Dest:  florida Simulated value is zero!!!!
+Orig:  louisiana Dest:  georgia Simulated value is zero!!!!
+Orig:  louisiana Dest:  idaho Simulated value is zero!!!!
+Orig:  louisiana Dest:  illinois Simulated value is zero!!!!
+Orig:  louisiana Dest:  indiana Simulated value is zero!!!!
+Orig:  louisiana Dest:  iowa Simulated value is zero!!!!
+Orig:  louisiana Dest:  kansas Simulated value is zero!!!!
+Orig:  louisiana Dest:  kentucky Simulated value is zero!!!!
+Orig:  louisiana Dest:  maine Simulated value is zero!!!!
+Orig:  louisiana Dest:  maryland Simulated value is zero!!!!
+Orig:  louisiana Dest:  massachusetts Simulated value is zero!!!!
+Orig:  louisiana Dest:  michigan Simulated value is zero!!!!
+Orig:  louisiana Dest:  minnesota Simulated value is zero!!!!
+Orig:  louisiana Dest:  mississippi Obs-to-sim ratio:  3.84007990067141
+Orig:  louisiana Dest:  missouri Simulated value is zero!!!!
+Orig:  louisiana Dest:  montana Simulated value is zero!!!!
+Orig:  louisiana Dest:  nebraska Simulated value is zero!!!!
+Orig:  louisiana Dest:  nevada Simulated value is zero!!!!
+Orig:  louisiana Dest:  new hampshire Simulated value is zero!!!!
+Orig:  louisiana Dest:  new jersey Simulated value is zero!!!!
+Orig:  louisiana Dest:  new mexico Simulated value is zero!!!!
+Orig:  louisiana Dest:  new york Simulated value is zero!!!!
+Orig:  louisiana Dest:  north carolina Simulated value is zero!!!!
+Orig:  louisiana Dest:  north dakota Simulated value is zero!!!!
+Orig:  louisiana Dest:  ohio Simulated value is zero!!!!
+Orig:  louisiana Dest:  oklahoma Simulated value is zero!!!!
+Orig:  louisiana Dest:  oregon Simulated value is zero!!!!
+Orig:  louisiana Dest:  pennsylvania Simulated value is zero!!!!
+Orig:  louisiana Dest:  rhode island Simulated value is zero!!!!
+Orig:  louisiana Dest:  south carolina Simulated value is zero!!!!
+Orig:  louisiana Dest:  south dakota Simulated value is zero!!!!
+Orig:  louisiana Dest:  tennessee Simulated value is zero!!!!
+Orig:  louisiana Dest:  texas Simulated value is zero!!!!
+Orig:  louisiana Dest:  utah Simulated value is zero!!!!
+Orig:  louisiana Dest:  vermont Simulated value is zero!!!!
+Orig:  louisiana Dest:  virginia Simulated value is zero!!!!
+Orig:  louisiana Dest:  west virginia Simulated value is zero!!!!
+Orig:  louisiana Dest:  wisconsin Simulated value is zero!!!!
+Orig:  louisiana Dest:  wyoming Simulated value is zero!!!!
+Orig:  washington Dest:  alabama Simulated value is zero!!!!
+Orig:  washington Dest:  arizona Obs-to-sim ratio:  0.0158533329993747
+Orig:  washington Dest:  arkansas Simulated value is zero!!!!
+Orig:  washington Dest:  california Obs-to-sim ratio:  0.0771662478553844
+Orig:  washington Dest:  colorado Simulated value is zero!!!!
+Orig:  washington Dest:  connecticut Obs-to-sim ratio:  0.0261596744307722
+Orig:  washington Dest:  delaware Simulated value is zero!!!!
+Orig:  washington Dest:  florida Obs-to-sim ratio:  0.0510416552252674
+Orig:  washington Dest:  georgia Simulated value is zero!!!!
+Orig:  washington Dest:  idaho Obs-to-sim ratio:  0.542817688627101
+Orig:  washington Dest:  illinois Simulated value is zero!!!!
+Orig:  washington Dest:  indiana Simulated value is zero!!!!
+Orig:  washington Dest:  iowa Simulated value is zero!!!!
+Orig:  washington Dest:  kansas Simulated value is zero!!!!
+Orig:  washington Dest:  kentucky Simulated value is zero!!!!
+Orig:  washington Dest:  maine Simulated value is zero!!!!
+Orig:  washington Dest:  maryland Simulated value is zero!!!!
+Orig:  washington Dest:  massachusetts Simulated value is zero!!!!
+Orig:  washington Dest:  michigan Simulated value is zero!!!!
+Orig:  washington Dest:  minnesota Obs-to-sim ratio:  0.00813241530074765
+Orig:  washington Dest:  mississippi Simulated value is zero!!!!
+Orig:  washington Dest:  missouri Simulated value is zero!!!!
+Orig:  washington Dest:  montana Obs-to-sim ratio:  1.25100106468957
+Orig:  washington Dest:  nebraska Simulated value is zero!!!!
+Orig:  washington Dest:  nevada Obs-to-sim ratio:  0.0362833643227282
+Orig:  washington Dest:  new hampshire Simulated value is zero!!!!
+Orig:  washington Dest:  new jersey Obs-to-sim ratio:  0.00336062682497301
+Orig:  washington Dest:  new mexico Obs-to-sim ratio:  0.0673077953632123
+Orig:  washington Dest:  new york Obs-to-sim ratio:  0.143575315479742
+Orig:  washington Dest:  north carolina Obs-to-sim ratio:  0.0132229461964698
+Orig:  washington Dest:  north dakota Simulated value is zero!!!!
+Orig:  washington Dest:  ohio Obs-to-sim ratio:  0.00308019786399939
+Orig:  washington Dest:  oklahoma Simulated value is zero!!!!
+Orig:  washington Dest:  oregon Obs-to-sim ratio:  8.7381348219947
+Orig:  washington Dest:  pennsylvania Obs-to-sim ratio:  0.0173511252631162
+Orig:  washington Dest:  rhode island Simulated value is zero!!!!
+Orig:  washington Dest:  south carolina Simulated value is zero!!!!
+Orig:  washington Dest:  south dakota Simulated value is zero!!!!
+Orig:  washington Dest:  tennessee Simulated value is zero!!!!
+Orig:  washington Dest:  texas Obs-to-sim ratio:  0.00426203891594418
+Orig:  washington Dest:  utah Simulated value is zero!!!!
+Orig:  washington Dest:  vermont Simulated value is zero!!!!
+Orig:  washington Dest:  virginia Simulated value is zero!!!!
+Orig:  washington Dest:  west virginia Simulated value is zero!!!!
+Orig:  washington Dest:  wisconsin Obs-to-sim ratio:  0.000585135081385988
+Orig:  washington Dest:  wyoming Obs-to-sim ratio:  0.251479374587355
