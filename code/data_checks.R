@@ -235,7 +235,7 @@ USmap_cnty_df <- left_join(USmap_cnty_df,
 
 # I decided to do it in different maps
 # Exports
-no_breaks <- 6
+no_breaks <- 9
 mu <- mean(USmap_cnty_df$cnty_exports, na.rm = TRUE)
 sd <- sd(USmap_cnty_df$cnty_exports, na.rm = TRUE)
 max <- max(USmap_cnty_df$cnty_exports, na.rm = TRUE)
@@ -289,12 +289,15 @@ ggplot() +
     title = "Simulated exports"
   ) +
   scale_fill_manual(values = c(
-    "0 to 1"    = "#eff3ff",
-    "1 to 36"  = "#c6dbef",
-    "36 to 71"  = "#9ecae1",
-    "71 to 106"  = "#6baed6",
-    "106 to 141"  = "#3182bd",
-    "141 to 323"  = "#08519c")) +
+    "0 to 1"    = "#f7fbff",
+    "1 to 36"  = "#deebf7",
+    "36 to 71"  = "#c6dbef",
+    "71 to 106"  = "#9ecae1",
+    "106 to 141"  = "#6baed6",
+    "141 to 176"  = "#4292c6",
+    "176 to 211"  = "#2171b5",
+    "211 to 246"  = "#08519c",
+    "246 to 323"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
@@ -304,7 +307,7 @@ ggplot() +
                              title.position = "top"))
 
 # Imports
-no_breaks <- 6
+no_breaks <- 9
 mu <- mean(USmap_cnty_df$cnty_imports, na.rm = TRUE)
 sd <- sd(USmap_cnty_df$cnty_imports, na.rm = TRUE)
 max <- max(USmap_cnty_df$cnty_imports, na.rm = TRUE)
@@ -358,13 +361,15 @@ ggplot() +
     title = "Simulated imports"
   ) +
   scale_fill_manual(values = c(
-    "0 to 1"    = "#eff3ff",
-    "1 to 87"  = "#c6dbef",
-    "87 to 173"  = "#9ecae1",
-    "173 to 259"  = "#6baed6",
-    "259 to 345"  = "#3182bd",
-    "345 to 2101"  = "#08519c"),
-    na.value = "black") +
+    "0 to 1"    = "#f7fbff",
+    "1 to 87"  = "#deebf7",
+    "87 to 173"  = "#c6dbef",
+    "173 to 259"  = "#9ecae1",
+    "259 to 345"  = "#6baed6",
+    "345 to 431"  = "#4292c6",
+    "431 to 517"  = "#2171b5",
+    "517 to 603"  = "#08519c",
+    "603 to 2101"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
@@ -372,4 +377,4 @@ ggplot() +
         legend.position = "bottom") +
   guides(fill = guide_legend(title = "Imports:",
                              title.position = "top"))
-# end
+♦# end
