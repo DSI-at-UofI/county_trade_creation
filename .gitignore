@@ -1,4 +1,5 @@
 .Rproj.user/
+.Rhistory
 
 assets/USmap_cnty_df.rds
 assets/USmap_st_df.rds
