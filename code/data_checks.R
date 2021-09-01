@@ -9,7 +9,7 @@ rm(list = ls())
 # correlaiton between gdp_j and imports, and sales_i and exports
 # The last part of the code is interested with mapping the values
 
-print.results <- askYesNo("Print Results?")
+#print.results <- askYesNo("Print Results?")
 
 library(tidyverse)
 library(rgdal)
@@ -148,7 +148,7 @@ no_exp <- sum(mo_cnty$cnty_exports == 0)
 no_imp_kona <- sum(mo_cnty$kona_imports == 0)
 no_exp_kona <- sum(mo_cnty$kona_exports == 0)
 
-if(print.results) { # Printing results
+if(TRUE) { # Printing results
   cat("\n")
   cat(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::", "\n")
   cat("::: The following are comparisons between Konar's county trade flows ::::::::::::::::::::::", "\n")
@@ -290,14 +290,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 36"  = "#deebf7",
-    "36 to 71"  = "#c6dbef",
-    "71 to 106"  = "#9ecae1",
-    "106 to 141"  = "#6baed6",
-    "141 to 176"  = "#4292c6",
-    "176 to 211"  = "#2171b5",
-    "211 to 246"  = "#08519c",
-    "246 to 323"  = "#08306b")) +
+    "1 to 93"  = "#deebf7",
+    "93 to 185"  = "#c6dbef",
+    "185 to 277"  = "#9ecae1",
+    "277 to 369"  = "#6baed6",
+    "369 to 461"  = "#4292c6",
+    "461 to 553"  = "#2171b5",
+    "553 to 645"  = "#08519c",
+    "645 to 973"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
@@ -362,14 +362,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 87"  = "#deebf7",
-    "87 to 173"  = "#c6dbef",
-    "173 to 259"  = "#9ecae1",
-    "259 to 345"  = "#6baed6",
-    "345 to 431"  = "#4292c6",
-    "431 to 517"  = "#2171b5",
-    "517 to 603"  = "#08519c",
-    "603 to 2101"  = "#08306b")) +
+    "1 to 305"  = "#deebf7",
+    "305 to 609"  = "#c6dbef",
+    "609 to 913"  = "#9ecae1",
+    "913 to 1217"  = "#6baed6",
+    "1217 to 1521"  = "#4292c6",
+    "1521 to 1825"  = "#2171b5",
+    "1825 to 2129"  = "#08519c",
+    "2129 to 7630"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +

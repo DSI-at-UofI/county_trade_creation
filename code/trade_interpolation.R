@@ -12,7 +12,7 @@ library(tidyverse)
 # 64 GB ram
 # Mumford computer
 
-answer_weights <-askYesNo("Calculate weights?")
+#answer_weights <-askYesNo("Calculate weights?")
 start.time <- Sys.time()
 start.time
 
@@ -93,7 +93,7 @@ dy_cnty <- left_join(dy_cnty,
 rm(list=setdiff(ls(), c("dy_cnty", "start.time", "answer_weights")))
 
 # Creating pair_id list based on states to assign the weights
-if(answer_weights) {
+if(FALSE) {
   dy_cnty <- dy_cnty %>%
     mutate(pair_id = group_indices(., orig_stName, dest_stName))
   pair_id_list <- dy_cnty %>% distinct(pair_id) %>% pull()
@@ -133,7 +133,62 @@ cnst_SE  <- 2.464821
 # of the FE. I did not modify the regression code because I believe that 
 # doing that would bias the FE estimates since the regression would include flows towards
 # Louisiana and Washington.
-dy_cnty$sum_FE[is.na(dy_cnty$sum_FE)] <- mean(dy_cnty$sum_FE, na.rm = TRUE)  
+#dy_cnty$sum_FE[is.na(dy_cnty$sum_FE)] <- mean(dy_cnty$sum_FE, na.rm = TRUE) 
+
+key <- read_csv(file = 'assets/state_clm_region.csv')
+key <- key %>%
+  select(initial, clm_region) %>%
+  mutate(initial = toupper(initial))
+
+key <- key[!is.na(key$clm_region),]
+
+southeast <- key$initial[key$clm_region == "southeast"]
+southwest <- key$initial[key$clm_region == "southwest"]
+south <- key$initial[key$clm_region == "south"]
+west <- key$initial[key$clm_region == "west"]
+northeast <- key$initial[key$clm_region == "northeast"]
+northwest <- key$initial[key$clm_region == "northwest"]
+central <- key$initial[key$clm_region == "central"]
+east_north_central <- key$initial[key$clm_region == "east north central"]
+west_north_central <- key$initial[key$clm_region == "west north central"]
+
+# Climate region
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% central & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.1490965
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% east_north_central & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.144062
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% northeast & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.3741672
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% northwest & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.1968383
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% south & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- .1319473
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% southeast & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.1596681
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% southwest & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- .2054927
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% west & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- -.3958415
+dy_cnty$sum_FE[dy_cnty$orig_stIni %in% west_north_central & (dy_cnty$dest_stIni == "LA" | dy_cnty$dest_stIni == "WA")] <- .3766987
+
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% central & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- -.1167689
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% east_north_central & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- .1547206
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% northeast & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- .4705915
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% northwest & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- 1.570819
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% south & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- .4189743
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% southeast & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- 1.226447
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% southwest & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- 1.006436
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% west & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- .9615587
+dy_cnty$sum_FE[dy_cnty$dest_stIni %in% west_north_central & (dy_cnty$orig_stIni == "LA" | dy_cnty$orig_stIni == "WA")] <- 0
+
+# contiguity
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "AR"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "AR"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "ID"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "ID"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "TX" & dy_cnty$dest_stIni == "LA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "TX" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "MS" & dy_cnty$dest_stIni == "LA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "MS" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "AR" & dy_cnty$dest_stIni == "LA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "AR" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "MS"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "MS"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "OR"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "OR"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "TX"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "TX"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "OR" & dy_cnty$dest_stIni == "WA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "OR" & dy_cnty$dest_stIni == "WA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "ID" & dy_cnty$dest_stIni == "WA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "ID" & dy_cnty$dest_stIni == "WA"]
+
+# intra
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "LA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "WA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "WA"]
+
 dy_cnty <- dy_cnty %>%
   mutate(distance_c = distance*dist_eta) %>%
   mutate(sales_i_c  = sales_i*sale_eta) %>%
