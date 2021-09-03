@@ -12,7 +12,6 @@ library(tidyverse)
 # 64 GB ram
 # Mumford computer
 
-answer_weights <-askYesNo("Calculate weights?")
 start.time <- Sys.time()
 start.time
 
@@ -92,24 +91,6 @@ dy_cnty <- left_join(dy_cnty,
 # state dyadic interaction and the inverse of the weight is multiplied by the FE summation
 rm(list=setdiff(ls(), c("dy_cnty", "start.time", "answer_weights")))
 
-# Creating pair_id list based on states to assign the weights
-if(answer_weights) {
-  dy_cnty <- dy_cnty %>%
-    mutate(pair_id = group_indices(., orig_stName, dest_stName))
-  pair_id_list <- dy_cnty %>% distinct(pair_id) %>% pull()
-
-  dy_cnty$weight <- NA
-  p <- 0
-  for(id in pair_id_list) { # Creating the weights
-  
-    p <- p + 1
-    cat(":::: Percentage: ", 100*(p/2304), "% ::::", "\n")
-    w <- sum(dy_cnty$pair_id == id)
-    dy_cnty$weight[dy_cnty$pair_id == id] <- w
-  
-  }
-}
-
 # The following code uses the parameters and the variables to create the county flows ----
 # These are the parameters:
 # These are directly typed from stata regression result by running state_gravity_reg.do
@@ -128,18 +109,87 @@ gdpj_SE  <- 0.104049
 cnst     <- -15.46002
 cnst_SE  <- 2.464821
 
-# variance(beta_variance*variable) --- formula
-# The next line of code replaces the missing FE value for Louisiana and Washington for the average
-# of the FE. I did not modify the regression code because I believe that 
-# doing that would bias the FE estimates since the regression would include flows towards
-# Louisiana and Washington.
-dy_cnty$sum_FE[is.na(dy_cnty$sum_FE)] <- mean(dy_cnty$sum_FE, na.rm = TRUE)  
+ppml_SE  <- -18.11583 
+
+key <- read_csv(file = 'assets/state_clm_region.csv')
+key <- key %>%
+  select(initial, clm_region) %>%
+  mutate(initial = toupper(initial))
+
+key <- key[!is.na(key$clm_region),]
+
+southeast <- key$initial[key$clm_region == "southeast"]
+southwest <- key$initial[key$clm_region == "southwest"]
+south <- key$initial[key$clm_region == "south"]
+west <- key$initial[key$clm_region == "west"]
+northeast <- key$initial[key$clm_region == "northeast"]
+northwest <- key$initial[key$clm_region == "northwest"]
+central <- key$initial[key$clm_region == "central"]
+east_north_central <- key$initial[key$clm_region == "east north central"]
+west_north_central <- key$initial[key$clm_region == "west north central"]
+
+# Climate region
+for(ini in c("LA", "WA")) {#origin is region dest is state
+  if(ini == "LA") {
+    FE <- -.1931769 + ppml_SE - cnst # FE associated with LA on the destination
+  }else{
+    FE <- .9586682 + ppml_SE - cnst  # FE associated with WA on the destination
+  }
+  
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% central & dy_cnty$dest_stIni == ini] <- .246745 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% east_north_central & dy_cnty$dest_stIni == ini] <- .2517795 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% northeast & dy_cnty$dest_stIni == ini] <- .0216743 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% northwest & dy_cnty$dest_stIni == ini] <-  .1990032 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% south & dy_cnty$dest_stIni == ini] <- .5277888 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% southeast & dy_cnty$dest_stIni == ini] <- .2361734 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% southwest & dy_cnty$dest_stIni == ini] <- .6013342 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% west & dy_cnty$dest_stIni == ini] <- 0 + FE
+  dy_cnty$sum_FE[dy_cnty$orig_stIni %in% west_north_central & dy_cnty$dest_stIni == ini] <- .7725402 + FE
+  
+}
+
+for(ini in c("LA", "WA")) {#destination is region origin is state
+  if(ini == "LA") {
+    FE <- .5277888 + ppml_SE - cnst  # FE associated with LA on the origin
+  }else{
+    FE <- .1990032 + ppml_SE - cnst  # FE associated with WA on the origin
+  }
+  
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% central & dy_cnty$orig_stIni == ini] <-  -.7289201 + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% east_north_central & dy_cnty$orig_stIni == ini] <- -.4574307 + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% northeast & dy_cnty$orig_stIni == ini] <-  -.1415597  + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% northwest & dy_cnty$orig_stIni == ini] <- .9586682   + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% south & dy_cnty$orig_stIni == ini] <-  -.1931769 + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% southeast & dy_cnty$orig_stIni == ini] <-  .6142957  + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% southwest & dy_cnty$orig_stIni == ini] <-  .3942852  + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% west & dy_cnty$orig_stIni == ini] <- .3494075  + FE
+  dy_cnty$sum_FE[dy_cnty$dest_stIni %in% west_north_central & dy_cnty$orig_stIni == ini] <-  -.6121513  + FE
+}
+
+
+# contiguity
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "AR"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "AR"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "ID"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "ID"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "TX" & dy_cnty$dest_stIni == "LA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "TX" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "MS" & dy_cnty$dest_stIni == "LA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "MS" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "AR" & dy_cnty$dest_stIni == "LA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "AR" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "MS"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "MS"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "OR"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "OR"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "TX"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "TX"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "OR" & dy_cnty$dest_stIni == "WA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "OR" & dy_cnty$dest_stIni == "WA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "ID" & dy_cnty$dest_stIni == "WA"] <- .7813085 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "ID" & dy_cnty$dest_stIni == "WA"]
+
+# intra
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "LA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "LA" & dy_cnty$dest_stIni == "LA"]
+dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "WA"] <- 3.526352 + dy_cnty$sum_FE[dy_cnty$orig_stIni == "WA" & dy_cnty$dest_stIni == "WA"]
+
 dy_cnty <- dy_cnty %>%
   mutate(distance_c = distance*dist_eta) %>%
   mutate(sales_i_c  = sales_i*sale_eta) %>%
   mutate(gdp_j_c    = gdp_j*gdpj_eta) %>%
   mutate(FE_w       = (cnst + sum_FE)) %>% # check if you want to use weights
   mutate(cnty_flows = exp(distance_c + sales_i_c + gdp_j_c + FE_w))
+
 
 # I conduct the following clean-up to make sure that county flows reflect reality----
 rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
@@ -180,7 +230,7 @@ for(st_ori in c(st_list, "louisiana", "washington")) {
     
     indices <- (dy_cnty$gdp_j != 0 & dy_cnty$sales_i != 0)
     
-    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des# & indices
+    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des & indices
     
     st_flw_sim <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE)
     st_flw_obs <- mean(dy_cnty$trade[indices], na.rm = TRUE)
@@ -217,32 +267,6 @@ dy_cnty <- dy_cnty %>%
          cnty_flows,
          sales_i,
          gdp_j)
-if(FALSE){
-i <- 0
-w <- 0
-for(st_ori in st_list) {
-  for(st_des in st_list) {
-    
-    indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des
-    
-    val <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE) == mean(dy_cnty$trade[indices], na.rm = TRUE)
-    i <- i + 1
-    
-    #cat(":::: Iteration number ", i, "out of 2,304")
-    
-    
-    if(!val) {
-      cat("\n")
-      print(st_ori)
-      print(st_des)
-      print(sum(dy_cnty$cnty_flows[indices], na.rm = TRUE))
-      print(mean(dy_cnty$trade[indices], na.rm = TRUE))
-      w <- w + 1
-      cat("\n")
-    }
-  }
-}
-}
 
 saveRDS(dy_cnty, file = 'output/dyadic_county_flows_adjusted.rds')
 #dy_cnty <- as.data.frame(dy_cnty)
