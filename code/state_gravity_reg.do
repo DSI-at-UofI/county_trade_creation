@@ -103,19 +103,11 @@ outreg2 using "output/state_reg", replace label excel dec(5) addstat(Pseudo R2, 
 
 estimates save "output/state_reg", replace
 
-/*
-/* run the following only to check the FE for LA WA */
 tab clm_orig_time, gen(orig_FE)
 tab clm_dest_time, gen(dest_FE)
 
-ppmlhdfe trade distance sales_i gdp_j i.(one clm_orig_time_id clm_dest_time_id intra contiguity) if indicator != 1, a(one) cl(orig_id dest_id)
-
-drop if indicator != 1
-drop if year == 2012
-
-keep orig_ini clm_region_i clm_orig_time_id dest_ini clm_dest_time_id clm_region_j intra contiguity
-*/
-
+ppml trade distance sales_i gdp_j orig_FE* dest_FE* intra contiguity if indicator != 1
+predict ppml_hat, mu
 
 *tab pair_id, gen(pair_FE)
 
@@ -132,9 +124,13 @@ gen domestic = 0
 replace domestic = trade if orig == dest  
 
 keep if year == 2017
-keep orig dest sum_FE notrade trade imports exports domestic
+keep orig dest orig_ini dest_ini sales_i gdp_j distance intra contiguity sum_FE notrade trade imports exports domestic ppml_hat clm_region_i orig_FE* clm_region_j dest_FE* 
+
 rename orig orig_stName
 rename dest dest_stName
+
+rename orig_ini orig_stIni
+rename dest_ini dest_stIni
 
 save "output/dyadic_state_2017_merge", replace
 * end

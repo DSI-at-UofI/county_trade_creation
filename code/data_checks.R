@@ -290,14 +290,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 93"  = "#deebf7",
-    "93 to 185"  = "#c6dbef",
-    "185 to 277"  = "#9ecae1",
-    "277 to 369"  = "#6baed6",
-    "369 to 461"  = "#4292c6",
-    "461 to 553"  = "#2171b5",
-    "553 to 645"  = "#08519c",
-    "645 to 973"  = "#08306b")) +
+    "1 to 41"  = "#deebf7",
+    "41 to 81"  = "#c6dbef",
+    "81 to 121"  = "#9ecae1",
+    "121 to 161"  = "#6baed6",
+    "161 to 201"  = "#4292c6",
+    "201 to 241"  = "#2171b5",
+    "241 to 281"  = "#08519c",
+    "281 to 440"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
@@ -362,14 +362,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 305"  = "#deebf7",
-    "305 to 609"  = "#c6dbef",
-    "609 to 913"  = "#9ecae1",
-    "913 to 1217"  = "#6baed6",
-    "1217 to 1521"  = "#4292c6",
-    "1521 to 1825"  = "#2171b5",
-    "1825 to 2129"  = "#08519c",
-    "2129 to 7630"  = "#08306b")) +
+    "1 to 94"  = "#deebf7",
+    "94 to 187"  = "#c6dbef",
+    "187 to 280"  = "#9ecae1",
+    "280 to 373"  = "#6baed6",
+    "373 to 466"  = "#4292c6",
+    "466 to 559"  = "#2171b5",
+    "559 to 652"  = "#08519c",
+    "652 to 2101"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
