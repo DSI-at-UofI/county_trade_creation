@@ -19,3 +19,5 @@ output/dyadic_county_flows_adjusted.dta
 output/sim_to_obs_ration.txt
 
 documentation/
+
+.DS_Store
