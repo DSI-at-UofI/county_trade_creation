@@ -6,9 +6,7 @@ assets/USmap_st_df.rds
 
 data/cfs_cleaned_data
 data/data_needs
-data/cntyflows_12_lin_2019.csv
 
-code/check_predict.do
 code/dyadic_county_merged_construction.do
 
 output/dyadic_county_flows.rds

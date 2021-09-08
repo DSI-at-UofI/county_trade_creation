@@ -1,18 +1,24 @@
 rm(list = ls())
+
 # Noe J Nava
-# noejn2@illinois.edu
+# noejn2@illinois.edu // noejnava2@gmail.com
 # https://noejn2.github.io/
-# Script creates the dyadic_county_flows.rds, which is our 
-# main dataset in this repository
-# 
-# script calculates county exports and imports, but also calculates
-# correlaiton between gdp_j and imports, and sales_i and exports
-# The last part of the code is interested with mapping the values
 
-#print.results <- askYesNo("Print Results?")
+# Purpose: ----------------
+# Here, we performed several checks and comparisons between our dataset
+# and the dataset in Lin, Ruess, Marston and Konar (2019) dataset
+# which here is titled: cntyflows_12_lin_2019.
+# The data checks include:
+# imports/exports maps, and
+# descriptive statistics
 
-library(tidyverse)
-library(rgdal)
+# This is groundhog config to keep useful versions of packages
+# Do not change groundhog_day!!
+# check: http://datacolada.org/95
+groundhog_day <- "2021-09-05"
+pkgs <- c("tidyverse", "rgdal")
+groundhog::groundhog.library(pkgs, groundhog_day)
+
 
 dy_cnty <- readRDS(file = 'output/dyadic_county_flows_adjusted.rds')
 dy_kona <- read_csv(file = 'data/cntyflows_12_lin_2019.csv')
@@ -21,9 +27,6 @@ dy_kona <- dy_kona %>%
   rename(orig = ori,
          dest = des,
          kona = sctg_2)
-
-#exports <- dy_cnty %>% distinct(orig, sales_i)
-#imports <- dy_cnty %>% distinct(dest, gdp_j)
 
 # Calculating nodes and links ----
 # Konar
@@ -148,7 +151,7 @@ no_exp <- sum(mo_cnty$cnty_exports == 0)
 no_imp_kona <- sum(mo_cnty$kona_imports == 0)
 no_exp_kona <- sum(mo_cnty$kona_exports == 0)
 
-if(TRUE) { # Printing results
+if(TRUE) {# Printing results
   cat("\n")
   cat(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::", "\n")
   cat("::: The following are comparisons between Konar's county trade flows ::::::::::::::::::::::", "\n")
@@ -183,7 +186,6 @@ if(TRUE) { # Printing results
   cat("::: Max of imports:", max(mo_cnty$cnty_imports), "::::::::::::::::::::::::::::::::::::::::::", "\n")
   cat(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::", "\n")
 }
-
 # Creating maps ----
 # First we make the tibble files using the shapefiles
 # I will save it to save this step in future maps
@@ -377,4 +379,4 @@ ggplot() +
         legend.position = "bottom") +
   guides(fill = guide_legend(title = "Imports:",
                              title.position = "top"))
-♦# end
+# end

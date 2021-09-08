@@ -1,15 +1,27 @@
 clear all
 /*
-Noé J Nava (noejn2@illinois.edu)
+Noé J Nava (noejn2@illinois.edu//noejnava2@gmail.com)
 https://noejn2.github.io/
 
-Script runs the gravity specificaiton that we settle on DSO-at-UofI/trade_interpolation.
-Then, script creates a dataset that will be used with county-trade flows for adjustments: dyadic_state_2017_merge.dta
+Before running script, request from Noe (script's author) the following 
+data directories:
+- data/cfs_cleaned_data
+- data/data_needs
 
+Scripts' goal:
+- Recover the gravity parameters that will be employed in our county flows 
+simulation
+- Create the dyadic_state_2017_merge.dta employed in simulation corrections.
 
 */
 
 cd "C:\Users\noejn2\OneDrive - University of Illinois - Urbana\Drive\Projects\county_trade_creation"
+
+* Panel data creation:
+* Cross-sections are created individual for each year in {2012, 2017}
+* then, the following puts all cross-sections together into a panel dataset.
+* Notice that the dependent variable, trade, comes from cfs_cleaned_data
+* but the dependent variables come from data_needs directories.
 
 /* Panel regression Set-up*/
 frame copy default df_2017
@@ -40,7 +52,6 @@ frameappend df_2017, drop
 /* End: Panel regression Set-up*/
 
 * Estimation part:
-**** IMPORTANT: If climate region is not present, then run R script -- ~/code/clm_region.R in the trade_interpolation repo ---
 egen orig_id = group(orig)		// Numerical IDs for orig_state
 egen dest_id = group(dest)		// Numerical IDs for dest_state
 egen pair_id = group(orig dest) // Numerical IDs for dyadic
@@ -87,12 +98,8 @@ label var gdp_id078_j "Specialties manufacturing (GDP)"
 label var gdp_id093_j "Bread manufacturing (GDP)"
 label var gdp_j "GDP"
 
-* distance and contiguity are also included
-* FE structire is climate zone with time [exporter and importer] plus intra plus time
-*tab clm_orig_time_id, gen(clm_orig_time_FE)
-*tab clm_dest_time_id, gen(clm_dest_time_FE)
-*tab intra, gen(intra_FE)
-
+* Estimation drops LA and WA since flows toward these states may include a lot 
+* of international exports
 gen indicator = 0
 replace indicator = 1 if orig == "louisiana" | dest == "louisiana"
 replace indicator = 1 if orig == "washington" | dest == "washington"
@@ -100,16 +107,17 @@ ppmlhdfe trade distance sales_i gdp_j if indicator != 1, a(one clm_orig_time_id 
 
 /* Saving the results */
 outreg2 using "output/state_reg", replace label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Contiguity YES, Intra FE, YES, Time FE, YES, Importer Climate Time FE, YES, Exporter Climate Time FE, YES)
-
 estimates save "output/state_reg", replace
 
+/* The following is used to
+1) recover the estimates associated with the FE to be used in the simulation part, and
+2) to create a ppml_hat variable (prediction) to make sure our adjustment code works 
+This is done in FE_formula.R script */
 tab clm_orig_time, gen(orig_FE)
 tab clm_dest_time, gen(dest_FE)
 
 ppml trade distance sales_i gdp_j orig_FE* dest_FE* intra contiguity if indicator != 1
 predict ppml_hat, mu
-
-*tab pair_id, gen(pair_FE)
 
 ** Calculating state imports, exports and domestic consumption **
 ** This is done to create a dataset that will be used with county-trade flows for adjustments**

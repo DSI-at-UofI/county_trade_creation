@@ -1,37 +1,33 @@
 rm(list = ls())
 
-library(tidyverse)
+# Script is employed to check if the formula in the main script
+# trade_interpolation.R is correct. That is, we analyze if there is
+# any bias when correcting for LA and WA flows.
+
+# This is groundhog config to keep useful versions of packages
+# Do not change groundhog_day!!
+# check: http://datacolada.org/95
+groundhog_day <- "2021-09-05"
+pkgs <- c("tidyverse", "readstata13")
+groundhog::groundhog.library(pkgs, groundhog_day)
+
 options(scipen = 9999)
 
+dy_stat <- read.dta13(file = 'output/dyadic_state_2017_merge.dta')
 
-# Noe J Nava
-# noejn2@illinois.edu
-# https://noejn2.github.io/
-# Script creates the dyadic_county_flows_adjusted.rds, which is our 
-# main dataset in this repository
-# Code takes approximately 15 minutes
-# on Intel(R) Xeon(R) CPU E3-12250 v6 3.00Ghz 
-# 64 GB ram
-# Mumford computer
-
-dy_stat <- readstata13::read.dta13(file = 'output/dyadic_state_2017_merge.dta')
-
-
+# Parameters from Stata ppml regression:
 dist_eta <- -0.4495181
-
 sale_eta <- 0.6802411
-
 gdpj_eta <- 0.9762757
-
 cnst     <- -18.11583 
 
 key <- read_csv(file = 'assets/state_clm_region.csv')
 key <- key %>%
   select(initial, clm_region) %>%
   mutate(initial = toupper(initial))
-
 key <- key[!is.na(key$clm_region),]
 
+# These are the climate regions each U.S. state belongs to:
 southeast <- key$initial[key$clm_region == "southeast"]
 southwest <- key$initial[key$clm_region == "southwest"]
 south <- key$initial[key$clm_region == "south"]
@@ -44,7 +40,12 @@ west_north_central <- key$initial[key$clm_region == "west north central"]
 
 dy_stat <- dy_stat %>%
   filter(orig_stName %in% c("louisiana", "washington") | dest_stName %in% c("louisiana", "washington"))
-# Climate region
+
+# The following adds-up the FE in the same way as Stata's ppmlhdfe such that they
+# are later used to recover state flows for comparison.
+# Notice that we account for FE for origin and destination climate zones
+
+# Climate region correction
 for(ini in c("LA", "WA")) {#origin is region dest is state
   if(ini == "LA") {
     FE <- -.1931769 # FE associated with LA on the destination
@@ -83,7 +84,7 @@ for(ini in c("LA", "WA")) {#destination is region origin is state
 }
 
 
-# contiguity
+# contiguity correction
 dy_stat$sum_FE[dy_stat$orig_stIni == "LA" & dy_stat$dest_stIni == "AR"] <- .7813085 + dy_stat$sum_FE[dy_stat$orig_stIni == "LA" & dy_stat$dest_stIni == "AR"]
 dy_stat$sum_FE[dy_stat$orig_stIni == "WA" & dy_stat$dest_stIni == "ID"] <- .7813085 + dy_stat$sum_FE[dy_stat$orig_stIni == "WA" & dy_stat$dest_stIni == "ID"]
 dy_stat$sum_FE[dy_stat$orig_stIni == "TX" & dy_stat$dest_stIni == "LA"] <- .7813085 + dy_stat$sum_FE[dy_stat$orig_stIni == "TX" & dy_stat$dest_stIni == "LA"]
@@ -95,10 +96,11 @@ dy_stat$sum_FE[dy_stat$orig_stIni == "LA" & dy_stat$dest_stIni == "TX"] <- .7813
 dy_stat$sum_FE[dy_stat$orig_stIni == "OR" & dy_stat$dest_stIni == "WA"] <- .7813085 + dy_stat$sum_FE[dy_stat$orig_stIni == "OR" & dy_stat$dest_stIni == "WA"]
 dy_stat$sum_FE[dy_stat$orig_stIni == "ID" & dy_stat$dest_stIni == "WA"] <- .7813085 + dy_stat$sum_FE[dy_stat$orig_stIni == "ID" & dy_stat$dest_stIni == "WA"]
 
-# intra
+# intra correction
 dy_stat$sum_FE[dy_stat$orig_stIni == "LA" & dy_stat$dest_stIni == "LA"] <- 3.526352 + dy_stat$sum_FE[dy_stat$orig_stIni == "LA" & dy_stat$dest_stIni == "LA"]
 dy_stat$sum_FE[dy_stat$orig_stIni == "WA" & dy_stat$dest_stIni == "WA"] <- 3.526352 + dy_stat$sum_FE[dy_stat$orig_stIni == "WA" & dy_stat$dest_stIni == "WA"]
 
+# Appplying the formula
 dy_stat <- dy_stat %>%
   mutate(distance_c = distance*dist_eta) %>%
   mutate(sales_i_c  = sales_i*sale_eta) %>%
@@ -107,7 +109,8 @@ dy_stat <- dy_stat %>%
   mutate(st_flows = exp(distance_c + sales_i_c + gdp_j_c + FE_w),
          ratio = ppml_hat/st_flows)
 
-dy_state <- dy_stat %>%
+#checking everything went well where ratio is the ratio of the bias
+dy_stat <- dy_stat %>%
   select(orig_stName,
          dest_stName,
          ppml_hat,

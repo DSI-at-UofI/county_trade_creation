@@ -1,25 +1,44 @@
 rm(list = ls())
 
-library(tidyverse)
-
 # Noe J Nava
-# noejn2@illinois.edu
+# noejn2@illinois.edu // noejnava2@gmail.com
 # https://noejn2.github.io/
-# Script creates the dyadic_county_flows_adjusted.rds, which is our 
-# main dataset in this repository
-# Code takes approximately 15 minutes
-# on Intel(R) Xeon(R) CPU E3-12250 v6 3.00Ghz 
-# 64 GB ram
-# Mumford computer
+
+# Purpose: ----------------
+# Script is the simulation that we employ to estimate the county flows
+# using the parameters from our gravity regression:
+# 1) FE parameters
+# 2) elasticities associated with crop sales and gdp
+# But also, we employ here our IMPLAN and NASS crop sales county level data
+# This comes from the dyadic_county_2017.rds dataset that we created
+
+# In addition, this script also corrects for the following:
+# 1) WA and LA flows were not estimated, so we use FE parameters
+# to estimate county flows for these states
+# The additional correction is that our simulated flows at the county level,
+# when aggregated back to the state level, must add-up to the observed state 
+# levels. We do that here too, except for exports to LA and WA.
+
+# Code takes approximately 12 minutes ----------
+# on MacBook Pro
+# 2.3 GHz Quad-Core Intel Core i7 
+# 32 GB ram
+# Personal Mac
 
 start.time <- Sys.time()
-start.time
 
-#dy_cnty <- readstata13::read.dta13(file = 'data/dyadic_county_2017.dta')
+# This is groundhog config to keep useful versions of packages
+# Do not change groundhog_day!!
+# check: http://datacolada.org/95
+groundhog_day <- "2021-09-05"
+pkgs <- c("tidyverse", "readstata13")
+groundhog::groundhog.library(pkgs, groundhog_day)
+
 dy_cnty <- readRDS(file = 'output/dyadic_county_2017.rds')
-dy_stat <- readstata13::read.dta13(file = 'output/dyadic_state_2017_merge.dta')
+dy_stat <- read.dta13(file = 'output/dyadic_state_2017_merge.dta')
 
 # Setting-up the dataset for county flows -----
+# The state level dataset is created for the county level
 dy_cnty <- dy_cnty %>%
   mutate(distance = log(distance + head_mayer_2002)) %>%
   mutate(sales_i = log(sales_i)) %>%
@@ -83,13 +102,8 @@ dy_cnty <- left_join(dy_cnty,
                      by = c("orig_stName",
                             "dest_stName"))
 
-### add code here to remove zero observations that we know are zero at the state level
-
 # We create the weights to divided the SUM of Fixed effects ----
-# To allocate the Fixed Effect values (which are obtained at the state level-state dyadic)
-# to the counties, I count the number of county dyadic interactions belonging to eac
-# state dyadic interaction and the inverse of the weight is multiplied by the FE summation
-rm(list=setdiff(ls(), c("dy_cnty", "start.time", "answer_weights")))
+rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
 
 # The following code uses the parameters and the variables to create the county flows ----
 # These are the parameters:
@@ -106,18 +120,19 @@ sale_SE  <- 0.1195276
 gdpj_eta <- 0.9762757
 gdpj_SE  <- 0.104049
 
-cnst     <- -15.46002
+cnst     <- -15.46002 #from ppmlhdfe regression --- main regression that creates sum_FE variable
 cnst_SE  <- 2.464821
 
-ppml_SE  <- -18.11583 
+ppml_SE  <- -18.11583 # from ppml regression --- to adjust WA and LA
 
+# This correction has been tested
 key <- read_csv(file = 'assets/state_clm_region.csv')
 key <- key %>%
   select(initial, clm_region) %>%
   mutate(initial = toupper(initial))
-
 key <- key[!is.na(key$clm_region),]
 
+# These allocates all counties to their climate regions
 southeast <- key$initial[key$clm_region == "southeast"]
 southwest <- key$initial[key$clm_region == "southwest"]
 south <- key$initial[key$clm_region == "south"]
@@ -127,6 +142,10 @@ northwest <- key$initial[key$clm_region == "northwest"]
 central <- key$initial[key$clm_region == "central"]
 east_north_central <- key$initial[key$clm_region == "east north central"]
 west_north_central <- key$initial[key$clm_region == "west north central"]
+
+# The following adds-up the FE in the same way as Stata's ppmlhdfe such that they
+# are later used to recover state flows for comparison.
+# Notice that we account for FE for origin and destination climate zones
 
 # Climate region
 for(ini in c("LA", "WA")) {#origin is region dest is state
@@ -187,11 +206,11 @@ dy_cnty <- dy_cnty %>%
   mutate(distance_c = distance*dist_eta) %>%
   mutate(sales_i_c  = sales_i*sale_eta) %>%
   mutate(gdp_j_c    = gdp_j*gdpj_eta) %>%
-  mutate(FE_w       = (cnst + sum_FE)) %>% # check if you want to use weights
+  mutate(FE_w       = (cnst + sum_FE)) %>%
   mutate(cnty_flows = exp(distance_c + sales_i_c + gdp_j_c + FE_w))
 
 
-# I conduct the following clean-up to make sure that county flows reflect reality----
+# I conduct the following correction to make sure that county flows reflect observed state flows----
 rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
 
 sum(is.na(dy_cnty$cnty_flows))
@@ -269,8 +288,6 @@ dy_cnty <- dy_cnty %>%
          gdp_j)
 
 saveRDS(dy_cnty, file = 'output/dyadic_county_flows_adjusted.rds')
-#dy_cnty <- as.data.frame(dy_cnty)
-#readstata13::save.dta13(dy_cnty, file = 'output/dyadic_county_flows_adjusted.dta')
 
 mins <- as.numeric(Sys.time() - start.time, units = "mins")
 cat("\n")
