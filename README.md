@@ -42,6 +42,12 @@ Below we show an schematic work flow of our procedure. For the purpose of code d
 
 ![schematic work flow](assets/schematic_cnty_flows.png)
 
+The following scripts are complementary to this simulation:
+
+- `code/FE_formula.R` is used to demonstrate that the correction to include the FEs associated with WA and LA in `code/trade_interpolation.R` carries no bias i.e., the code is correct.
+- `code/check_predict.do` is used to demonstrate that the formula used in R in `code/trade_interpolation.R` is the same as any Stata's predict command.
+- `code/data_checks.R` performs several checks and comparisons between our dataset and the dataset in Lin, Ruess, Marston and Konar (2019) dataset which here is titled: `data/cntyflows_12_lin_2019.csv`. The data checks include: imports/exports maps, and descriptive statistics.
+
 <sup name="footnote1">1 Please see IMPLAN repository to see how to create this dataset. </sup>.
 <sup name="footnote2">2 This is created in step 1 here. </sup>.
 <sup name="footnote2">3 This is created in step 2 here. </sup>.
