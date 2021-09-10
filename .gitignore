@@ -6,6 +6,7 @@ assets/USmap_st_df.rds
 
 data/cfs_cleaned_data
 data/data_needs
+data/faf4.5.1_2017_state.dta
 
 code/dyadic_county_merged_construction.do
 
