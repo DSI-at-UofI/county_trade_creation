@@ -16,6 +16,7 @@ output/dyadic_state_2017_merge.dta
 output/dyadic_county_flows_adjusted.rds
 output/dyadic_county_flows_adjusted.dta
 output/sim_to_obs_ration.txt
+output/st_trade_flows.dta
 
 documentation/
 
