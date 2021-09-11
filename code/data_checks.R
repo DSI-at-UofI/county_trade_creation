@@ -16,7 +16,7 @@ rm(list = ls())
 # Do not change groundhog_day!!
 # check: http://datacolada.org/95
 groundhog_day <- "2021-09-05"
-pkgs <- c("tidyverse", "rgdal")
+pkgs <- c("tidyverse", "rgdal", "collapse", "readstata13")
 groundhog::groundhog.library(pkgs, groundhog_day)
 
 
@@ -186,6 +186,16 @@ if(TRUE) {# Printing results
   cat("::: Max of imports:", max(mo_cnty$cnty_imports), "::::::::::::::::::::::::::::::::::::::::::", "\n")
   cat(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::", "\n")
 }
+
+# The following lines of code create the st_flows dataset where one can corroborate that the state flows
+# are indeed the same (simulated vs CFS). Notice that only LA and WA have discrepencies.
+st_flows <- collap(dy_cnty, ~orig_stName+dest_stName, FUN = sum)
+st_flows <- st_flows %>% select(orig_stName, dest_stName, cnty_flows)
+cfs <- read.dta13(file = 'output/st_trade_flows.dta')
+cfs <- cfs %>% filter(year == 2017) %>% select(orig, dest, trade)
+st_flows <- left_join(st_flows, cfs, by = c("orig_stName" = "orig", "dest_stName" = "dest"))
+st_flows$ratio <- st_flows$cnty_flows/st_flows$trade
+
 # Creating maps ----
 # First we make the tibble files using the shapefiles
 # I will save it to save this step in future maps

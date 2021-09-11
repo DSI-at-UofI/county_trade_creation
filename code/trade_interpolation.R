@@ -19,7 +19,7 @@ rm(list = ls())
 # when aggregated back to the state level, must add-up to the observed state 
 # levels. We do that here too, except for exports to LA and WA.
 
-# Code takes approximately 12 minutes ----------
+# Code takes approximately 11 minutes ----------
 # on MacBook Pro
 # 2.3 GHz Quad-Core Intel Core i7 
 # 32 GB ram
@@ -257,7 +257,7 @@ for(st_ori in c(st_list, "louisiana", "washington")) {
     if(st_flw_sim == 0) { #if simulated flows is zero, then we allocate as follows:
       dy_cnty$cnty_flows[indices] <- st_flw_obs/length(dy_cnty$cnty_flows[indices])
       
-      if(st_flw_obs == 0 & st_flw_obs == 0) {
+      if(st_flw_obs != 0) {
         line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated value is zero!!!!")
         write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
       }else{
