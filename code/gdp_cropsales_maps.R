@@ -161,8 +161,8 @@ ggplot() +
     title = "GDP - demand for SCTG 02 crops"
   ) +
   scale_fill_manual(values   = c(
-    "Below $10,000"          = "#edf8e9",
-    " $10,000 and $100,000"  = "#c7e9c0",
+    "Below $100,000"         = "#edf8e9",
+    " $100,000 and $1 M"     = "#c7e9c0",
     " $1 M and $10 M"        = "#a1d99b",
     " $10 M and $100 M"      = "#74c476",
     " $100 M and  $1 B"      = "#31a354",
