@@ -7,6 +7,7 @@ assets/USmap_st_df.rds
 data/cfs_cleaned_data
 data/data_needs
 data/faf4.5.1_2017_state.dta
+Data/smith_etal_2017
 
 code/dyadic_county_merged_construction.do
 
@@ -17,6 +18,8 @@ output/dyadic_county_flows_adjusted.rds
 output/dyadic_county_flows_adjusted.dta
 output/sim_to_obs_ration.txt
 output/st_trade_flows.dta
+
+output/figs
 
 documentation/
 
