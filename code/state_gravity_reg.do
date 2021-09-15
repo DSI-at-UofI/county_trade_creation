@@ -131,7 +131,7 @@ replace imports = 0 if orig == dest
 gen domestic = 0
 replace domestic = trade if orig == dest  
 
-keep orig dest orig_ini dest_ini sales_i gdp_j distance intra contiguity sum_FE notrade trade imports exports domestic ppml_hat clm_region_i orig_FE* clm_region_j dest_FE* 
+keep orig dest orig_ini dest_ini sales_i gdp_j distance intra contiguity sum_FE notrade trade imports exports domestic ppml_hat clm_region_i orig_FE* clm_region_j dest_FE* year
 
 save "output/st_trade_flows.dta", replace
 
