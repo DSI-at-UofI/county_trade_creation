@@ -161,6 +161,13 @@ ggplot() +
                    fill = cut(exports,
                               breaks = breaks,
                               labels = labels)),
+               color = "grey",
+               size = .02) +
+  geom_polygon(data = USmap_st_df,
+               aes(x = long,
+                   y = lat,
+                   group = group),
+               fill = NA,
                color = "black",
                size = .6) +
   geom_polygon(data = USmap_cnty_df,
@@ -169,7 +176,7 @@ ggplot() +
                    group = group),
                fill = NA,
                color = "grey",
-               size = .05) +
+               size = .02) +
   labs(
     title = "Out-state SCTG 02 exports (state level)"
   ) +
@@ -258,6 +265,13 @@ ggplot() +
                    fill = cut(imports,
                               breaks = breaks,
                               labels = labels)),
+               color = "grey",
+               size = .02) +
+  geom_polygon(data = USmap_st_df,
+               aes(x = long,
+                   y = lat,
+                   group = group),
+               fill = NA,
                color = "black",
                size = .6) +
   geom_polygon(data = USmap_cnty_df,
@@ -266,7 +280,7 @@ ggplot() +
                    group = group),
                fill = NA,
                color = "grey",
-               size = .05) +
+               size = .02) +
   labs(
     title = "Out-state SCTG 02 imports (state level)"
   ) +
@@ -355,6 +369,13 @@ ggplot() +
                    fill = cut(domestic,
                               breaks = breaks,
                               labels = labels)),
+               color = "grey",
+               size = .02) +
+  geom_polygon(data = USmap_st_df,
+               aes(x = long,
+                   y = lat,
+                   group = group),
+               fill = NA,
                color = "black",
                size = .6) +
   geom_polygon(data = USmap_cnty_df,
@@ -363,7 +384,7 @@ ggplot() +
                    group = group),
                fill = NA,
                color = "grey",
-               size = .05) +
+               size = .02) +
   labs(
     title = "In-state SCTG 02 domestic (state level)"
   ) +
@@ -430,15 +451,3 @@ ggplot() +
   guides(fill = guide_legend(title = "",
                              title.position = "top"))
 # end
-
-
-
-
-
-
-
-
-
-
-
-
