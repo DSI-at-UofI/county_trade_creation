@@ -24,6 +24,7 @@ output/figs
 documentation/
 
 Flow-map-in-r-ggplot/
+multinomial_logit_example/
 
 .DS_Store
 
