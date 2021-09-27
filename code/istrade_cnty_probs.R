@@ -3,7 +3,7 @@ options(scipen = 9999)
 
 # Noe J Nava
 # noejn2@illinois.edu // noejnava2@gmail.com
-# https://noejn2.github.io/
+# https://noejn2.github.io
 
 # Purpose: ----------------
 # Calibrate a logit model with state level data to calcuate the probability
