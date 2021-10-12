@@ -1,5 +1,6 @@
 .Rproj.user/
 .Rhistory
+county_trade_creation.Rproj
 
 assets/USmap_cnty_df.rds
 assets/USmap_st_df.rds
@@ -19,6 +20,7 @@ output/dyadic_county_flows_adjusted.dta
 output/sim_to_obs_ration.txt
 output/st_trade_flows.dta
 output/dy_cnty_probs.rds
+Output/sim_to_obs_ratio.txt
 
 output/figs
 
