@@ -9,12 +9,20 @@ options(scipen = 9999)
 # Calibrate a logit model with state level data to calcuate the probability
 # of dyadic-conty observations to have trade
 
+# Conclusions: ---------
+# Gains from having different model specication (year or intra), and
+# having different estimators (Machine learning, normal logistic and King and Zeng)
+# are minimal. 
+# Using Konar's paper as benchmark, we predict substantially lower observations
+# We employ model 9 since it gives us the highest number of ones.
+
 library(tidyverse)
 library(readstata13)
 library(plm)
 library(caret)
 library(glmnet)
 library(Zelig)
+library(pscl)
 
 set.seed(123)
 cutoff <- 0.5 # <------ select probabilitiy cut-off
@@ -122,8 +130,15 @@ pred_power <- function(observed, predicted, cutoff, model) {
               round(100*right_n_0/obs_n_0, 2))
   
   output
-  
+
 }
+
+### This is the priors that we employ in King and Zeng that requires us
+### to have some weights about what we know the share of ones is in our 
+### dataset
+num_ones <- sum(st_trade_flows$istrade == 1)
+num_all <- length(st_trade_flows$orig)
+prior <- num_ones/num_all
 
 # Includes intra for only 2017--- model 1
 reg_formula <- "istrade ~ distance + intra + contiguity + sales_i + gdp_j + y17"
@@ -280,14 +295,14 @@ model8 <- pred_power(test_data$istrade, probs, .5, "ML no intra -- 2012")
 
 # Includes intra for both years--- model 9
 reg_formula <- "istrade ~ distance + intra + contiguity + sales_i + gdp_j + y17"
-glm_fit <- glm(formula = paste0(reg_formula, FE_formula),
-               data = st_trade_flows, 
-               family = "binomial")
-st_trade_flows$model9 <- predict(glm_fit,
+glm_fit09 <- glm(formula = paste0(reg_formula, FE_formula),
+                 data = st_trade_flows,
+                 family = "binomial")
+st_trade_flows$model9 <- predict(glm_fit09,
                                  newdata = st_trade_flows, 
                                  type = "response")
 model9 <- pred_power(st_trade_flows$istrade,
-                     st_trade_flows$model1,
+                     st_trade_flows$model9,
                      cutoff = cutoff,
                      "Logi intra -- both")
 
@@ -372,12 +387,7 @@ probs <- model %>% predict(newx = x_test)
 
 model12 <- pred_power(test_data$istrade, probs, .5, "ML intra -- both")
 
-# Without intra for both years--- model 13
-num_ones <- sum(st_trade_flows$istrade == 1)
-num_all <- sum(st_trade_flows$orig != st_trade_flows$dest)
-
-prior <- num_ones/num_all
-
+# Without intra for both years with small sample--- model 13
 reg_formula <- "istrade ~ distance + sales_i + gdp_j + y17"
 st_trade_flow_train <- st_trade_flows[st_trade_flows$orig != st_trade_flows$dest,]
 
@@ -390,21 +400,21 @@ st_trade_flow_train <- na.omit(st_trade_flow_train)
 weigs <- rep(prior, length(st_trade_flow_train$orig))
 weigs <- ifelse(st_trade_flow_train$istrade == 1, weigs, 1 - prior)
 
-glm_fit <- glm(formula = paste0(reg_formula, FE_formula),
-               data = st_trade_flow_train,
-               weights = weigs,
-               family = "binomial")
-st_trade_flows$model13 <- predict(glm_fit,
-                                  newdata = st_trade_flows, 
+glm_fit13 <- glm(formula = paste0(reg_formula, FE_formula),
+                 data = st_trade_flow_train,
+                 weights = weigs,
+                 family = "binomial")
+st_trade_flows$model13 <- predict(glm_fit13,
+                                  newdata = st_trade_flows,
                                   type = "response")
 
 indices <- st_trade_flows$orig_ini != st_trade_flows$dest_ini
 model13 <- pred_power(st_trade_flows$istrade[indices],
                       st_trade_flows$model13[indices],
                       cutoff = cutoff,
-                      "King_Zeng no intra -- both")
+                      "King_Zeng no intra_small -- both")
 
-# Without intra for both years--- model 14
+# Without intra for both years with small sample--- model 14
 num_ones <- sum(st_trade_flows$istrade == 1)
 num_all <- sum(st_trade_flows$orig != st_trade_flows$dest)
 
@@ -435,15 +445,53 @@ indices <- st_trade_flows$orig_ini != st_trade_flows$dest_ini
 model14 <- pred_power(st_trade_flows$istrade[indices],
                       st_trade_flows$model14[indices],
                       cutoff = cutoff,
-                      "King_Zeng -- both")
+                      "King_Zeng small -- both")
+
+# Without intra for both years--- model 15
+reg_formula <- "istrade ~ distance + sales_i + gdp_j + y17"
+indices <- st_trade_flows$orig_ini != st_trade_flows$dest_ini
+
+weigs <- rep(prior, length(st_trade_flows$orig[indices]))
+weigs <- ifelse(st_trade_flows$istrade[indices] == 1, weigs, 1 - prior)
+
+glm_fit <- glm(formula = paste0(reg_formula, FE_formula),
+               data = st_trade_flows[indices,],
+               weights = weigs,
+               family = "binomial")
+st_trade_flows$model15 <- predict(glm_fit,
+                                  newdata = st_trade_flows, 
+                                  type = "response")
+
+model15 <- pred_power(st_trade_flows$istrade[indices],
+                      st_trade_flows$model15[indices],
+                      cutoff = cutoff,
+                      "King_Zeng no intra -- both")
+
+# Without intra for both years --- model 16
+weigs <- rep(prior, length(st_trade_flow_train$orig))
+weigs <- ifelse(st_trade_flow_train$istrade == 1, weigs, 1 - prior)
+
+glm_fit <- glm(formula = paste0(reg_formula, FE_formula),
+               data = st_trade_flow_train,
+               weights = weigs,
+               family = "binomial")
+
+st_trade_flows$model16 <- predict(glm_fit,
+                                  newdata = st_trade_flows, 
+                                  type = "response")
+
+model16 <- pred_power(st_trade_flows$istrade,
+                      st_trade_flows$model16,
+                      cutoff = cutoff,
+                      "King_Zeng small -- both")
 
 cbind(model1, model2, model3, model4, 
       model5, model6, model7, model8, 
       model9, model10, model11, model12,
-      model13, model14)
+      model13, model14, model15, model16)
 
 ### The following code calculates probabilities at the county level
-dy_cnty$probs <- predict(glm_fit, newdata = dy_cnty, type = "response")
+dy_cnty$probs <- predict(glm_fit09, newdata = dy_cnty, type = "response")
 dy_cnty_probs <- dy_cnty %>% select(orig, dest, probs)
 sum(dy_cnty_probs$probs > .5)
 saveRDS(dy_cnty_probs, file = "output/dy_cnty_probs.rds")
