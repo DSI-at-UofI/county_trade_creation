@@ -17,7 +17,8 @@ rm(list = ls())
 # check: http://datacolada.org/95
 groundhog_day <- "2021-09-05"
 pkgs <- c("tidyverse", "rgdal", "collapse", "readstata13")
-groundhog::groundhog.library(pkgs, groundhog_day)
+groundhog::groundhog.library(pkgs, groundhog_day,
+                             tolerate.R.version = '4.0.3')
 
 
 dy_cnty <- readRDS(file = 'output/dyadic_county_flows_adjusted.rds')
@@ -302,14 +303,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 41"  = "#deebf7",
-    "41 to 81"  = "#c6dbef",
-    "81 to 121"  = "#9ecae1",
-    "121 to 161"  = "#6baed6",
-    "161 to 201"  = "#4292c6",
-    "201 to 241"  = "#2171b5",
-    "241 to 281"  = "#08519c",
-    "281 to 440"  = "#08306b")) +
+    "1 to 64"  = "#deebf7",
+    "64 to 127"  = "#c6dbef",
+    "127 to 190"  = "#9ecae1",
+    "190 to 253"  = "#6baed6",
+    "253 to 316"  = "#4292c6",
+    "316 to 379"  = "#2171b5",
+    "379 to 442"  = "#08519c",
+    "442 to 1412"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +
@@ -374,14 +375,14 @@ ggplot() +
   ) +
   scale_fill_manual(values = c(
     "0 to 1"    = "#f7fbff",
-    "1 to 94"  = "#deebf7",
-    "94 to 187"  = "#c6dbef",
-    "187 to 280"  = "#9ecae1",
-    "280 to 373"  = "#6baed6",
-    "373 to 466"  = "#4292c6",
-    "466 to 559"  = "#2171b5",
-    "559 to 652"  = "#08519c",
-    "652 to 2101"  = "#08306b")) +
+    "1 to 311"  = "#deebf7",
+    "311 to 621"  = "#c6dbef",
+    "621 to 931"  = "#9ecae1",
+    "931 to 1241"  = "#6baed6",
+    "1241 to 1551"  = "#4292c6",
+    "1551 to 1861"  = "#2171b5",
+    "1861 to 2171"  = "#08519c",
+    "2171 to 7355"  = "#08306b")) +
   theme(panel.background = element_rect(fill = NA, 
                                         color = NA)) +
   coord_equal() +

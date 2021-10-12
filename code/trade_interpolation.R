@@ -12,12 +12,17 @@ rm(list = ls())
 # But also, we employ here our IMPLAN and NASS crop sales county level data
 # This comes from the dyadic_county_2017.rds dataset that we created
 
-# In addition, this script also corrects for the following:
+# This script also corrects for the following:
 # 1) WA and LA flows were not estimated, so we use FE parameters
 # to estimate county flows for these states
-# The additional correction is that our simulated flows at the county level,
+
+# In addition, we use probablities of having trade at the county level
+# from a previous logistic regression.
+
+# The final correction is that our simulated flows at the county level,
 # when aggregated back to the state level, must add-up to the observed state 
 # levels. We do that here too, except for exports to LA and WA.
+
 
 # Code takes approximately 11 minutes ----------
 # on MacBook Pro
@@ -27,12 +32,19 @@ rm(list = ls())
 
 start.time <- Sys.time()
 
+# Configuration of script:
+apply_correction  <- TRUE    # Select if you want to apply a proposed correction or not
+
+
+
 # This is groundhog config to keep useful versions of packages
 # Do not change groundhog_day!!
 # check: http://datacolada.org/95
 groundhog_day <- "2021-09-05"
 pkgs <- c("tidyverse", "readstata13")
-groundhog::groundhog.library(pkgs, groundhog_day)
+groundhog::groundhog.library(pkgs, 
+                             groundhog_day,
+                             tolerate.R.version = '4.0.3')
 
 dy_cnty <- readRDS(file = 'output/dyadic_county_2017.rds')
 dy_stat <- read.dta13(file = 'output/dyadic_state_2017_merge.dta')
@@ -103,7 +115,7 @@ dy_cnty <- left_join(dy_cnty,
                             "dest_stName"))
 
 # We create the weights to divided the SUM of Fixed effects ----
-rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
+rm(list=setdiff(ls(), c("dy_cnty", "start.time", "apply_correction")))
 
 # The following code uses the parameters and the variables to create the county flows ----
 # These are the parameters:
@@ -209,31 +221,80 @@ dy_cnty <- dy_cnty %>%
   mutate(FE_w       = (cnst + sum_FE)) %>%
   mutate(cnty_flows = exp(distance_c + sales_i_c + gdp_j_c + FE_w))
 
-
 # I conduct the following correction to make sure that county flows reflect observed state flows----
-rm(list=setdiff(ls(), c("dy_cnty", "start.time")))
+rm(list=setdiff(ls(), c("dy_cnty", "start.time", "apply_correction")))
 
 sum(is.na(dy_cnty$cnty_flows))
 sum(is.infinite(dy_cnty$cnty_flows))
 
-# 1st Step -- Adjust for the non-zero observations that we know they should not exist
+dy_prob <- readRDS(file = "output/dy_cnty_probs.rds")
+dy_cnty <- left_join(dy_cnty, dy_prob, by = c("orig", "dest"))
+
+# 1st Step -- Adjust for the non-zero observations that we know they should not exist based on:
+# a) notrade (at the state level) coming from the CFS data
+# b) whenever sales_i and gdp_j are zero
+# c) Probability is too low for trade to exist; however
+# there is the case in whcih probability is lower than the cut-off (0.5), but
+# that would cause that the two states that we kno trade by (nottrade variable)
+# do not trade.... for these cases, I just force them to trade between the top
+# 10 dyadic relationships based on probability.
 
 # The adjustments are done in this order:
-# 1) Zero cnty_flows if notrade == 1
-dy_cnty$cnty_flows[dy_cnty$notrade == 1] <- 0
+dy_cnty$prior <- ifelse(dy_cnty$notrade == 1, 0, 1)
+dy_cnty$prior[dy_cnty$sales_i == 0] <- 0 
+dy_cnty$prior[dy_cnty$gdp_j == 0]   <- 0
+dy_cnty$prior[dy_cnty$probs < .5] <- 0
+sum(dy_cnty$prior)
 
-# 2) Zero cnty_flows if sales_i == 0
-dy_cnty$cnty_flows[dy_cnty$sales_i == 0] <- 0
-
-# 3) Zero cnty_flows if gdp_j  == 0
-dy_cnty$cnty_flows[dy_cnty$gdp_j == 0] <- 0
-
-# 2nd Step -- Adjust dyadic county flows to match state dyadic flows
-st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
+total_errors <- 0
+which_errors <- data.frame()
 i <- 0
-# Notice that louisiana and washington are excluded from this adjustment
-st_list <- st_list[st_list != "louisiana"]
+st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
+for(st_orig in st_list) {
+  for(st_dest in st_list) {
+    
+    i <- i + 1
+    cat("\n")
+    cat(":::: Iteration number ", i, "out of 2,304")
+    cat("\n")
+    
+    df_temp <- dy_cnty %>%
+      filter(orig_stName == st_orig & dest_stName == st_dest) %>%
+      select(orig, dest, notrade, probs, prior)
+    
+    if(all(df_temp$notrade == 0 & df_temp$prob < 0.5)){
+      total_errors <- 1 + total_errors
+      which_errors <- rbind(which_errors, c(st_orig, st_dest))
+      
+      if(apply_correction) {
+        
+        df_temp <- df_temp[with(df_temp, order(-probs)),][1:10,]
+        
+        for(c in 1:10){
+          
+          row <- df_temp[c,]
+          dy_cnty$prior[dy_cnty$orig == row$orig & dy_cnty$dest == row$dest] <- 1
+          
+        }
+      }
+    }
+  }
+}
+
+dy_cnty$cnty_flows[dy_cnty$prior == 0] <- 0
+names(which_errors) <- c("orig", "dest")
+
+cat("\n")
+cat("Total of errors is", total_errors)
+cat("\n")
+cat("Total of dyadic interactions", sum(dy_cnty$prior))
+cat("\n")
+
+# 2nd Step -- Balance dyadic county flows to match state dyadic flows
+i <- 0
+st_list <- st_list[st_list != "louisiana"] 
 st_list <- st_list[st_list != "washington"]
+# Notice that louisiana and washington are excluded from this adjustment
 for(st_ori in c(st_list, "louisiana", "washington")) {
   for(st_des in st_list) {
     
@@ -247,12 +308,17 @@ for(st_ori in c(st_list, "louisiana", "washington")) {
     cat(":::: Iteration number ", i, "out of 2,208")
     cat("\n")
     
-    indices <- (dy_cnty$gdp_j != 0 & dy_cnty$sales_i != 0)
+    indices <- dy_cnty$prior == 1
     
     indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des & indices
     
     st_flw_sim <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE)
-    st_flw_obs <- mean(dy_cnty$trade[indices], na.rm = TRUE)
+    
+    if(all(!indices)) {
+      st_flw_obs <- 0
+    }else{
+      st_flw_obs <- mean(dy_cnty$trade[indices], na.rm = TRUE)
+    }
     
     if(st_flw_sim == 0) { #if simulated flows is zero, then we allocate as follows:
       dy_cnty$cnty_flows[indices] <- st_flw_obs/length(dy_cnty$cnty_flows[indices])
@@ -275,6 +341,7 @@ for(st_ori in c(st_list, "louisiana", "washington")) {
     }
   }
 }
+sum(dy_cnty$cnty_flows > 0)
 
 dy_cnty <- dy_cnty %>%
   select(orig,
