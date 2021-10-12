@@ -24,6 +24,8 @@ Output/sim_to_obs_ratio.txt
 
 output/figs
 
+diagnostics/
+
 documentation/
 
 Flow-map-in-r-ggplot/
