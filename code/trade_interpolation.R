@@ -244,7 +244,6 @@ dy_cnty$prior <- ifelse(dy_cnty$notrade == 1, 0, 1)
 dy_cnty$prior[dy_cnty$sales_i == 0] <- 0 
 dy_cnty$prior[dy_cnty$gdp_j == 0]   <- 0
 dy_cnty$prior[dy_cnty$probs < .5] <- 0
-sum(dy_cnty$prior)
 
 total_errors <- 0
 which_errors <- data.frame()
@@ -282,7 +281,9 @@ for(st_orig in st_list) {
 }
 
 dy_cnty$cnty_flows[dy_cnty$prior == 0] <- 0
+
 names(which_errors) <- c("orig", "dest")
+saveRDS(which_errors, file = 'diagnostics/which_errors.rds')
 
 cat("\n")
 cat("Total of errors is", total_errors)
