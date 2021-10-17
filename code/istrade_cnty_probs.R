@@ -306,6 +306,12 @@ model9 <- pred_power(st_trade_flows$istrade,
                      cutoff = cutoff,
                      "Logi intra -- both")
 
+dy_prob_St <- st_trade_flows %>% # Saving state probs from model 9
+  filter(year == 2017) %>%
+  select(orig, dest, model9) %>%
+  rename(probs_st = model9)
+saveRDS(dy_prob_St, file = "output/dy_state_probs.rds")
+
 # Without intra for both years--- model 10
 reg_formula <- "istrade ~ distance + sales_i + gdp_j + y17"
 indices <- st_trade_flows$orig_ini != st_trade_flows$dest_ini
