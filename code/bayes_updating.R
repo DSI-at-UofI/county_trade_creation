@@ -54,7 +54,7 @@ dy_cnty <- left_join(dy_cnty,
                             "dest_stName"))
 
 dy_cnty <- left_join(dy_cnty, dy_prob, by = c("orig", "dest"))
-dy_cnty$posterior <- (dy_cnty$istrade*dy_cnty$probs)/dy_cnty$probs_st
+dy_cnty$posterior <- (dy_cnty$probs)/dy_cnty$probs_st
 
 
 sum(dy_cnty$istrade == 1 & dy_cnty$probs > PofB)
