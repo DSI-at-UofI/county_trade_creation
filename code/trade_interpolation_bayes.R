@@ -29,7 +29,7 @@ cut_off           <- 0.5  # Define a cut-off for posterior to select if there ex
 # when aggregated back to the state level, must add-up to the observed state 
 # levels. We do that here too, except for exports to LA and WA.
 
-# Code takes approximately 11 minutes ----------
+# Code takes approximately 22 minutes ----------
 # on MacBook Pro
 # 2.3 GHz Quad-Core Intel Core i7 
 # 32 GB ram
@@ -297,10 +297,13 @@ for(st_orig in st_list) {
         # Applying correction for whenever notrade == 0, but posterior is 
         # below threshold
         
-        df_temp <- df_temp[with(df_temp, order(-posterior)),][1:10,]
+        df_temp <- df_temp %>% 
+          filter(notrade == 0 & df_temp$posterior < cut_off) %>%
+          filter(posterior > max(posterior)*.9)
+        
         which_corrections <- rbind(which_corrections, df_temp)
         
-        for(c in 1:10){
+        for(c in 1:length(df_temp$orig)){
           
           row <- df_temp[c,]
           dy_cnty$istrade[dy_cnty$orig == row$orig & dy_cnty$dest == row$dest] <- 1
@@ -311,8 +314,26 @@ for(st_orig in st_list) {
   }
 }
 
+# Saving the data set for visualizations
+dy_cnty %>%
+  select(!c(notrade, sum_FE, imports, 
+            exports, distance_c, sales_i_c, 
+            gdp_j_c, FE_w)) %>%
+saveRDS(file = 'output/dy_cnty_viz.rds')
+
+# Saving the diagnostics
 names(which_errors) <- c("orig", "dest")
 saveRDS(which_errors, file = 'diagnostics/which_errors.rds')
+
+key <- read_csv(file = "data/data_needs/location_master_key.csv")
+key <- key %>% select(fips, st_name) %>% mutate(fips = as.character(fips))
+
+which_corrections <- left_join(which_corrections, key, by = c("orig" = "fips"))
+names(which_corrections)[6] <- "orig_state"
+
+which_corrections <- left_join(which_corrections, key, by = c("dest" = "fips"))
+names(which_corrections)[7] <- "dest_state"
+
 saveRDS(which_corrections, file = 'diagnostics/which_corrections.rds')
 
 cat("\n")
