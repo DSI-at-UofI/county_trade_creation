@@ -32,7 +32,7 @@
 - `output/st_trade_flows.dta`
 - `output/dyadic_county_2017.rds`
 
-### 4) `code/trade_interpolation.R`
+### 4) `code/trade_interpolation_bayes.R`
 
 **Creates:** `output/dyadic_county_flows_adjusted.rds`.
 
