@@ -21,6 +21,7 @@ output/sim_to_obs_ration.txt
 output/st_trade_flows.dta
 output/dy_cnty_probs.rds
 Output/sim_to_obs_ratio.txt
+Output/dy_cnty_viz.rds
 
 output/figs
 
@@ -33,3 +34,4 @@ multinomial_logit_example/
 
 .DS_Store
 
+Classification/
