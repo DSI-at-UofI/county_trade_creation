@@ -2,6 +2,9 @@
 .Rhistory
 county_trade_creation.Rproj
 
+write_up/
+data/FAF4/
+
 assets/USmap_cnty_df.rds
 assets/USmap_st_df.rds
 
