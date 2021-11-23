@@ -50,6 +50,17 @@ trade_tb$trade_cfs[is.na(trade_tb$trade_cfs)] <- 0
 
 trade_tb$trade_cfs <- trade_tb$trade_cfs/1000000
 
+distance <- read.dta13(file = "output/st_trade_flows.dta")
+
+distance <- distance %>%
+  select(orig_ini, dest_ini, distance) %>%
+  rename(orig = orig_ini,
+         dest = dest_ini) %>%
+  mutate(distance = exp(distance)/1.609)
+
+trade_tb <- left_join(trade_tb, distance, by = c("orig", "dest"))
+
+# All --------
 # Flows:
 mean(trade_tb$trade_faf)
 sd(trade_tb$trade_faf)
@@ -60,7 +71,6 @@ sd(trade_tb$trade_cfs)
 cor(trade_tb$trade_faf, trade_tb$trade_cfs)
 
 # Nodes:
-
 #faf
 nodes_faf_o <- trade_tb %>%
   filter(trade_tb$trade_faf != 0) %>%
@@ -125,9 +135,81 @@ sd(faf_imports$x)
 
 cor(cfs_imports$x, faf_imports$x)
 
+# Above 500
+trade_tb <- trade_tb %>% filter(distance > 500)
+# Flows:
+mean(trade_tb$trade_faf)
+sd(trade_tb$trade_faf)
 
+mean(trade_tb$trade_cfs)
+sd(trade_tb$trade_cfs)
 
+cor(trade_tb$trade_faf, trade_tb$trade_cfs)
 
+# Nodes:
+#faf
+nodes_faf_o <- trade_tb %>%
+  filter(trade_tb$trade_faf != 0) %>%
+  distinct(orig) %>%
+  pull()
+
+nodes_faf_d <- trade_tb %>%
+  filter(trade_tb$trade_faf != 0) %>%
+  distinct(dest) %>%
+  pull()
+
+nodes_faf <- tibble(c(nodes_faf_o, nodes_faf_d))
+nodes_faf <- nodes_faf %>% distinct()
+length(nodes_faf$`c(nodes_faf_o, nodes_faf_d)`)
+
+#cfs
+nodes_cfs_o <- trade_tb %>%
+  filter(trade_tb$trade_cfs != 0) %>%
+  distinct(orig) %>%
+  pull()
+
+nodes_cfs_d <- trade_tb %>%
+  filter(trade_tb$trade_cfs != 0) %>%
+  distinct(dest) %>%
+  pull()
+
+nodes_cfs <- tibble(c(nodes_cfs_o, nodes_cfs_d))
+nodes_cfs <- nodes_cfs %>% distinct()
+length(nodes_cfs$`c(nodes_cfs_o, nodes_cfs_d)`)
+
+# Links:
+sum(trade_tb$trade_faf != 0)
+sum(trade_tb$trade_cfs != 0)
+
+# Exports:
+cfs_exports <- aggregate(trade_tb$trade_cfs,
+                         by = list(states = trade_tb$orig),
+                         FUN = sum)
+mean(cfs_exports$x)
+sd(cfs_exports$x)
+
+faf_exports <- aggregate(trade_tb$trade_faf,
+                         by = list(states = trade_tb$orig),
+                         FUN = sum)
+mean(faf_exports$x)
+sd(faf_exports$x)
+
+cor(cfs_exports$x, faf_exports$x)
+
+#Imports:
+cfs_imports <- aggregate(trade_tb$trade_cfs,
+                         by = list(states = trade_tb$dest),
+                         FUN = sum)
+mean(cfs_imports$x)
+sd(cfs_imports$x)
+
+faf_imports <- aggregate(trade_tb$trade_faf,
+                         by = list(states = trade_tb$dest),
+                         FUN = sum)
+mean(faf_imports$x)
+sd(faf_imports$x)
+
+cor(cfs_imports$x, faf_imports$x)
 
 
 
