@@ -49,47 +49,65 @@ formula <- paste0("trade ~ indicator + distance + sales_i + gdp_j + contiguity +
 ## sales_i   == .6802411 
 ## gdp_j     ==  .9762757
 ## intercept == -18.11583 
-indices <- data$dest == "louisiana" | data$dest == "washington"
+data$trade[is.na(data$trade)] <- 0
+indices <- (data$dest == "louisiana" | data$dest == "washington")
 indicator <- ifelse(indices, 1, 0)
+
 out <- glm(formula, family = "quasipoisson", data = data)
 summary(out)
 
 # The mundlak-like test for destination
 st_list <- data %>% select(orig) %>% distinct() %>% arrange(orig) %>% pull()
 for(st in st_list) {
-  
-  indices <- data$dest == st
-  mean <- mean(data$trade[indices], na.rm = TRUE)
-  indicator <- ifelse(indices, 1, 0)
-  indicator <- mean*indicator
-  
-  out <- glm(formula, family = "quasipoisson", data = data)
-  pval <- summary(out)$coefficients[2,4] # Recover p-value
-  
-  if(pval < 0.05) {
-    cat("\n")
-    cat(":::", st, "is significant,")
-    cat("\n")
+  for(year in c(2012, 2017)) {
+    
+    indices <- (data$dest == st) & data$year == year
+    
+    mean_sales <- mean(data$sales_i, na.rm = TRUE)
+    mean_gdp_j <- mean(data$gdp_j, na.rm = TRUE)
+    
+    mean_sales <- mean_sales*indicator
+    out <- glm(formula, family = "quasipoisson", data = data)
+    indicator <- ifelse(indices, 1, 0)
+    pval_sales <- summary(out)$coefficients[2,4] # Recover p-value
+    
+    indicator <- mean_gdp_j*indicator
+    out <- glm(formula, family = "quasipoisson", data = data)
+    indicator <- ifelse(indices, 1, 0)
+    pval_gdp_j <- summary(out)$coefficients[2,4] # Recover p-value
+    
+    if(pval_sales < 0.05 & pval_gdp_j < 0.05) {
+      cat("\n")
+      cat(":::", st, "is significant for the year of", year)
+      cat("\n")
+    }
   }
-  
 }
 
 # The mundlak-like test for origin
 for(st in st_list) {
-  
-  indices <- data$orig == st
-  mean <- mean(data$trade[indices], na.rm = TRUE)
-  indicator <- ifelse(indices, 1, 0)
-  indicator <- mean*indicator
-  
-  out <- glm(formula, family = "quasipoisson", data = data)
-  pval <- summary(out)$coefficients[2,4] # Recover p-value
-  
-  if(pval < 0.05) {
-    cat("\n")
-    cat(":::", st, "is significant,")
-    cat("\n")
+  for(year in c(2012, 2017)) {
+    
+    indices <- (data$orig == st) & data$year == year
+    
+    mean_sales <- mean(data$sales_i, na.rm = TRUE)
+    mean_gdp_j <- mean(data$gdp_j, na.rm = TRUE)
+    
+    mean_sales <- mean_sales*indicator
+    out <- glm(formula, family = "quasipoisson", data = data)
+    indicator <- ifelse(indices, 1, 0)
+    pval_sales <- summary(out)$coefficients[2,4] # Recover p-value
+    
+    indicator <- mean_gdp_j*indicator
+    out <- glm(formula, family = "quasipoisson", data = data)
+    indicator <- ifelse(indices, 1, 0)
+    pval_gdp_j <- summary(out)$coefficients[2,4] # Recover p-value
+    
+    if(pval_sales < 0.05 & pval_gdp_j < 0.05) {
+      cat("\n")
+      cat(":::", st, "is significant for the year of", year)
+      cat("\n")
+    }
   }
-  
 }
-
+in
