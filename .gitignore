@@ -25,6 +25,8 @@ output/st_trade_flows.dta
 output/dy_cnty_probs.rds
 Output/sim_to_obs_ratio.txt
 Output/dy_cnty_viz.rds
+Output/state_reg_table*
+output/spec_curveAnalysis_results.rds
 
 output/figs
 
