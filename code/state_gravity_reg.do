@@ -109,6 +109,29 @@ ppmlhdfe trade distance sales_i gdp_j if indicator != 1, a(one clm_orig_time_id 
 outreg2 using "output/state_reg", replace label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Contiguity YES, Intra FE, YES, Time FE, YES, Importer Climate Time FE, YES, Exporter Climate Time FE, YES)
 estimates save "output/state_reg", replace
 
+** Table of regression results
+ppmlhdfe trade distance sales_i gdp_j, a(one clm_orig_time_id clm_dest_time_id intra contiguity) cl(orig_id dest_id)
+outreg2 using "output/state_reg_table", replace label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., Yes, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, Yes, LA 2017, No)
+
+ppmlhdfe trade distance sales_i gdp_j, a(one intra contiguity) cl(orig_id dest_id)
+outreg2 using "output/state_reg_table", append label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., Yes, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, No, LA 2017, No)
+
+ppmlhdfe trade distance sales_i gdp_j, a(one clm_orig_time_id clm_dest_time_id intra contiguity)
+outreg2 using "output/state_reg_table", append label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., No, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, Yes, LA 2017, No)
+
+ppmlhdfe trade distance sales_i gdp_j, a(one intra contiguity)
+outreg2 using "output/state_reg_table", append label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., No, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, No, LA 2017, No)
+
+gen indicator2 = 0
+replace indicator2 = 1 if dest == "louisiana" | year == 2017
+
+ppmlhdfe trade distance sales_i gdp_j, a(one clm_orig_time_id clm_dest_time_id intra contiguity indicator2) cl(orig_id dest_id)
+outreg2 using "output/state_reg_table", append label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., Yes, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, Yes, LA 2017, Yes)
+
+ppmlhdfe trade distance sales_i gdp_j, a(one clm_orig_time_id clm_dest_time_id intra contiguity indicator2)
+outreg2 using "output/state_reg_table", append label excel dec(5) addstat(Pseudo R2, e(r2_p)) addtext(Dyadic clustered S.E., No, Contiguity, Yes, Intra FE, Yes, Importer/exporter Climate Time FE, Yes, LA 2017, Yes)
+
+
 /* The following is used to
 1) recover the estimates associated with the FE to be used in the simulation part, and
 2) to create a ppml_hat variable (prediction) to make sure our adjustment code works 
