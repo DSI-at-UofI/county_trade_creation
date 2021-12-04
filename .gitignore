@@ -27,6 +27,7 @@ Output/sim_to_obs_ratio.txt
 Output/dy_cnty_viz.rds
 Output/state_reg_table*
 output/spec_curveAnalysis_results.rds
+output/dyadic_county_flows_adjusted_v2.rds
 
 output/figs
 
