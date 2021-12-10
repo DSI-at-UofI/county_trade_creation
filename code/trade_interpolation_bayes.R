@@ -8,8 +8,6 @@ rm(list = ls())
 apply_correction  <- TRUE # Select if you want to apply a proposed correction or not
 cut_off           <- 0.5  # Define a cut-off for posterior to select if there exist trade between two counties
 
-
-
 # Purpose: ----------------
 # Script is the simulation that we employ to estimate the county flows
 # using the parameters from our gravity regression:
@@ -273,8 +271,8 @@ dy_cnty$posterior <- (1*dy_cnty$priors)/dy_cnty$probs_st
 dy_cnty$istrade <- ifelse(dy_cnty$posterior > cut_off, 1, 0)
 
 total_errors <- 0
-which_errors <- data.frame()
-which_corrections <- data.frame()
+which_errors <- data.frame()       # For state dyads
+which_corrections <- data.frame()  # For cnty dyads
 i <- 0
 st_list <- dy_cnty %>% distinct(orig_stName) %>% pull()
 for(st_orig in st_list) {
@@ -290,6 +288,7 @@ for(st_orig in st_list) {
       select(orig, dest, posterior, istrade, notrade)
     
     if(all(df_temp$notrade == 0 & df_temp$posterior < cut_off)){
+      
       total_errors <- 1 + total_errors
       which_errors <- rbind(which_errors, c(st_orig, st_dest))
       
@@ -313,7 +312,6 @@ for(st_orig in st_list) {
     }
   }
 }
-
 # Saving the data set for visualizations
 dy_cnty %>%
   select(!c(notrade, sum_FE, imports, 
@@ -343,18 +341,32 @@ cat("Total of dyadic interactions", sum(dy_cnty$istrade == 1))
 cat("\n")
 
 # 2nd Step -- Balance dyadic county flows to match state dyadic flows
-i <- 0
+st_trade_flows <- readstata13::read.dta13(file = 'output/st_trade_flows.dta')
+st_trade_flows <- st_trade_flows %>% 
+  filter(year == 2017) %>%
+  select(orig, dest, trade)
+st_list_grid <- expand.grid(st_list, st_list)
 st_list <- st_list[st_list != "louisiana"] 
 st_list <- st_list[st_list != "washington"]
+
+sim_to_obs_ratio <- st_list_grid
+sim_to_obs_ratio <- cbind.data.frame(sim_to_obs_ratio, rep(NA,length(sim_to_obs_ratio$Var1)))
+sim_to_obs_ratio <- cbind.data.frame(sim_to_obs_ratio, rep(NA,length(sim_to_obs_ratio$Var1)))
+sim_to_obs_ratio <- cbind.data.frame(sim_to_obs_ratio, rep(NA,length(sim_to_obs_ratio$Var1)))
+names(sim_to_obs_ratio) <- c("orig", "dest", "ratio", "obs", "sim")
+
 dy_cnty$cnty_flows[dy_cnty$istrade == 0] <- 0
+a <- dy_cnty
+dy_cnty <- a
 # Notice that louisiana and washington are excluded from this adjustment
+i <- 0
 for(st_ori in c(st_list, "louisiana", "washington")) {
   for(st_des in st_list) {
     
-    if(i == 0) {
-      note <- "These are the observed-to-simulated ratios for dyadic flows at the state level."
-      write(note, file = "output/sim_to_obs_ratio.txt", append = TRUE)
-    }
+    #if(i == 0) {
+    #  note <- "These are the observed-to-simulated ratios for dyadic flows at the state level."
+    #  write(note, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+    #}
     
     i <- i + 1
     cat("\n")
@@ -362,38 +374,50 @@ for(st_ori in c(st_list, "louisiana", "washington")) {
     cat("\n")
     
     indices <- dy_cnty$istrade == 1
-    
     indices <- dy_cnty$orig_stName == st_ori & dy_cnty$dest_stName == st_des & indices
     
     st_flw_sim <- sum(dy_cnty$cnty_flows[indices], na.rm = TRUE)
     
+    indices2 <- sim_to_obs_ratio$orig == st_ori & sim_to_obs_ratio$dest == st_des
+    
     if(all(!indices)) {
       st_flw_obs <- 0
     }else{
-      st_flw_obs <- mean(dy_cnty$trade[indices], na.rm = TRUE)
+      st_flw_obs <- st_trade_flows$trade[st_trade_flows$orig == st_ori & st_trade_flows$dest == st_des]
     }
     
     if(st_flw_sim == 0) { #if simulated flows is zero, then we allocate as follows:
-      dy_cnty$cnty_flows[indices] <- st_flw_obs/length(dy_cnty$cnty_flows[indices])
       
+      diff <- st_flw_obs/length(dy_cnty$cnty_flows[indices])
+      dy_cnty$cnty_flows[indices] <- diff  
+      
+      sim_to_obs_ratio$obs[indices2] <- st_flw_obs
+      sim_to_obs_ratio$sim[indices2] <- 0
+      sim_to_obs_ratio$ratio[indices2] <- diff
+    
       if(st_flw_obs != 0) {
-        line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated value is zero!!!!")
-        write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+        #line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated value is zero!!!!")
+        #write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
       }else{
-        line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated and observed value are zero!!!!")
-        write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+        #line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Simulated and observed value are zero!!!!")
+        #write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
       }
       
     }else{
       diff <- (st_flw_obs/st_flw_sim)
-      
       dy_cnty$cnty_flows[indices] <- dy_cnty$cnty_flows[indices]*diff
       
-      line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Obs-to-sim ratio: ", diff)
-      write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
+      sim_to_obs_ratio$obs[indices2] <- st_flw_obs
+      sim_to_obs_ratio$sim[indices2] <- st_flw_sim
+      sim_to_obs_ratio$ratio[indices2] <- diff
+      
+      #line <- paste("Orig: ", st_ori, "Dest: ", st_des, "Obs-to-sim ratio: ", diff)
+      #write(line, file = "output/sim_to_obs_ratio.txt", append = TRUE)
     }
   }
 }
+
+saveRDS(sim_to_obs_ratio, file = 'diagnostics/sim_to_obs_ratio.rds')
 
 cat("\n")
 cat("Total of dyadic interactions", sum(dy_cnty$cnty_flows > 0))
