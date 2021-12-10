@@ -10,6 +10,7 @@ faf_2017 <- read.dta13(file = 'data/data_needs/faf4.5.1_2017_state.dta')
 # cleaning faf data
 faf_2017 <- faf_2017 %>% 
   filter(sctg2 == "2") %>%
+  filter(year == 2017) %>%
   filter(!orig_state %in% c("HI", "DC", "AK")) %>%
   filter(!dest_state %in% c("HI", "DC", "AK")) %>%
   select(orig_state,
@@ -53,6 +54,7 @@ trade_tb$trade_cfs <- trade_tb$trade_cfs/1000000
 distance <- read.dta13(file = "output/st_trade_flows.dta")
 
 distance <- distance %>%
+  filter(year == "2017") %>%
   select(orig_ini, dest_ini, distance) %>%
   rename(orig = orig_ini,
          dest = dest_ini) %>%
