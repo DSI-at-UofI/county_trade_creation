@@ -17,24 +17,28 @@
 
 ### 2) `code/state_gravity_reg.do`
 
-**Creates:** `output/dyadic_state_2017_merge.dta` and `output/st_trade_flows.dta`.
+**Creates:** `output/dyadic_state_2017_merge.dta` and `output/st_trade_flows.dta`, and `output/st_trade_flows_mean.dta`, where the latter dataset is used directly in step 3.
 
 **Requires:** 
 - `data/cfs_cleaned_data`
 - `data/data_needs/dyadic_state_2017`
 - `data/data_needs/dyadic_state_2012`
 
-### 3) `code/istrade_cnty_probs.R`
+### 3) `code/istrade_cnty_probs_hurdle.R`
 
-**Creates:** `output/dy_cnty_probs.rds`
+**Creates:** `output/dy_cnty_probs_v2.rds` and `output/dy_state_probs_v2.rds`.
 
 **Requires:**
-- `output/st_trade_flows.dta`
+- `output/st_trade_flows_mean.dta`
 - `output/dyadic_county_2017.rds`
 
 ### 4) `code/trade_interpolation_bayes.R`
 
-**Creates:** `output/dyadic_county_flows_adjusted.rds`.
+**Creates:** `output/dyadic_county_flows_adjusted.rds`. In addition, the following diagnostic datasets are created:
+
+- `diagnostics/which_errors.rds`
+- `diagnostics/sim_to_obs_ratio.rds`
+
 
 **Requires:** 
 - `output/dyadic_county_2007.rds` <sup>[2](#footnote1)</sup>
