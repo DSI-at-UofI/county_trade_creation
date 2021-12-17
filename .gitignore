@@ -23,11 +23,15 @@ output/dyadic_county_flows_adjusted.dta
 output/sim_to_obs_ration.txt
 output/st_trade_flows.dta
 output/dy_cnty_probs.rds
+output/dy_cnty_probs_v2.rds
 Output/sim_to_obs_ratio.txt
 Output/dy_cnty_viz.rds
+Output/dy_cnty_viz_v2.rds
 Output/state_reg_table*
 output/spec_curveAnalysis_results.rds
 output/dyadic_county_flows_adjusted_v2.rds
+Output/dy_state_probs_v2.rds
+
 
 output/figs
 
